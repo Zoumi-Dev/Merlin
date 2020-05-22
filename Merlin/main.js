@@ -16,21 +16,6 @@ client.admin = admin;
 
 client.commands = new Enmap();
 
-fs.readdir("./commands/utilisateur/", (err, files) => {
-    console.log(`commands/utilisateur`);
-    if (err) console.log(err);
-    files.forEach(file => {
-        if (!file.endsWith(".js")){
-            console.log("(!!!) Aucune command trouver.");
-            return;
-        }
-        const props = require(`./commands/utilisateur/${file}`);
-        const commandName = file.split(".")[0];
-        console.log(`//////////////// ${commandName} ////////////////`);
-        client.commands.set(commandName, props);
-    });
-});
-
 fs.readdir("./commands/fun/", (err, files) => {
     console.log(`commands/fun`);
     if (err) console.log(err);

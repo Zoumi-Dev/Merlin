@@ -7,4 +7,8 @@ module.exports = async (client, message) => {
     const cmd = client.commands.get(command);
 
     cmd.run(client, message, args);
+
+    if (!cmd.run(client, message, args)){
+        return message.channel.send('test')
+    }
 };

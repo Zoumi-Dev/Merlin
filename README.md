@@ -1,2 +1,2 @@
-# Meliodas
-The official bot meliodas, powered by Zoumi#0336
+# Merlin
+The official bot merlin, powered by Zoumi#0336

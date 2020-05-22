@@ -55,12 +55,12 @@ exports.run = (client, message, args) => {
     let mpEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("GREY")
-        .addField("> :exclamation: | Ban", `\`Vous avez été bannie du serveur \`${message.guild.name}\` pour la raison \`${reason[1]}\`.\``);
+        .addField("> :exclamation: | Ban", `\`Vous avez été bannie du serveur \`${message.guild.name}\` pour la raison \`${reason}\`.\``);
 
     let banEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("GREY")
-        .addField("> :white_check_mark: | Succès", `\`Le membre \`<@${banUser.user.id}>\` à été bannie avec succès !\nRaison: \`${reason[1]}`)
+        .addField("> :white_check_mark: | Succès", `\`Le membre \`<@${banUser.user.id}>\` à été bannie avec succès !\nRaison: \`${reason}`)
         .setTimestamp()
         .setFooter('Merlin | Powered by Zoumi#0336');
     return message.channel.send(banEmbed) && banUser.ban({days: 7, reason: reason}) && banUser.user.send(mpEmbed);

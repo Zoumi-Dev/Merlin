@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="" />
+    <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/ban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/utilisateur/avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/utilisateur/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/img.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/utilisateur/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/ping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/utilisateur/sugg.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/sugg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cHKGI24CO4h4mSxicaNqy6Kman" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,9 +37,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\github\Merlin\Merlin\commands\admin" />
+      <recent name="F:\github\Merlin\Merlin\commands\infos" />
+      <recent name="F:\github\Merlin\Merlin\commands\fun" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -51,6 +72,9 @@
       <option name="presentableId" value="Default" />
       <updated>1590179985723</updated>
       <workItem from="1590180029080" duration="526000" />
+      <workItem from="1590181690685" duration="1289000" />
+      <workItem from="1590183478461" duration="762000" />
+      <workItem from="1590184816318" duration="2269000" />
     </task>
     <servers />
   </component>
@@ -62,9 +86,9 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590180821395" />
-    <state x="341" y="148" key="SettingsEditor" timestamp="1590180844577">
+    <state x="341" y="148" key="SettingsEditor" timestamp="1590184508513">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="341" y="148" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590180844577" />
+    <state x="341" y="148" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590184508513" />
   </component>
 </project>
