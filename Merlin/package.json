@@ -1,0 +1,20 @@
+{
+  "name": "merlin",
+  "version": "1.0.0",
+  "description": "The Official Bot Merlin, Created By Zoumi#0336",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zoumi",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "enmap": "^5.2.4",
+    "fs": "0.0.1-security",
+    "moment": "^2.25.3",
+    "ms": "^2.1.2",
+    "snekfetch": "^4.0.4",
+    "ytdl-core-discord": "^1.2.0"
+  }
+}

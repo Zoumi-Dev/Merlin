@@ -1,0 +1,17 @@
+{
+  "token": "NzEyMzE4Nzc0NjQ0MzEwMDU3.XsP02w.kQDJOaAed-rKmSntCEQR1ybPUts",
+
+  "prefix": "_",
+
+  "ownerID": ["660921972271611924", "371340889722847234"],
+
+  "zoumi": "371340889722847234",
+
+  "jordan": "660921972271611924",
+
+  "DEFAULT_SETTINGS": {
+    "prefix": "_",
+    "guildMemberAdd": false,
+    "logsChannel": "logs-merlin"
+  }
+}
