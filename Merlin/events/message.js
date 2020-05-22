@@ -6,9 +6,13 @@ module.exports = async (client, message) => {
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command);
 
-    cmd.run(client, message, args);
-
-    if (!cmd.run(client, message, args)){
-        return message.channel.send('test')
+    if (!cmd){
+        return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`_help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faite \`_bot-infos\` et clicker sur m'inviter !`);
     }
+
+    if (message.mentions.has(client.user.id)){
+        return message.channel.send('lol');
+    }
+
+    cmd.run(client, message, args);
 };
