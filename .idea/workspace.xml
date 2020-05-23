@@ -4,7 +4,8 @@
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/sugg.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/sugg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,8 @@
       <workItem from="1590181690685" duration="1289000" />
       <workItem from="1590183478461" duration="762000" />
       <workItem from="1590184816318" duration="4012000" />
-      <workItem from="1590249038951" duration="7546000" />
+      <workItem from="1590249038951" duration="9251000" />
+      <workItem from="1590266072664" duration="1459000" />
     </task>
     <servers />
   </component>
@@ -76,6 +78,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590264342712">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590264342712" />
     <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1590180821395">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -91,7 +97,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Merlin/commands/nsfw/hentai.js</url>
           <line>8</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
