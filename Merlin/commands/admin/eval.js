@@ -11,10 +11,16 @@ module.exports.run = async (client, message, args) => {
     if (message.author.id !== client.config.zoumi){
         return message.channel.send(`<@${message.author.id}>, vous n'avez pas la permission d'utiliser cette commande !`);
     }
-    const code = args.join(' ');
-    const evaled = eval(code);
-    const cleanCode = await clean(evaled);
-    await message.channel.send(cleanCode, {code: "js"});
+    try {
+
+        const code = args.join(' ');
+        const evaled = eval(code);
+        const cleanCode = await clean(evaled);
+        await message.channel.send(cleanCode, {code: "js"});
+        
+    } catch (e) {
+        return message.channel.send(`${e.message}`, {code: "js"});
+    }
 };
 
 module.exports.help = {

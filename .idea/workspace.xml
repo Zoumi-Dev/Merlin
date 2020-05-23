@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Merlin/events/message/MessagePriver.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/channelCreate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/channelDelete" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/channel/channelDelete" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/guildBanAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildBanAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/guildMemberAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildMemberAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/guildMemberRemove.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildMemberRemove.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/messageDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/messageDelete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/ready.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/eval.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/eval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message/MessagePriver.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/messagePriver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
       <workItem from="1590183478461" duration="762000" />
       <workItem from="1590184816318" duration="4012000" />
       <workItem from="1590249038951" duration="9251000" />
-      <workItem from="1590266072664" duration="4380000" />
+      <workItem from="1590266072664" duration="5673000" />
     </task>
     <servers />
   </component>
@@ -99,6 +93,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="341" y="148" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590184508513" />
+    <state x="496" y="233" key="run.anything.popup" timestamp="1590271650391">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="496" y="233" key="run.anything.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1590271650391" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
