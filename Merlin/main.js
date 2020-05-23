@@ -30,14 +30,20 @@ const loadCommands = (dir = "./commands/") => {
 
 loadCommands();
 
-fs.readdir("./events/", (err, files) => {
-    if(err) return console.log(err);
-    files.forEach(file => {
-        const event = require(`./events/${file}`);
-        const eventName = file.split(".")[0];
-        client.on(eventName, event.bind(null, client));
-    });
-});
+const loadEvents = (dir = "./events/") => {
+  fs.readdirSync(dir).forEach(dirs => {
+      const events = fs.readdirSync(`${dir}/${dirs}/`).filter(files => files.endsWith(".js"));
+
+      for (const event of events){
+          const evt = require(`${dir}/${dirs}/${event}`);
+          const evtName = event.split(".")[0];
+          client.on(evtName, evt.bind(null, client));
+          console.log(`Evenement chargé: ${evtName}`);
+      }
+  });
+};
+
+loadEvents();
 
 /*
 fs.readdir("./commands/fun/", (err, files) => {

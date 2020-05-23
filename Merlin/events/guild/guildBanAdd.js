@@ -17,7 +17,7 @@ module.exports = async (client, guild) => {
             .setColor("GREY")
             .setDescription("> :unlock: | Utilisateur bannie")
             .addField("> Utilisateur", `\`${executor.username}\``)
-            .addField("> Reason", `\`${member.content}\``)
+            .addField("> Reason", `\`\``)
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
         return guild.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(logs);
