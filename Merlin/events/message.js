@@ -10,7 +10,7 @@ module.exports = async (client, message) => {
         return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`_help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faite \`_bot-infos\` et clicker sur m'inviter !`);
     }
 
-    if (message.mentions.has(client.user.id)){
+    if (message.content === message.mentions.has(client.user.id)){
         return message.channel.send('lol');
     }
 
