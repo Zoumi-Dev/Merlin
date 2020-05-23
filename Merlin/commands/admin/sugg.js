@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
 
     let suggChannel = client.guilds.cache.get("712358618993000499").channels.cache.get("712675195365752892");
 
-    let sugg = args.join(" ");
+    let sugge = args.join(" ");
 
     if (!args[0]){
         let embed = new Discord.MessageEmbed()
@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
     let suggEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("GREY")
-        .addField(`> Suggestion de ${message.author.tag}`, sugg)
+        .addField(`> Suggestion de ${message.author.tag}`, sugge)
         .setTimestamp()
         .setFooter("Merlin | Powered by Zoumi");
 
@@ -37,10 +37,10 @@ module.exports.run = async (client, message, args) => {
     return suggChannel.send(suggEmbed).then(async em => {
         await em.react("✅");
         await em.react("❌");
-    }) && await message.channel.send(`<@${message.author.id}>, votre suggestion à bien été envoyer !`) && client.guild.member().roles.add();
+    }) && await message.channel.send(`<@${message.author.id}>, votre suggestion à bien été envoyer !`);
 
 };
 
 module.exports.help = {
-    name: "sugg",
+    name: "sug",
 };

@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
         .setAuthor("Merlin")
         .setColor("GREY")
         .setThumbnail(client.user.avatarURL())
-        .addField("> :man_technologist: | Développeur", "• Zoumi#0336", true)
+        .addField("> :man_technologist: | Développeur", "• Zoumi#0336\n• JOrDan#5128", true)
         .addField(">  :book: | Librairie", "• NodeJs\n• DiscordJs", true)
         .addField("> :wrench: | Version", "• 1.0.0", true)
         .addField("> :newspaper2: | Informations", `Je suis dans \`${client.guilds.cache.size}\` serveur\nUn total de \`soon\` membre(s) sur tous les serveurs ou je suis !`)
