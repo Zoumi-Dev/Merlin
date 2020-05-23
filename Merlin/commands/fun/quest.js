@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = async (client, message, args) => {
+exports.run = async(client, message, args) => {
 
     message.delete();
 
@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
     let repEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("GREY")
-        .setDescription(`> Question poser par <@${message.author.id}>`)
+        .setDescription(`> Question posé par <@${message.author.id}>`)
         .addField("> Question", args.join(' '))
         .addField("> Réponse", randomReponse)
         .setTimestamp()
