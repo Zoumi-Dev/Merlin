@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     message.delete();
 
@@ -15,4 +15,8 @@ exports.run = async (client, message, args) => {
         .setTimestamp()
         .setFooter("Merlin | Powered by Zoumi#0336");
     return message.channel.send(helpEmbed);
+};
+
+module.exports.help = {
+    name: "help",
 };

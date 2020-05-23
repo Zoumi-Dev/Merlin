@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     message.delete();
 
@@ -37,6 +37,10 @@ exports.run = async (client, message, args) => {
     return suggChannel.send(suggEmbed).then(async em => {
         await em.react("✅");
         await em.react("❌");
-    }) && message.channel.send(`<@${message.author.id}>, votre suggestion à bien été envoyer !`) && client.guild.member().roles.add();
+    }) && await message.channel.send(`<@${message.author.id}>, votre suggestion à bien été envoyer !`) && client.guild.member().roles.add();
 
+};
+
+module.exports.help = {
+    name: "sugg",
 };

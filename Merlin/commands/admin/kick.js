@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = (client, message, args) => {
+module.exports.run = (client, message, args) => {
 
     let kickUser = message.guild.member(
         message.mentions.users.first() || message.guild.members.cache.get(args[0])
@@ -64,4 +64,8 @@ exports.run = (client, message, args) => {
         .setTimestamp()
         .setFooter('Merlin | Powered by Zoumi#0336');
     return message.channel.send(kickEmbed) && kickUser.kick(reason) && kickUser.user.send(mpEmbed);
+};
+
+module.exports.help = {
+    name: "kick",
 };

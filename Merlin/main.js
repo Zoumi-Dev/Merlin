@@ -16,6 +16,30 @@ client.admin = admin;
 
 client.commands = new Enmap();
 
+const loadCommands = (dir = "./commands/") => {
+  fs.readdirSync(dir).forEach(dirs => {
+      const commands = fs.readdirSync(`${dir}/${dirs}/`).filter(files => files.endsWith('.js'));
+
+      for (const file of commands){
+          const getFileName = require(`${dir}/${dirs}/${file}`);
+          client.commands.set(getFileName.help.name, getFileName);
+          console.log(`Commande chargée: ${getFileName.help.name}`);
+      }
+  })
+};
+
+loadCommands();
+
+fs.readdir("./events/", (err, files) => {
+    if(err) return console.log(err);
+    files.forEach(file => {
+        const event = require(`./events/${file}`);
+        const eventName = file.split(".")[0];
+        client.on(eventName, event.bind(null, client));
+    });
+});
+
+/*
 fs.readdir("./commands/fun/", (err, files) => {
     console.log(`commands/fun`);
     if (err) console.log(err);
@@ -84,5 +108,6 @@ fs.readdir("./events/", (err, files) => {
         client.on(eventName, event.bind(null, client));
     });
 });
+*/
 
 client.login(config.token);

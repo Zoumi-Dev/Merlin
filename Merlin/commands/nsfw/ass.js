@@ -4,7 +4,7 @@ const ass = [
     "",
 ];
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     const imgass = ass[Math.floor(Math.random() * ass.length)];
 
@@ -20,4 +20,8 @@ exports.run = async (client, message, args) => {
     }else{
         return message.channel.send(`<@${message.author.id}>, cette commande est disponible uniquement dans les salons nsfw !`);
     }
+};
+
+module.exports.help = {
+    name: "ass",
 };

@@ -7,7 +7,7 @@ const hot = [
     "https://i.pinimg.com/originals/7d/d0/0a/7dd00aa6d7c14882c6a1c92cf0e4d2b7.jpg",
 ];
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     const imghot = hot[Math.floor(Math.random() * hot.length)];
 
@@ -23,4 +23,8 @@ exports.run = async (client, message, args) => {
     }else{
         return message.channel.send(`<@${message.author.id}>, cette commande est disponible uniquement dans les salons nsfw !`);
     }
+};
+
+module.exports.help = {
+    name: "hot",
 };

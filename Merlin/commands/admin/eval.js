@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     function clean(text) {
         if (typeof text === "string")
@@ -15,4 +15,8 @@ exports.run = async (client, message, args) => {
     const evaled = eval(code);
     const cleanCode = await clean(evaled);
     await message.channel.send(cleanCode, {code: "js"});
+};
+
+module.exports.help = {
+    name: "eval",
 };

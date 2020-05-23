@@ -14,6 +14,7 @@
     "fs": "0.0.1-security",
     "moment": "^2.25.3",
     "ms": "^2.1.2",
+    "random-puppy": "^1.1.0",
     "snekfetch": "^4.0.4",
     "ytdl-core-discord": "^1.2.0"
   }

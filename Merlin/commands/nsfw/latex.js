@@ -9,7 +9,7 @@ const latex = [
 
 ];
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     const imghot = latex[Math.floor(Math.random() * latex.length)];
 
@@ -25,4 +25,8 @@ exports.run = async (client, message, args) => {
     }else{
         return message.channel.send(`<@${message.author.id}>, cette commande est disponible uniquement dans les salons nsfw !`);
     }
+};
+
+module.exports.help = {
+    name: "latex",
 };

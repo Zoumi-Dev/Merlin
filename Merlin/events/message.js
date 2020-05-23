@@ -1,8 +1,8 @@
 module.exports = async (client, message) => {
     if (message.author.bot) return;
-    if (message.content.indexOf(client.config.prefix) !==0) return;
+    if (message.content.indexOf(client.config.prefix) !== 0) return;
 
-    const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
+    const args = message.content.slice(client.config.prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command);
 

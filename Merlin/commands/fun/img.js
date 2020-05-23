@@ -57,7 +57,7 @@ const imagedbz = [
 
 const snekfetch = require('snekfetch');
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     if (!args[0]){
         return message.channel.send(`<@${message.author.id}>, voici la liste des images disponibles:\n• \`seven\` The seven deadly sins\n• \`hunter\` Hunter X Hunter\n• \`naruto\` Naruto\n• \`dbz\` Dragon ball z`);
@@ -114,4 +114,8 @@ exports.run = async (client, message, args) => {
             .setFooter("Merlin | Powered by Zoumi#0336 and Giphy.com");
         return message.channel.send(im);
     }
+};
+
+module.exports.help = {
+    name: "img",
 };

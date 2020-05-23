@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     message.delete();
 
@@ -30,4 +30,8 @@ exports.run = async (client, message, args) => {
 
         return message.channel.send(clearEmbed).then(message => message.delete({timeout: 5000}));
     });
+};
+
+module.exports.help = {
+    name: "clear",
 };

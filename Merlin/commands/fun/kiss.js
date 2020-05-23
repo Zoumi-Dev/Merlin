@@ -12,7 +12,7 @@ const kissimg = [
     "https://media.giphy.com/media/1wmtU5YhqqDKg/giphy.gif",
 ];
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     message.delete();
 
@@ -40,4 +40,8 @@ exports.run = async (client, message, args) => {
         }
     }
 
+};
+
+module.exports.help = {
+    name: "kiss",
 };

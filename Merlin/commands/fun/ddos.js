@@ -18,3 +18,7 @@ exports.run = async (client, message, args) => {
 
     return (await (await (await (await message.channel.send(`\`|||||||||||||||||||||\nVictime: ${usr.user.username}\nDDoS en cours: 0%\n∎.........\n|||||||||||||||||||||\``)).edit(`\`|||||||||||||||||||||\nVictime: ${usr.user.username}\nDDoS en cours: 25%\n∎∎∎.......\n|||||||||||||||||||||\``)).edit(`\`|||||||||||||||||||||\nVictime: ${usr.user.username}\nDDoS en cours: 50%\n∎∎∎∎∎.....\n|||||||||||||||||||||\``)).edit(`\`|||||||||||||||||||||\nVictime: ${usr.user.username}\nDDoS en cours: 75%\n∎∎∎∎∎∎∎...\n|||||||||||||||||||||\``)).edit(`\`|||||||||||||||||||||\nVictime: ${usr.user.username}\nDDoS en cours: 100%\n∎∎∎∎∎∎∎∎∎∎\n|||||||||||||||||||||\``)
 };
+
+module.exports.help = {
+    name: "ddos",
+};

@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const moment = require('moment');
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     message.delete();
 
@@ -38,4 +38,8 @@ exports.run = async (client, message, args) => {
         .setFooter("Merlin | Powered by Zoumi#0336");
     return message.channel.send(infos);
 
+};
+
+module.exports.help = {
+    name: "infos",
 };

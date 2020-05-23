@@ -10,7 +10,7 @@ const hugimg = [
     "https://media.giphy.com/media/QGc8RgRvMonFm/giphy.gif",
 ];
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     message.delete();
 
@@ -37,4 +37,8 @@ exports.run = async (client, message, args) => {
             return message.channel.send(hugEmbed);
         }
     }
+};
+
+module.exports.help = {
+    name: "hug",
 };

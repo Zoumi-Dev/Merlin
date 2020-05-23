@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const randomPuppy = require('random-puppy');
 
-exports.run = async(client, message, args) => {
+module.exports.run = async(client, message, args) => {
 
     message.delete();
 
-    randomPuppy('cry')
+    randomPuppy('cry mangas')
         .then(url => {
             if (!args[0]) {
                 let cryEmbed = new Discord.MessageEmbed()
@@ -17,4 +17,8 @@ exports.run = async(client, message, args) => {
                 return message.channel.send(cryEmbed);
             }
         })
-}
+};
+
+module.exports.help = {
+    name: "cry",
+};

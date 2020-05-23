@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     message.delete();
 
@@ -27,4 +27,8 @@ exports.run = async (client, message, args) => {
             return message.channel.send(avatarEmbed);
         }
     }
+};
+
+module.exports.help = {
+    name: "avatar",
 };

@@ -6,7 +6,7 @@ const hentai = [
 
 ];
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     const imghentai = hentai[Math.floor(Math.random() * hentai.length)];
 
@@ -22,4 +22,8 @@ exports.run = async (client, message, args) => {
     }else{
         return message.channel.send(`<@${message.author.id}>, cette commande est disponible uniquement dans les salons nsfw !`);
     }
+};
+
+module.exports.help = {
+    name: "hentai",
 };

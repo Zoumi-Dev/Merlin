@@ -4,7 +4,7 @@ module.exports = async (client, message) => {
     if (client.guilds.cache.get("712358618993000499")) {
         const channel = message.guild.channels.cache.get("712782027883020330");
 
-        if (message.guild.channels.cache.find(ch => ch.name === "logs-meliodas")) {
+        if (message.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel)) {
             let logs = new Discord.MessageEmbed()
                 .setAuthor("Merlin")
                 .setColor("GREY")
@@ -17,7 +17,7 @@ module.exports = async (client, message) => {
                 .addField("> :cry: | Aurevoir", `<@${message.user.id}>, nous à quitter ! Nous espérons sont retour...`)
                 .setTimestamp()
                 .setFooter("Merlin | Powered by Zoumi#0336");
-            return channel.send(embed) && message.guild.channels.cache.find(ch => ch.name === "logs-meliodas").send(logs);
+            return channel.send(embed) && message.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(logs);
         }
     }
 };

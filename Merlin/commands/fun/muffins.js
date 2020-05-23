@@ -5,7 +5,7 @@ const muffin = [
     "https://c4.wallpaperflare.com/wallpaper/642/617/159/muffins-4k-background-hd-wallpaper-preview.jpg",
 ];
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {
 
     message.delete();
 
@@ -19,4 +19,8 @@ exports.run = async (client, message, args) => {
         .setTimestamp()
         .setFooter("Merlin | Powered by Zoumi#0336");
     return message.channel.send(muffinEmbed);
+};
+
+module.exports.help = {
+    name: "muffins",
 };
