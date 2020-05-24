@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Merlin/events/guild/guildCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/eval.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/eval.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/message/MessagePriver.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/messagePriver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/server-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/server-infos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,7 @@
       <workItem from="1590183478461" duration="762000" />
       <workItem from="1590184816318" duration="4012000" />
       <workItem from="1590249038951" duration="9251000" />
-      <workItem from="1590266072664" duration="5673000" />
+      <workItem from="1590266072664" duration="10070000" />
     </task>
     <servers />
   </component>
