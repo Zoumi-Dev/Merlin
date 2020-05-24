@@ -6,7 +6,7 @@ module.exports = async (client, guild) => {
         let joinEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREY")
-            .addField("> :grinning: | Rejoint", `J'ai été ajouter sur le server \`${guild.name}\` !`)
+            .addField("> :cry: | Quitter", `J'ai été retirer du server \`${guild.name}\` !`)
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
         return client.guilds.cache.get("712358618993000499").channels.cache.find(ch => ch.id === "713886808798396417").send(joinEmbed);
