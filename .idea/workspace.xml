@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Merlin/events/guild/guildDelete.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/muffins.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/muffins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/quest.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/quest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/say.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/say.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/guild/guildCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/ping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,18 +74,35 @@
       <workItem from="1590249038951" duration="9251000" />
       <workItem from="1590266072664" duration="10553000" />
       <workItem from="1590333583918" duration="318000" />
-      <workItem from="1590334027518" duration="5331000" />
+      <workItem from="1590334027518" duration="7734000" />
+      <workItem from="1590349717945" duration="1438000" />
     </task>
+    <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
+      <created>1590346249634</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590346249634</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590264342712">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590264342712" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590351200251">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590351200251" />
     <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1590180821395">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -99,6 +111,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="341" y="148" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590184508513" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590346453090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590346453090" />
     <state x="496" y="233" key="run.anything.popup" timestamp="1590271650391">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

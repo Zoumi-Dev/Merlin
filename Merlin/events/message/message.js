@@ -1,3 +1,5 @@
+const Enmap = require('enmap');
+
 module.exports = async (client, message) => {
     if (message.author.bot) return;
     if (message.content.indexOf(client.config.prefix) !== 0) return;
@@ -15,6 +17,29 @@ module.exports = async (client, message) => {
     if (message.content === message.mentions.has(client.user.id)){
         return message.channel.send('lol');
     }
+
+    /* Cooldown */
+    if (!client.cooldowns.has(cmd.help.name)){
+        client.cooldowns.set(cmd.help.name, new Enmap());
+    }
+
+    const timeNow = Date.now();
+    const timeSTamp = client.cooldowns.get(cmd.help.name);
+    const cdAmount = (cmd.help.cooldown || 5) * 1000;
+
+    if (message.author.id !== client.config.zoumi) {
+        if (timeSTamp.has(message.author.id)) {
+            const cdExpTime = timeSTamp.get(message.author.id) + cdAmount;
+
+            if (timeNow < cdExpTime) {
+                timeLeft = (cdExpTime - timeNow) / 1000;
+                return message.channel.send(`<@${message.author.id}>, veuiller patienter \`${timeLeft.toFixed(0)}\` seconde(s) avant de ré-utiliser cette commande.`);
+            }
+        }
+    }
+
+    timeSTamp.set(message.author.id, timeNow);
+    setTimeout(() => timeSTamp.delete(message.author.id), cdAmount);
 
     cmd.run(client, message, args);
 };
