@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="" />
+    <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/server-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/server-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +24,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1cAhTTkPQaQIxdVuE3I33kCluQl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,6 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -51,6 +68,8 @@
       <workItem from="1590145666858" duration="3505000" />
       <workItem from="1590150036275" duration="15195000" />
       <workItem from="1590170112056" duration="28000" />
+      <workItem from="1590360303289" duration="1658000" />
+      <workItem from="1590362398510" duration="692000" />
     </task>
     <servers />
   </component>

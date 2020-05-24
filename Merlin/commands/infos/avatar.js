@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
         let avatarEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setDescription(`> Voici l'avatar de <@${message.author.id}>`)
-            .setColor("GREY")
+            .setColor("BLUE")
             .setImage(message.author.avatarURL())
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");

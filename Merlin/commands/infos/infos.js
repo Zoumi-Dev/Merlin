@@ -20,10 +20,10 @@ module.exports.run = async (client, message, args) => {
     if (!args[0]) {
         let infos = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
-            .addField("> :bust_in_silhouette: | Nom d'utilisateur", `• ${message.author.username}`, true)
-            .addField("> :mag: | Compte créer le", `• ${moment.utc(message.author.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
-            .addField("> A rejoint le", `${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
+            .setColor("BLUE")
+            .addField("> :bust_in_silhouette: | Nom d'utilisateur", `✦ ${message.author.username}`, true)
+            .addField("> :mag: | Compte créer le", `✦ ${moment.utc(message.author.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
+            .addField("> A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
             .setThumbnail(message.author.avatarURL())
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
@@ -32,9 +32,9 @@ module.exports.run = async (client, message, args) => {
         let infos = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREY")
-            .addField("> :bust_in_silhouette: | Nom d'utilisateur", `• ${usr}`, true)
-            .addField("> :mag: | Compte créer le", `• ${moment.utc(usr.user.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
-            .addField("> A rejoint le", `${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
+            .addField("> :bust_in_silhouette: | Nom d'utilisateur", `✦ ${usr}`, true)
+            .addField("> :mag: | Compte créer le", `✦ ${moment.utc(usr.user.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
+            .addField("> A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
             .setThumbnail(usr.user.avatarURL())
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");

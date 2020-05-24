@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
 
     let helpEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setColor("GREY")
+        .setColor("BLUE")
         .addField("> :newspaper2: | Informations", "`bot-infos`, `server-infos`, `infos`, `ping`")
         .addField("> :tada: | Fun", "`img`, `say`, `quest`, `kiss`, `hug`, `cry`, `ddos`(fake)")
         .addField("> :underage: | nsfw", "`anal`, `neko`, `hentai`, `latex`, `ass`, `hot`")

@@ -2,6 +2,13 @@ const Enmap = require('enmap');
 
 module.exports = async (client, message) => {
     if (message.author.bot) return;
+
+    if (message.mentions.has(client.user.id, {ignoreEveryone: true})) {
+        if (message.author.bot) return;
+        if (message.channel.type === "dm") return;
+        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.config.DEFAULT_SETTINGS.prefix}\`. Si tu souhaite voir la liste des commandes disponibles fait \`_help\` . Si tu souhaite m'ajouter fait \`_bot-infos\` et click sur m'inviter !`);
+    }
+
     if (message.content.indexOf(client.config.prefix) !== 0) return;
 
     const args = message.content.slice(client.config.prefix.length).split(/ +/);
@@ -12,10 +19,6 @@ module.exports = async (client, message) => {
 
     if (!cmd){
         return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`_help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faite \`_bot-infos\` et clicker sur m'inviter !`);
-    }
-
-    if (message.content === message.mentions.has(client.user.id)){
-        return message.channel.send('lol');
     }
 
     /* Cooldown */

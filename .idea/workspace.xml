@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/ping.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Zoumi/plugins/Faction" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -75,7 +73,7 @@
       <workItem from="1590266072664" duration="10553000" />
       <workItem from="1590333583918" duration="318000" />
       <workItem from="1590334027518" duration="7734000" />
-      <workItem from="1590349717945" duration="1438000" />
+      <workItem from="1590349717945" duration="4864000" />
     </task>
     <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
       <created>1590346249634</created>
@@ -84,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590346249634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajout cooldown">
+      <created>1590351218191</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590351218192</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +97,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande" />
+    <MESSAGE value="ajout cooldown" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout cooldown" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590264342712">
@@ -103,9 +109,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590351200251" />
-    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1590180821395">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="504" y="187" key="FileChooserDialogImpl" timestamp="1590357457689">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590357457689" />
     <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590180821395" />
     <state x="341" y="148" key="SettingsEditor" timestamp="1590184508513">
       <screen x="0" y="0" width="1680" height="1010" />
