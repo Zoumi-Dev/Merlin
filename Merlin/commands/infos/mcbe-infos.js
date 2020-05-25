@@ -15,25 +15,21 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(noargs);
     }
 
-    try {
-        libquery.query(args[0], args[1]).then((data) => {
-            let embed = new Discord.MessageEmbed()
-                .setAuthor("Merlin")
-                .setColor("BLUE")
-                .setDescription(`> Voici les informations du serveur \`${data.host}\``)
-                .addField("> Port", `✦ ${data.port}`)
-                .addField("> Version", `✦ ${data.version}`)
-                .addField("> Motd", `✦ ${data.motd}`)
-                .addField("> Joueur(s) en ligne", `✦ ${data.online}/${data.max}`)
-                .addField("> Map(s)", `✦ ${data.map}`)
-                .addField("> Plugin(s)", `✦ ${data.plugins}`)
-                .setTimestamp()
-                .setFooter("Merlin | Powered by Zoumi#0336");
-            return message.channel.send(embed);
-        });
-    } catch(e){
-        return message.channel.send(e.message, {code: "js"});
-    }
+    libquery.query(args[0], args[1]).then((data) => {
+        let embed = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("BLUE")
+            .setDescription(`> Voici les informations du serveur \`${data.host}\``)
+            .addField("> Port", `✦ ${data.port}`)
+            .addField("> Version", `✦ ${data.version}`)
+            .addField("> Motd", `✦ ${data.motd}`)
+            .addField("> Joueur(s) en ligne", `✦ ${data.online}/${data.max}`)
+            .addField("> Map(s)", `✦ ${data.map}`)
+            .addField("> Plugin(s)", `✦ ${data.plugins}`)
+            .setTimestamp()
+            .setFooter("Merlin | Powered by Zoumi#0336");
+        return message.channel.send(embed);
+    }).catch(e => { console.log(e.message)});
 
 };
 

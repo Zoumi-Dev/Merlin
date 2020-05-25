@@ -68,7 +68,7 @@
       <workItem from="1590419602172" duration="1099000" />
       <workItem from="1590421488406" duration="6145000" />
       <workItem from="1590432939769" duration="2614000" />
-      <workItem from="1590435741231" duration="2065000" />
+      <workItem from="1590435741231" duration="3611000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -119,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590437944669</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modification mcbe-infos.js">
+      <created>1590438997030</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590438997030</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +139,8 @@
     <MESSAGE value="ajout de la commande maintenance" />
     <MESSAGE value="envoie d'un message si le bot est en mode maintenance" />
     <MESSAGE value="ajout de la commande mcbe-infos" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la commande mcbe-infos" />
+    <MESSAGE value="modification mcbe-infos.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification mcbe-infos.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589977479430">
@@ -143,17 +151,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590165714174" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590437940764">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590438991954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590437940764" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590438991954" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1589990903025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589990903025" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590437947372">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590439000685">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590437947372" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590439000685" />
   </component>
 </project>
