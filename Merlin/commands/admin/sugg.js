@@ -43,4 +43,6 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "sugg",
+    description: "Permet d'envoyer une suggestion dans le serveur help de Merlin.",
+    usage: "_sugg [votre suggestion]",
 };

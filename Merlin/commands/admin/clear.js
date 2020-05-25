@@ -34,4 +34,6 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "clear",
+    description: "Permet de supprimer plusieur message.",
+    usage: "_clear [nombre de message] ATTENTION une limite de 100 messages par utilisation.",
 };

@@ -22,6 +22,7 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setColor("BLUE")
             .addField("> :bust_in_silhouette: | Nom d'utilisateur", `✦ ${message.author.username}`, true)
+            .addField("> :id: | ID de l'utilisateur", `✦ ${message.author.id}`, true)
             .addField("> :mag: | Compte créer le", `✦ ${moment.utc(message.author.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
             .addField("> A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
             .setThumbnail(message.author.avatarURL())
@@ -33,8 +34,9 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setColor("GREY")
             .addField("> :bust_in_silhouette: | Nom d'utilisateur", `✦ ${usr}`, true)
+            .addField("> :id: | ID de l'utilisateur", `✦ ${message.author.id}`)
             .addField("> :mag: | Compte créer le", `✦ ${moment.utc(usr.user.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
-            .addField("> A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
+            .addField("> :mag: | A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
             .setThumbnail(usr.user.avatarURL())
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
@@ -46,4 +48,6 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "infos",
     aliases: ["i"],
+    description: "Permet d'afficher les informations d'un utilisateur ou de vous.",
+    usage: "_infos [utilisateur] ou _infos",
 };

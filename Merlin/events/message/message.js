@@ -1,28 +1,34 @@
 const Enmap = require('enmap');
 
 module.exports = async (client, message) => {
-    if (message.author.bot) return;
-
-    if (message.author.id !== client.config.zoumi) {
-        if (client.config.maintenance === true) {
-            return message.channel.send(`<@${message.author.id}>, le bot est en mode maintenance veuillez patienter !`);
-        }
-    }
-
-    if (message.mentions.has(client.user.id, {ignoreEveryone: true})) {
-        if (message.author.bot) return;
-        if (message.channel.type === "dm") return;
-        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.config.DEFAULT_SETTINGS.prefix}\`. Si tu souhaite voir la liste des commandes disponibles fait \`_help\` . Si tu souhaite m'ajouter fait \`_bot-infos\` et click sur m'inviter !`);
-    }
-
-    if (message.content.indexOf(client.config.prefix) !== 0) return;
 
     const args = message.content.slice(client.config.prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(command));
 
+    if (message.author.bot) return;
+
+    if (message.content.indexOf(client.config.prefix) !== 0) return;
+
     if (message.channel.type === "dm") return client.emit("messagePriver", message);
 
+    /* Si le bot est en mode maintenance */
+    if(cmd) {
+        if (message.author.id !== client.config.zoumi) {
+            if (client.config.maintenance === true) {
+                return message.channel.send(`<@${message.author.id}>, le bot est en mode \`maintenance\` veuillez patienter !`);
+            }
+        }
+    }
+
+    /* Si le bot est mentionner */
+    if (message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
+        if (message.author.bot) return;
+        if (message.channel.type === "dm") return;
+        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.config.DEFAULT_SETTINGS.prefix}\`. Si tu souhaite voir la liste des commandes disponibles fait \`_help\` . Si tu souhaite m'ajouter fait \`_bot-infos\` et click sur m'inviter !`);
+    }
+
+    /* Si la commande n'existe pas */
     if (!cmd){
         return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`_help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faite \`_bot-infos\` et clicker sur m'inviter !`);
     }

@@ -31,5 +31,7 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "avatar",
-    aliases: ["av"]
+    aliases: ["av"],
+    description: "Permet de voir l'avatar d'une personne ou de vous.",
+    usage: "_avatar [utilisateur] ou _avatar",
 };

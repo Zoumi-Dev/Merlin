@@ -11,7 +11,7 @@
 
   "supportServer": "712358618993000499",
 
-  "maintenance": false,
+  "maintenance": true,
 
   "DEFAULT_SETTINGS": {
     "prefix": "_",
