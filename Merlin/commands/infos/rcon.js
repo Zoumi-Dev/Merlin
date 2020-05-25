@@ -19,3 +19,10 @@ module.exports.run = async (client, message, args) => {
         console.log("Une erreur est survenue !\n " + err.message);
     })
 }
+
+module.exports.help = {
+    name: "rcon",
+    aliases: ["rc"],
+    description: "Permet de se connecter au serveur depuis le discord (cette commande est très dangereuse en la faisant depuis les yeux du publique je vous prie de le faire en mp avec le bot ou de le faire dans un salon à part)",
+    usage: "_rcon [mot de passe] [ip] [port]",
+};
