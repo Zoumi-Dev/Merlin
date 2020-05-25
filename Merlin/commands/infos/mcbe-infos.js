@@ -15,19 +15,19 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(noargs);
     }
 
-    let embed = new Discord.MessageEmbed();
     libquery.query(args[0], args[1]).then((data) => {
-        embed.setAuthor("Merlin");
-        embed.setColor("BLUE");
-        embed.setDescription(`> Voici les informations du serveur \`${data.host}\``);
-        embed.addField("> Port", `✦ ${data.port}`);
-        embed.addField("> Version", `✦ ${data.version}`);
-        embed.addField("> Motd", `✦ ${data.motd}`);
-        embed.addField("> Joueur(s) en ligne", `✦ ${data.online}/${data.max}`);
-        embed.addField("> Map(s)", `✦ ${data.map}`);
-        embed.addField("> Plugin(s)", `✦ ${data.plugins}`);
-        embed.setTimestamp();
-        embed.setFooter("Merlin | Powered by Zoumi#0336");
+        let embed = new Discord.MessageEmbed();
+            .setAuthor("Merlin");
+            .setColor("BLUE");
+            .setDescription(`> Voici les informations du serveur \`${data.host}\``);
+            .addField("> Port", `✦ ${data.port}`);
+            .addField("> Version", `✦ ${data.version}`);
+            .addField("> Motd", `✦ ${data.motd}`);
+            .addField("> Joueur(s) en ligne", `✦ ${data.online}/${data.max}`);
+            .addField("> Map(s)", `✦ ${data.map}`);
+            .addField("> Plugin(s)", `✦ ${data.plugins}`);
+            .setTimestamp();
+            .setFooter("Merlin | Powered by Zoumi#0336");
     });
 
     return message.channel.send(embed);
