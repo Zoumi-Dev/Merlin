@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) => {
     }
 
     libquery.query(args[0], args[1]).then((data) => {
-        let embed = new Discord.MessageEmbed();
+        let embed = new Discord.MessageEmbed()
             .setAuthor("Merlin");
             .setColor("BLUE");
             .setDescription(`> Voici les informations du serveur \`${data.host}\``);
