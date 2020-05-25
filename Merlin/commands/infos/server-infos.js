@@ -12,9 +12,11 @@ module.exports.run = async (client, message, args) => {
         .setThumbnail(client.guilds.cache.get(message.guild.id).iconURL({dynamic: true}))
         .addField("> :crown: | Propriétaire", `✦ <@${message.guild.owner.id}>`, true)
         .addField("> :mag: | Serveur créer le", `✦ ${moment.utc(message.guild.createdAt).format("DD/MM/YYYY à HH:mm")}`, true)
-        .addField("> :busts_in_silhouette: | Membre(s) total", `✦ ${message.guild.memberCount}`, true)
-        .addField("> :robot: | Robot(s)", `✦ `, true)
+        .addField("> :busts_in_silhouette: | Utilisateur(s)", `✦ ${message.guild.memberCount}`, true)
+        .addField("> Humain(s)", `✦ ${message.guild.memberCount - message.guild.members.cache.filter(m => m.user.bot).size}`, true)
+        .addField("> :robot: | Robot(s)", `✦ ${message.guild.members.cache.filter(m => m.user.bot).size}`, true)
         .addField("> :closed_book: | Channel(s)", `✦ ${message.guild.channels.cache.size}`, true)
+        .addField("> :speaker: | Salon(s) Vocal/aux", `✦ ${message.guild.channels.cache.filter(m => m.type === 'voice').size}`)
         .setTimestamp()
         .setFooter("Merlin | Powered by Zoumi#0336");
     return message.channel.send(serverEmbed);
