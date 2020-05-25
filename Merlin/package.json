@@ -15,6 +15,7 @@
     "gamedig": "^2.0.20",
     "global": "^4.4.0",
     "libquery": "^1.0.2",
+    "librcon": "^1.0.3",
     "moment": "^2.25.3",
     "ms": "^2.1.2",
     "random-puppy": "^1.1.0",

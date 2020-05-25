@@ -19,23 +19,22 @@ module.exports.run = async (client, message, args) => {
         let embed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("BLUE")
-            .setDescription(`> Voici les informations du serveur \`${data.host}\``)
+            .setDescription(`> Voici les informations du serveur \`${args[0]}\``)
             .addField("> Port", `✦ ${data.port}`)
             .addField("> Version", `✦ ${data.version}`)
             .addField("> Motd", `✦ ${data.motd}`)
             .addField("> Joueur(s) en ligne", `✦ ${data.online}/${data.max}`)
-            .addField("> Map(s)", `✦ ${data.map}`)
-            .addField("> Plugin(s)", `✦ ${data.plugins}`)
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
-        return message.channel.send(embed);
+        return message.channel.send(embed).catch(e => { return message.channel.send(e.message, {code: "php"}) }) && message.channel.send((`> Map(s)\n\`\`\`${data.map}\`\`\``)) && message.channel.send((`> Plugin(s)\n\`\`\`${data.plugins}\`\`\``));
     }).catch(e => { console.log(e.message)});
 
 };
 
 module.exports.help = {
     name: "mcbe-infos",
-    aliases: [""],
+    aliases: ["mi"],
     description: "Permet de voir les informations d'un serveur Minecraft Bedrock Edition",
     usage: "_mcbe-infos [ip] [port]",
+    cooldown: 10,
 };

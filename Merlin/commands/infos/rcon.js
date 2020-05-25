@@ -3,26 +3,30 @@ const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
 
+    message.delete();
+
     if (args < 1){
         let msg = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("BLUE")
-            .addField("> :x: | Erreur", "`Utilisation: _rcon [mot de passe] [ip] [port]`")
+            .addField("> :x: | Erreur", "`Utilisation: _rcon [mot de passe] [ip] [port] [cmd]`")
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
         return message.channel.send(msg);
     }
 
-    let rc = await librcon.send("list", args[0], args[1], args[2]).then((rc) => {
-        console.log("Got response : " + res);
-    }catch(err){
-        console.log("Une erreur est survenue !\n " + err.message);
-    })
-}
+    try {
+        let rc = await librcon.send(args[3], args[0], args[1], args[2]).then((rc) => {
+            return message.channel.send("commande envoyée !") && message.channel.send(`${rc}`, {code: "php"});
+        }).catch(e => { return message.channel.send(e.message) });
+    } catch (e) {
+        return message.channel.send(e.message);
+    }
+};
 
 module.exports.help = {
     name: "rcon",
     aliases: ["rc"],
-    description: "Permet de se connecter au serveur depuis le discord (cette commande est très dangereuse en la faisant depuis les yeux du publique je vous prie de le faire en mp avec le bot ou de le faire dans un salon à part)",
-    usage: "_rcon [mot de passe] [ip] [port]",
+    description: "Permet d'effectuer ue commande depuis discord :warning: il est préférable d'effectuer cette commande dans un salon priver.",
+    usage: "_rcon [mot de passe] [ip] [port] [cmd]",
 };

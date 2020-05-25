@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/help.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/rcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/rcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,7 @@
       <workItem from="1590419602172" duration="1099000" />
       <workItem from="1590421488406" duration="6145000" />
       <workItem from="1590432939769" duration="2614000" />
-      <workItem from="1590435741231" duration="3611000" />
+      <workItem from="1590435741231" duration="10247000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -126,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590438997030</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1590440411878</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590440411878</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +151,8 @@
     <MESSAGE value="envoie d'un message si le bot est en mode maintenance" />
     <MESSAGE value="ajout de la commande mcbe-infos" />
     <MESSAGE value="modification mcbe-infos.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification mcbe-infos.js" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589977479430">
@@ -151,17 +163,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590165714174" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590438991954">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590440471222">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590438991954" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590440471222" />
+    <state x="395" y="79" key="MultipleFileMergeDialog" timestamp="1590440442740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="395" y="79" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1590440442740" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1589990903025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589990903025" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590439000685">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590440477500">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590439000685" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590440477500" />
+    <state x="411" y="155" key="git4idea.merge.GitPullDialog" timestamp="1590440937759">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="411" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1590440937759" />
   </component>
 </project>
