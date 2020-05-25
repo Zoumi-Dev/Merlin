@@ -3,23 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/ban.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/clear.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/clear.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/admin/eval.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/eval.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/kick.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/kick.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/admin/maintenance.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/maintenance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/sugg.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/sugg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/infos/avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/avatar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/bot-infos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/infos/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/infos/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/ping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/infos/server-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/server-infos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/message/messagePriver.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/messagePriver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/message/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +70,10 @@
       <workItem from="1590362398510" duration="6076000" />
       <workItem from="1590403973439" duration="11163000" />
       <workItem from="1590417086447" duration="1687000" />
-      <workItem from="1590419602172" duration="335000" />
+      <workItem from="1590419602172" duration="1099000" />
+      <workItem from="1590421488406" duration="6145000" />
+      <workItem from="1590432939769" duration="2614000" />
+      <workItem from="1590435741231" duration="1084000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -111,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590404098472</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="envoie d'un message si le bot est en mode maintenance">
+      <created>1590420213236</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590420213236</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +121,8 @@
     <MESSAGE value="ajout de la commande color.js" />
     <MESSAGE value="update server-infos" />
     <MESSAGE value="ajout de la commande maintenance" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la commande maintenance" />
+    <MESSAGE value="envoie d'un message si le bot est en mode maintenance" />
+    <option name="LAST_COMMIT_MESSAGE" value="envoie d'un message si le bot est en mode maintenance" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589977479430">
@@ -133,17 +133,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590165714174" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590404579269">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590420197804">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590404579269" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590420197804" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1589990903025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589990903025" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590404588771">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590420218407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590404588771" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590420218407" />
   </component>
 </project>
