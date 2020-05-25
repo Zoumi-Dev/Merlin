@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <workItem from="1590419602172" duration="1099000" />
       <workItem from="1590421488406" duration="6145000" />
       <workItem from="1590432939769" duration="2614000" />
-      <workItem from="1590435741231" duration="1271000" />
+      <workItem from="1590435741231" duration="2065000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590437855842</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ajout de la commande mcbe-infos">
+      <created>1590437944669</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590437944669</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,9 +151,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589990903025" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590437886264">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590437947372">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590437886264" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590437947372" />
   </component>
 </project>
