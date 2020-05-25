@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="" />
+    <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Merlin/commands/infos/rcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="F:/Zoumi/plugins/Faction" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -66,6 +70,7 @@
       <workItem from="1590349717945" duration="4864000" />
       <workItem from="1590418193492" duration="127000" />
       <workItem from="1590418385762" duration="1645000" />
+      <workItem from="1590423131297" duration="1269000" />
     </task>
     <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
       <created>1590346249634</created>
