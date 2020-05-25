@@ -11,6 +11,8 @@
 
   "supportServer": "712358618993000499",
 
+  "maintenance": false,
+
   "DEFAULT_SETTINGS": {
     "prefix": "_",
     "guildMemberAdd": false,

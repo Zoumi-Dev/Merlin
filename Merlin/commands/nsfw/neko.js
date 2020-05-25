@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
     if (message.channel.nsfw === true){
         let nekoEmbed = new Discrord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("RED")
             .setDescription(`> \`Neko\` demandée par \`${message.author.username}\``)
             .setImage(imgneko)
             .setTimestamp()

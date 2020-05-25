@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args) => {
     if (message.channel.nsfw === true){
         let hentaiEmbed = new Discrord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("RED")
             .setDescription(`> \`hentai\` demandée par \`${message.author.username}\``)
             .setImage(imghentai)
             .setTimestamp()

@@ -22,6 +22,7 @@ module.exports.run = async (client, message, args) => {
         let hugEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setDescription(`> <@${message.author.id}> a fait un câlin à <@${client.user.id}> :hugging:`)
+            .setColor("GREEN")
             .setImage(hug)
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
@@ -31,6 +32,7 @@ module.exports.run = async (client, message, args) => {
             let hugEmbed = new Discord.MessageEmbed()
                 .setAuthor("Merlin")
                 .setDescription(`> <@${message.author.id}> a fait un câlin à <@${usr.user.id}> :hugging:`)
+                .setColor("GREEN")
                 .setImage(hug)
                 .setTimestamp()
                 .setFooter("Merlin | Powered by Zoumi#0336");

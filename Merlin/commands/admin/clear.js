@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
     if (!args[0]) {
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
-            .setColor('GREY')
+            .setColor('#FF00FF')
             .addField('> :x: | Erreur', '`Utilisation: _clear [nombre de message]\nPermission requise: MANAGE_MESSAGES`')
             .setTimestamp()
             .setFooter('Merlin | Powered by Zoumi#0336');
@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
         let clearEmbed = new Discord.MessageEmbed()
 
             .setAuthor('Merlin')
-            .setColor('GREY')
+            .setColor('#FF00FF')
             .addField(`:wastebasket: |`, `J'ai supprimer **${args[0]}** message(s) pour vous !`)
             .setTimestamp()
             .setFooter(`Merlin | Powered by Zoumi#0336`);

@@ -8,9 +8,20 @@ module.exports.run = async(client, message, args) => {
 
     let randomReponse = reponse[Math.floor(Math.random() * reponse.length)];
 
+    if (!args[0]){
+        let embed = new Discord.MessageEmbed()
+            .setAuthor('Merlin')
+            .setColor('GREEN')
+            .addField('> :x: | Erreur', '`Utilisation: _quest [question]`')
+            .setTimestamp()
+            .setFooter('Merlin | Powered by Zoumi#0336');
+
+        return message.channel.send(embed);
+    }
+
     let repEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setColor("GREY")
+        .setColor("GREEN")
         .setDescription(`> Question posé par <@${message.author.id}>`)
         .addField("> Question", args.join(' '))
         .addField("> Réponse", randomReponse)

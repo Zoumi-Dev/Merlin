@@ -11,6 +11,7 @@ module.exports.run = async(client, message, args) => {
                 let cryEmbed = new Discord.MessageEmbed()
                     .setAuthor("Merlin")
                     .setDescription(`> <@${message.author.id}> pleure :cry:`)
+                    .setColor("GREEN")
                     .setImage(url)
                     .setTimestamp()
                     .setFooter("Merlin | Powered by Zoumi#0336");

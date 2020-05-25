@@ -3,6 +3,12 @@ const Enmap = require('enmap');
 module.exports = async (client, message) => {
     if (message.author.bot) return;
 
+    if (message.author.id !== client.config.zoumi) {
+        if (client.config.maintenance === true) {
+            return message.channel.send(`<@${message.author.id}>, le bot est en mode maintenance veuillez patienter !`);
+        }
+    }
+
     if (message.mentions.has(client.user.id, {ignoreEveryone: true})) {
         if (message.author.bot) return;
         if (message.channel.type === "dm") return;

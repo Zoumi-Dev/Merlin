@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
     if (message.channel.nsfw === true){
         let assEmbed = new Discrord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("RED")
             .setDescription(`> \`Hot\` demandée par \`${message.author.username}\``)
             .setImage(imghot)
             .setTimestamp()

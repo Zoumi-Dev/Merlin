@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args) => {
 
     let muffinEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setColor("GREY")
+        .setColor("GREEN")
         .setDescription("> This is muffin time !")
         .setImage(imgmuffins)
         .setTimestamp()

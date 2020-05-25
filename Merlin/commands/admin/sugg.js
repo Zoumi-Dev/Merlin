@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
     if (!args[0]){
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
-            .setColor('GREY')
+            .setColor('#FF00FF')
             .addField('> :x: | Erreur', '`Utilisation: _sugg [votre suggestion]`')
             .setTimestamp()
             .setFooter('Merlin | Powered by Zoumi#0336');
@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
 
     let suggEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setColor("GREY")
+        .setColor("#FF00FF")
         .addField(`> Suggestion de ${message.author.tag}`, sugge)
         .setTimestamp()
         .setFooter("Merlin | Powered by Zoumi");
@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
     if (!suggChannel){
         let noChannel = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("#FF00FF")
             .addField("> :x: | Erreur", `Le salon \`<#${suggChannel.id}>\` n'existe pas, veuillez prévenir \`Zoumi#0336\``)
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");

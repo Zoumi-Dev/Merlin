@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
     if (!args[0]){
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("GREEN")
             .addField("> :x: | Erreur", "`Utilisation: _say [message]`")
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
 
     let embed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setColor("GREY")
+        .setColor("GREEN")
         .addField(`> ${message.author.username} à dit`, say)
         .setTimestamp()
         .setFooter("Merlin | Powered by Zoumi#0336");

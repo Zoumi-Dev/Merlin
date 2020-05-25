@@ -68,7 +68,7 @@ module.exports.run = async (client, message, args) => {
     if (args[0] === "seven") {
         let im = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("GREEN")
             .setDescription("> The seven deadly sins")
             .setImage(imgseven)
             .setTimestamp()
@@ -81,7 +81,7 @@ module.exports.run = async (client, message, args) => {
     if (args[0] === "hunter") {
         let im = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("GREEN")
             .setDescription("> Hunter X Hunter")
             .setImage(imghunter)
             .setTimestamp()
@@ -94,7 +94,7 @@ module.exports.run = async (client, message, args) => {
     if (args[0] === "naruto") {
         let im = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("GREEN")
             .setDescription("> Naruto")
             .setImage(imgnaruto)
             .setTimestamp()
@@ -107,7 +107,7 @@ module.exports.run = async (client, message, args) => {
     if (args[0] === "dbz") {
         let im = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("GREEN")
             .setDescription("> Dragon ball z")
             .setImage(imgdbz)
             .setTimestamp()

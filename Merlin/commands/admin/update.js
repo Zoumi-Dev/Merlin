@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
     let update = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setColor("GREY")
+        .setColor("#FF00FF")
         .setThumbnail(client.user.avatarURL())
         .addField("> Update #1", "**Nouveautés**\n\n• `infos` Permet de voir les informations d'un utilisateur.\n• `avatar` Permet d'afficher la photo de profil d'un utilisateur.\n\n**Mise à jour**\n\n• `help` De nouvelle commande font leur apparition !\n\n**Prochainement**\n\n• `play etc...` ajout des commandes de musique.")
         .setTimestamp()

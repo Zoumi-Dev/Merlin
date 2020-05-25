@@ -24,6 +24,7 @@ module.exports.run = async (client, message, args) => {
         let kissEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setDescription(`> <@${message.author.id}> a embrassé <@${client.user.id}> :heart:`)
+            .setColor("GREEN")
             .setImage(kiss)
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
