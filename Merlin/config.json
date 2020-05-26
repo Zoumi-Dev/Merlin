@@ -13,6 +13,8 @@
 
   "maintenance": false,
 
+  "footer": "Merlin | Powered by Zoumi#0336",
+
   "DEFAULT_SETTINGS": {
     "prefix": "_",
     "guildMemberAdd": false,

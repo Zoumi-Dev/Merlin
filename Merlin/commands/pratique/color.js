@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
             .setDescription(`> Voici la couleur ${args[0]}`)
             .setColor(args[0])
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(color)
     }
 

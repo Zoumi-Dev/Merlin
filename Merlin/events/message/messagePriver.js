@@ -12,7 +12,7 @@ module.exports = async (client, message) => {
             .addField("> :bust_in_silhouette: | Utilisateur", `<@${message.author.id}>`)
             .addField("> Message", `\`${message.content}\``)
             .setTimestamp()
-            .setFooter('Merlin | Powered by Zoumi#0336');
+            .setFooter(client.config.footer);
         return client.guilds.cache.get('712358618993000499').channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(dmEmbed);
     }
 };

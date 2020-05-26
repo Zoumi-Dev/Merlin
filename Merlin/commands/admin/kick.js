@@ -16,7 +16,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField("> :x: | Erreur", `\`Utilisation: ${client.config.DEFAULT_SETTINGS.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
-            .setFooter('Merlin | Powered by Zoumi#0336');
+            .setFooter(client.config.footer);
         return message.channel.send(noPerm);
     }
 
@@ -26,7 +26,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField(':x: | Erreur', `\`Utilisation: ${client.config.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
-            .setFooter('Merlin | Powered by Zoumi#0336');
+            .setFooter(client.config.footer);
         return message.channel.send(noMen);
     }
 
@@ -36,7 +36,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField("> :x: | Erreur", `\`Vous ne pouvez pas bannir une personne ayant la permission KICK_MEMBERS.\``)
             .setTimestamp()
-            .setFooter('Merlin | Powered by Zoumi#0336');
+            .setFooter(client.config.footer);
         return message.channel.send(havePerm).then(async m =>{
             await m.react(pleure);
         });
@@ -48,21 +48,23 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField('> :x: | Erreur', `\`Utilisation: ${client.config.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
-            .setFooter('Merlin | Powered by Zoumi#0336');
+            .setFooter(client.config.footer);
         return message.channel.send(noMen);
     }
 
     let mpEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("#FF00FF")
-        .addField("> :exclamation: | Kick", `\`Vous avez été kick du serveur \`${message.guild.name}\` pour la raison \`${reason}\`.\``);
+        .addField("> :exclamation: | Kick", `\`Vous avez été kick du serveur \`${message.guild.name}\` pour la raison \`${reason}\`.\``)
+        .setTimestamp()
+        .setFooter(client.config.footer);
 
     let kickEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("#FF00FF")
         .addField("> :white_check_mark: | Succès", `\`Le membre \`<@${kickUser.user.id}>\` à été kick avec succès !\nRaison: \`${reason}`)
         .setTimestamp()
-        .setFooter('Merlin | Powered by Zoumi#0336');
+        .setFooter(client.config.footer);
     return message.channel.send(kickEmbed) && kickUser.kick(reason) && kickUser.user.send(mpEmbed);
 };
 

@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
             .setDescription(`> \`hentai\` demandée par \`${message.author.username}\``)
             .setImage(imghentai)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(hentaiEmbed);
     }else{
         return message.channel.send(`<@${message.author.id}>, cette commande est disponible uniquement dans les salons nsfw !`);

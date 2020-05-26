@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
             .addField("> :closed_book: | Channel(s)", `✦ ${message.guild.channels.cache.size}`, true)
             .addField("> :speaker: | Salon(s) Vocal/aux", `✦ ${message.guild.channels.cache.filter(m => m.type === 'voice').size}`, true)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(serverEmbed);
     }else {
 

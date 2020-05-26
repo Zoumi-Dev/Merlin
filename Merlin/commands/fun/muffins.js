@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
         .setDescription("> This is muffin time !")
         .setImage(imgmuffins)
         .setTimestamp()
-        .setFooter("Merlin | Powered by Zoumi#0336");
+        .setFooter(client.config.footer);
     return message.channel.send(muffinEmbed);
 };
 

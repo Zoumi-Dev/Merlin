@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("GREY")
             .addField("> :x: | Erreur", "`Cette utilisateur n'existe pas !`")
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(noUsr);
     }
 
@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args) => {
             .addField("> A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
             .setThumbnail(message.author.avatarURL())
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(infos);
     } else {
         let infos = new Discord.MessageEmbed()
@@ -39,7 +39,7 @@ module.exports.run = async (client, message, args) => {
             .addField("> :mag: | A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
             .setThumbnail(usr.user.avatarURL())
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(infos);
     }
 

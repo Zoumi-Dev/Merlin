@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("GREEN")
             .addField("> :x: | Erreur", "`Utilisation: _say [message]`")
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(noargs);
     }
 
@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
         .setColor("GREEN")
         .addField(`> ${message.author.username} à dit`, say)
         .setTimestamp()
-        .setFooter("Merlin | Powered by Zoumi#0336");
+        .setFooter(client.config.footer);
     return message.channel.send(embed);
 };
 

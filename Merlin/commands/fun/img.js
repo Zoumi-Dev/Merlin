@@ -46,13 +46,18 @@ const imagenaruto = [
     "https://cdn.statically.io/img/www.itl.cat/pngfile/big/5-54841_badass-wallpapers-hd-elegant-naruto-wallpapers-hd-elegant.jpg",
 ];
 const imagedbz = [
-    "https://media.giphy.com/media/jURBjTfNXLRKGzE042/giphy.gif",
-    "https://media.giphy.com/media/tgWX6N4nHQjNC/giphy.gif",
-    "https://media.giphy.com/media/ZuHYyLfbWpPeo/giphy.gif",
-    "https://media.giphy.com/media/N8Q3RyAKWSzlK/giphy.gif",
-    "https://wallpaperaccess.com/full/9796.jpg",
-    "https://www.pixel4k.com/wp-content/uploads/2018/03/Broly%20Dragon%20Ball%20Z%20Artwork%204K874519148.jpg",
-    "https://images5.alphacoders.com/100/1002009.jpg",
+    "https://tenor.com/wMXJ.gif",
+    "https://tenor.com/Q6Hy.gif",
+    "https://tenor.com/LQt1.gif",
+    "https://tenor.com/6S7C.gif",
+    "https://media.giphy.com/media/1gVUhlXhETaRRxzeHO/giphy.gif",
+    "https://media.giphy.com/media/4EEHMnD7FtkGRmK9qj/giphy.gif",
+    "https://media.giphy.com/media/WSsM98qp4ejfJzIVkw/giphy.gif",
+    "https://media.giphy.com/media/BqsndHTH6cbAY/giphy.gif",
+    "https://media.giphy.com/media/109epNnxnLTMha/giphy.gif",
+    "https://media.giphy.com/media/JTjiT1dvFdSpi/giphy.gif",
+    "https://media.giphy.com/media/1KNmlBMrSsGT798Dot/giphy.gif",
+    "https://media.giphy.com/media/2tLyf84igtdykH104y/giphy.gif",
 ];
 
 const snekfetch = require('snekfetch');
@@ -72,7 +77,7 @@ module.exports.run = async (client, message, args) => {
             .setDescription("> The seven deadly sins")
             .setImage(imgseven)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336 and Giphy.com");
+            .setFooter(client.config.footer);
         return message.channel.send(im);
     }
 
@@ -85,7 +90,7 @@ module.exports.run = async (client, message, args) => {
             .setDescription("> Hunter X Hunter")
             .setImage(imghunter)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336 and Giphy.com");
+            .setFooter(client.config.footer);
         return message.channel.send(im);
     }
 
@@ -98,7 +103,7 @@ module.exports.run = async (client, message, args) => {
             .setDescription("> Naruto")
             .setImage(imgnaruto)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336 and Giphy.com");
+            .setFooter(client.config.footer);
         return message.channel.send(im);
     }
 
@@ -111,7 +116,7 @@ module.exports.run = async (client, message, args) => {
             .setDescription("> Dragon ball z")
             .setImage(imgdbz)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336 and Giphy.com");
+            .setFooter(client.config.footer);
         return message.channel.send(im);
     }
 };

@@ -14,7 +14,7 @@ module.exports.run = async(client, message, args) => {
             .setColor('GREEN')
             .addField('> :x: | Erreur', '`Utilisation: _quest [question]`')
             .setTimestamp()
-            .setFooter('Merlin | Powered by Zoumi#0336');
+            .setFooter(client.config.footer);
 
         return message.channel.send(embed);
     }
@@ -26,7 +26,7 @@ module.exports.run = async(client, message, args) => {
         .addField("> Question", args.join(' '))
         .addField("> Réponse", randomReponse)
         .setTimestamp()
-        .setFooter("Merlin | Powered by Zoumi#0336");
+        .setFooter(client.config.footer);
     return message.channel.send(repEmbed);
 
 };

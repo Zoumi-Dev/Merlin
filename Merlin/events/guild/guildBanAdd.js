@@ -19,7 +19,7 @@ module.exports = async (client, guild) => {
             .addField("> Utilisateur", `\`${executor.username}\``)
             .addField("> Reason", `\`\``)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return guild.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(logs);
     }
 };

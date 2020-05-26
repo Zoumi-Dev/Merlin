@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("BLUE")
             .addField("> :x: | Erreur", "`Utilisation: _rcon [mot de passe] [ip] [port] [cmd]`")
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(msg);
     }
 

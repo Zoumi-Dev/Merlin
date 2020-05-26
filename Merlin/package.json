@@ -14,6 +14,7 @@
     "fs": "0.0.1-security",
     "gamedig": "^2.0.20",
     "global": "^4.4.0",
+    "jimp": "^0.12.1",
     "libquery": "^1.0.2",
     "librcon": "^1.0.3",
     "moment": "^2.25.3",

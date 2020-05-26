@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const moment = require('moment');
 const fs = require('fs');
+const img = new Discord.MessageAttachment('././img/merlin_help.gif');
 
 module.exports.run = async (client, message, args) => {
 

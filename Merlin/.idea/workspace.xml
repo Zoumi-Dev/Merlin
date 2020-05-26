@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="" />
+    <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/commands/admin/mute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/admin/ticket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/admin/unmute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/fun/des.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/pratique/rank.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/admin/ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/ban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/admin/clear.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/clear.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/admin/eval.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/eval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/admin/kick.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/kick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/admin/sugg.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/sugg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/admin/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/pratique/color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/cry.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/cry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/hug.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/hug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/img.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/kiss.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/kiss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/muffins.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/muffins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/quest.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/quest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/say.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/say.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/rcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/pratique/rcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/server-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/server-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/nsfw/anal.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/nsfw/anal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/nsfw/ass.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/nsfw/ass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/nsfw/hentai.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/nsfw/hentai.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/nsfw/hot.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/nsfw/hot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/nsfw/latex.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/nsfw/latex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/nsfw/neko.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/nsfw/neko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/channel/channelCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/channel/channelCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/channel/channelDelete" beforeDir="false" afterPath="$PROJECT_DIR$/events/channel/channelDelete" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/guild/guildBanAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/guild/guildBanAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/guild/guildCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/guild/guildCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/guild/guildDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/guild/guildDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/guild/guildMemberAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/guild/guildMemberAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/guild/guildMemberRemove.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/guild/guildMemberRemove.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/messageDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/messageDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/messagePriver.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/messagePriver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +62,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1cAhTTkPQaQIxdVuE3I33kCluQl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -34,6 +82,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\github\Merlin\Merlin\commands\pratique" />
       <recent name="F:\Merlin\commands\infos" />
       <recent name="F:\Merlin\commands\fun" />
     </key>
@@ -67,6 +116,10 @@
       <workItem from="1590421488406" duration="6145000" />
       <workItem from="1590432939769" duration="2614000" />
       <workItem from="1590435741231" duration="10350000" />
+      <workItem from="1590447389559" duration="9124000" />
+      <workItem from="1590499419606" duration="2165000" />
+      <workItem from="1590502748550" duration="17649000" />
+      <workItem from="1590528797326" duration="3993000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -169,29 +222,37 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590165714174" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590447107778">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590447185330">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590447107778" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590447185330" />
     <state x="395" y="79" key="MultipleFileMergeDialog" timestamp="1590440442740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="395" y="79" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1590440442740" />
+    <state x="540" y="74" key="RollbackChangesDialog" timestamp="1590496844295">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="540" y="74" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590496844295" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1589990903025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589990903025" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590447145644">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590447193939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590447145644" />
-    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590447169150">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590447193939" />
+    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590447268817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1590447169150" />
+    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1590447268817" />
     <state x="411" y="155" key="git4idea.merge.GitPullDialog" timestamp="1590440937759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="411" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1590440937759" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1590512902409">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1590512902409" />
   </component>
 </project>

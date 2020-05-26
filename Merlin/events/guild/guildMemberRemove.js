@@ -10,13 +10,13 @@ module.exports = async (client, message) => {
                 .setColor("GREY")
                 .setDescription(`> \`${message.user.username} à quitter le serveur discord !\``)
                 .setTimestamp()
-                .setFooter("Merlin | Powered by Zoumi#0336");
+                .setFooter(client.config.footer);
             let embed = new Discord.MessageEmbed()
                 .setAuthor("Meliodas")
                 .setColor("GREY")
                 .addField("> :cry: | Aurevoir", `<@${message.user.id}>, nous à quitter ! Nous espérons sont retour...`)
                 .setTimestamp()
-                .setFooter("Merlin | Powered by Zoumi#0336");
+                .setFooter(client.config.footer);
             return channel.send(embed) && message.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(logs);
         }
     }

@@ -20,14 +20,14 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setColor("BLUE")
             .setDescription(`> Voici les informations du serveur \`${args[0]}\``)
-            .addField("> Port", `✦ ${data.port}`)
-            .addField("> Version", `✦ ${data.version}`)
-            .addField("> Motd", `✦ ${data.motd}`)
-            .addField("> Joueur(s) en ligne", `✦ ${data.online}/${data.max}`)
+            .addField("> :link: | Port", `✦ ${data.port}`)
+            .addField("> :gear: | Version", `✦ ${data.version}`)
+            .addField("> :anger_right: | Motd", `✦ ${data.motd}`)
+            .addField("> :busts_in_silhouette: | Joueur(s) en ligne", `✦ ${data.online}/${data.max}`)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
-        return message.channel.send(embed).catch(e => { return message.channel.send(e.message, {code: "php"}) }) && message.channel.send((`> Map(s)\n\`\`\`${data.map}\`\`\``)) && message.channel.send((`> Plugin(s)\n\`\`\`${data.plugins}\`\`\``));
-    }).catch(e => { console.log(e.message)});
+            .setFooter(client.config.footer);
+        return message.channel.send(embed).catch(e => { return message.channel.send(e.message, {code: "php"}) }) && message.channel.send((`> :map: | Map(s)\n\`\`\`${data.map}\`\`\``)) && message.channel.send((`> :file_folder: | Plugin(s)\n\`\`\`${data.plugins}\`\`\``));
+    }).catch(e => { return message.channel.send(e.message)});
 
 };
 

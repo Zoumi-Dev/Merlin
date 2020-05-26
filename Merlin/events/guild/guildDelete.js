@@ -8,7 +8,7 @@ module.exports = async (client, guild) => {
             .setColor("GREY")
             .addField("> :cry: | Quitter", `J'ai été retirer du server \`${guild.name}\` !`)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return client.guilds.cache.get("712358618993000499").channels.cache.find(ch => ch.id === "713886808798396417").send(joinEmbed);
     }
 };

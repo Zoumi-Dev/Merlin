@@ -11,9 +11,9 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setDescription(`> Voici l'avatar de <@${message.author.id}>`)
             .setColor("BLUE")
-            .setImage(message.author.avatarURL())
+            .setImage(message.author.displayAvatarURL())
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.channel.send(avatarEmbed);
     }else{
         if (args[0] === usr){
@@ -21,9 +21,9 @@ module.exports.run = async (client, message, args) => {
                 .setAuthor("Merlin")
                 .setDescription(`> Voici l'avatar de <@${message.author.id}>`)
                 .setColor("GREY")
-                .setImage(usr.user.avatarURL())
+                .setImage(usr.user.displayAvatarURL())
                 .setTimestamp()
-                .setFooter("Merlin | Powered by Zoumi#0336");
+                .setFooter(client.config.footer);
             return message.channel.send(avatarEmbed);
         }
     }

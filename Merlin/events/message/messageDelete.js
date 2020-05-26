@@ -9,8 +9,6 @@ module.exports = async (client, message) => {
 
     const latestMessageDeleted = fetchMessageDelete.entries.first();
 
-    const {executor} = latestMessageDeleted;
-
     if (message.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel)) {
         let logs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
@@ -19,7 +17,7 @@ module.exports = async (client, message) => {
             .addField("> Utilisateur", `\`${message.author.username}\``)
             .addField("> Message supprimé", `\`${message.content}\``)
             .setTimestamp()
-            .setFooter("Merlin | Powered by Zoumi#0336");
+            .setFooter(client.config.footer);
         return message.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(logs);
     }
 };
