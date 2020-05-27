@@ -9,6 +9,8 @@ module.exports.run = async (client, message, args) => {
         message.mentions.users.first() || message.guild.members.cache.get([0])
     );
 
+    let raison = args.slice(args[2]).join(" ");
+
     if (!muteUser){
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
@@ -89,7 +91,7 @@ module.exports.run = async (client, message, args) => {
     let muteEmbed = new Discord.MessageEmbed()
         .setAuthor('Merlin')
         .setColor('#FF00FF')
-        .setDescription(`> :white_check_mark: | L'utilisateur <@${muteUser.user.id}> est désormait réduit en silence pendant \`${args[1]}\` pour la raison \`${args[2]}\``)
+        .setDescription(`> :white_check_mark: | L'utilisateur <@${muteUser.user.id}> est désormait réduit en silence pendant \`${args[1]}\` pour la raison \`${raison}\``)
         .setTimestamp()
         .setFooter(client.config.footer);
     return message.channel.send(muteEmbed);

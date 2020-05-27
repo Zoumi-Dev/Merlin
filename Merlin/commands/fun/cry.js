@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const randomPuppy = require('random-puppy');
+const fetch = require('node-fetch');
 
 const cry = [
     "https://media.giphy.com/media/c1FqhfGG9YaPe/giphy.gif",
@@ -15,16 +16,14 @@ module.exports.run = async(client, message, args) => {
 
     let rdmCry = cry[Math.floor(Math.random() * cry.length)];
 
-    if (!args[0]) {
-        let cryEmbed = new Discord.MessageEmbed()
-            .setAuthor("Merlin")
-            .setDescription(`> <@${message.author.id}> pleure :cry:`)
-            .setColor("GREEN")
-            .setImage(rdmCry)
-            .setTimestamp()
-            .setFooter(client.config.footer);
-        return message.channel.send(cryEmbed);
-    }
+    const em = new Discord.MessageEmbed()
+        .setTitle("Merlin")
+        .setDescription(`> <@${message.author.id}>, pleure :cry:`)
+        .setColor('GREEN')
+        .setImage(rdmCry)
+        .setTimestamp()
+        .setFooter(client.config.footer);
+    return message.channel.send(em);
 };
 
 module.exports.help = {

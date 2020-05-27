@@ -13,6 +13,8 @@
 
   "maintenance": false,
 
+  "maintenanceReason": "",
+
   "footer": "Merlin | Powered by Zoumi#0336",
 
   "DEFAULT_SETTINGS": {

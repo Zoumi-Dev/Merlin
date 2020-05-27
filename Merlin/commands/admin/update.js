@@ -14,12 +14,13 @@ module.exports.run = async (client, message, args) => {
         .setAuthor("Merlin")
         .setColor("#FF00FF")
         .setThumbnail(client.user.avatarURL())
-        .addField("> Update #1",
+        .addField("> Update #2",
             "__**Mise à jour**__\n" +
-            "✦ `_server-infos` de nouvelle informations font leur apparition !\n" +
-            "✦ `_help` de nouvelle commande font leur apparition + nouveauté vous pouvez désormait voir les informations d'une commande en particulier !\n" +
+            "✦ `_help` de nouvelle commande font leur apparition !\n" +
             "__**Ajout**__\n" +
-            "✦ Aucune pour le moment\n" +
+            "✦ `_bingo` Permet de faire un bingo !\n" +
+            "✦ `_mcbe-infos` Permet de voir les informations d'un serveur minecraft bedrock edition !\n" +
+            "✦ `rcon` Permet d'effectuer une commande minecraft bedrock edition sur discord !\n" +
             "__**Informations**__\n" +
             "✦ les embeds rouge signifie les commandes `nsfw`, les verte signifie les commandes `funs`, les bleu signifie les commandes donnant des `informations` et les rose singifie les commandes `administratives`"
         )
