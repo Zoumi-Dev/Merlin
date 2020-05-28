@@ -16,12 +16,14 @@ module.exports.run = async(client, message, args) => {
 
     let rdmCry = cry[Math.floor(Math.random() * cry.length)];
 
+    /*
     const gif = await fetch(`https://api.tenor.com/v1/search?q=cry-manga&key=4XYAQG0O2S3Y&limit=1`)
         .then(res => res.json())
         .then(json => message.reply(json.results[0].url))
         .catch(e => {
             return message.reply('Imossible de trouver le gif demandé 🙁');
         });
+    */
 
     const em = new Discord.MessageEmbed()
         .setTitle("Merlin")

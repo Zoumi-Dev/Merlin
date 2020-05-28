@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commands/infos/heberg-infos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/ticket.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/ticket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/fun/quest.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/quest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/cry.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/cry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/bot-infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/pratique/rank.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/pratique/rank.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/heberg-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/heberg-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,8 @@
       <workItem from="1590626032880" duration="692000" />
       <workItem from="1590671992334" duration="3155000" />
       <workItem from="1590675596055" duration="2806000" />
-      <workItem from="1590683587126" duration="722000" />
+      <workItem from="1590683587126" duration="4328000" />
+      <workItem from="1590695679214" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590672565992</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update all">
+      <created>1590691635796</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590691635796</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,30 +243,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590165714174" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590672550107">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590691623660">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590672550107" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590691623660" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1590614250310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590614250310" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590690968033">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590697336173">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590690968033" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590690968033">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590697336173" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590697336173">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590690968033" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590690968033">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590697336173" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590697336173">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590690968033" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590690968033">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590697336173" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590697336173">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590690968033" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590697336173" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1590675049937">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -319,18 +327,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590613010054" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590672578551">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590691656499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590672578551" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590691656499" />
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590447268817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1590447268817" />
-    <state x="411" y="155" key="git4idea.merge.GitPullDialog" timestamp="1590440937759">
+    <state x="411" y="155" key="git4idea.merge.GitPullDialog" timestamp="1590691773965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="411" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1590440937759" />
+    <state x="411" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1590691773965" />
     <state x="400" y="171" key="jetbrains.nodejs.interpreters-dialog" timestamp="1590597131673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

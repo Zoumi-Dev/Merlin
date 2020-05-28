@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setColor("BLUE")
             .setDescription(" **__Dernière Ajout | Mise à jour__**\n✦ Ajout de la commande \`_bingo\`")
-            .addField("> :newspaper2: | 『Informations』", "```help, bot-infos, server-infos, infos, mcbe-infos```", true)
+            .addField("> :newspaper2: | 『Informations』", "```help, bot-infos, server-infos, infos, mcbe-infos, heberg-infos```", true)
             .addField("> :tada: | 『Fun』", "```say, img, cry, hug, kiss, muffins, quest, des, bingo```", true)
             .addField("> :wrench: | 『Pratique』", '```rcon, color, lyrics```')
             .addField("> :underage: | 『Nsfw』", "```anal, neko, hentai, latex, ass, hot```", true)

@@ -6,10 +6,10 @@ module.exports.run = async (client, message, args) => {
 
     let hebergEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setDescription("> Nous sommes en aucun cas en partenariat avec [inovaPerf](https://inovaperf.fr)")
+        .setDescription("> *Nous sommes en aucun cas en partenariat avec [inovaPerf](https://inovaperf.fr)*")
         .addField(
             "> :question: | Inova ? C'est quoi ?",
-            "la desc de inova"
+            "Inova est un hébergeur **__Français__** qui à pour objectif de fournir **__des services haut de gamme__** à prix réduit, celui-ci existe depuis maintenant **__2 ans__**, inova comporte de nombreuse offre comme **des sites webs**, **des vps(__virtual private server__)**, **des offres minecraft** est plein d'autre ! Nous avons rejoins inovaPerf pour leur __**qualité/prix**__ mais aussi pour leur support **actif** pour toute demande ! Si vous souhaitez acheter des offres ou visiter le site cliquez [[ici]](https://inovaperf.fr)"
         )
         .addField(
             "> :shopping_bags: | Offre actuel pour le bot",
