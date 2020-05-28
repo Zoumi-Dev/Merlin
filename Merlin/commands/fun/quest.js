@@ -22,9 +22,9 @@ module.exports.run = async(client, message, args) => {
     let repEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("GREEN")
-        .setDescription(`> Question posé par <@${message.author.id}>`)
-        .addField("> Question", args.join(' '))
-        .addField("> Réponse", randomReponse)
+        .setDescription(`> :question: | Question posé par <@${message.author.id}>`)
+        .addField("> :inbox_tray: | Question", args.join(' '))
+        .addField("> :outbox_tray: | Réponse", randomReponse)
         .setTimestamp()
         .setFooter(client.config.footer);
     return message.channel.send(repEmbed);

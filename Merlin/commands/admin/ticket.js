@@ -47,7 +47,6 @@ module.exports.run = async (client, message, args) => {
     }
 
     chh;
-    message.guild.channels.cache.find(ch => ch.name === `ticket-de-${message.author.username}`).send("test");
 
 
     let confirmEmbed = new Discord.MessageEmbed()

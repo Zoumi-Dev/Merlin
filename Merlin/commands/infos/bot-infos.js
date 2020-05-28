@@ -14,9 +14,9 @@ module.exports.run = async (client, message, args) => {
         .addField(">  :book: | Librairie", "✦ NodeJs\n✦ DiscordJs", true)
         .addField("> :wrench: | Version", "✦ 1.0.0")
         .addField("> Hébergeur", "✦ InovaPerf", true)
-        .addField("> Disque", `✦ ${fs.Stats.size}`, true)
+        .addField("> Disque", `✦ ${fs.statSync('../Merlin').size}`, true)
         .addField("> :newspaper2: | Informations", `✦ Je suis dans \`${client.guilds.cache.size}\` serveurs !\n✦ Un total de \`${client.users.cache.size}\` membre(s) sur tous les serveurs ou je suis !\n✦ Je suis en ligne depuis le \`${moment.utc(client.readyAt).format("DD/MM/YYYY à hh:mm A")}\``)
-        .addField("> :question: | Help", "✦ mon discord: \[[click]\](https://discord.gg/7PQUHTr)\n✦ m'inviter: \[[click]\](https://discord.com/api/oauth2/authorize?client_id=712318774644310057&permissions=8&scope=bot)")
+        .addField("> :question: | Help", "✦ mon discord: \[[click]\](https://discord.gg/7PQUHTr)\n✦ m'inviter: \[[click]\](https://discord.com/api/oauth2/authorize?client_id=712318774644310057&permissions=8&scope=bot)\n✦ nous soutenir financièrement [[click]](https://www.patreon.com/merlin_bot)")
         .setTimestamp()
         .setFooter(client.config.footer);
     return message.channel.send(botEmbed);

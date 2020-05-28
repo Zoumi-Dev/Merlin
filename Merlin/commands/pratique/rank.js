@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
         merlin
             .resize(256, 256)
             .quality(60)
-            .write('merlin_rank')
+            .write('././merlin_rank.gif')
     }).catch(err => {
         console.error(err);
     });
