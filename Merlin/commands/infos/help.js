@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const fs = require('fs');
 const img = new Discord.MessageAttachment('../../img/merlin_help.gif');
+const categorieList = fs.readdirSync('././commands');
+
 module.exports.run = async (client, message, args) => {
 
     message.delete();
@@ -10,12 +12,12 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setColor("BLUE")
             .setDescription(" **__Dernière Ajout | Mise à jour__**\n✦ Ajout de la commande \`_bingo\`")
-            .addField("> :newspaper2: | Informations", "`bot-infos`, `server-infos`, `infos`, `ping`, `mcbe-infos`", true)
-            .addField("> :tada: | Fun", "`say`, `img`, `cry`, `hug`, `kiss`, `muffins`, `quest`, `des`, `bingo`", true)
-            .addField("> :wrench: | Pratique", '`rcon`, `color`, `lyrics`', true)
-            .addField("> :underage: | nsfw", "`anal`, `neko`, `hentai`, `latex`, `ass`, `hot`", true)
-            .addField("> :man_police_officer: | Administrative", "`clear`, `ban`, `kick`, `mute`, `unmute`", true)
-            .addField("> :question: | Help", "Vous avez une suggestion ? Alors faite `_sugg`\nmon discord: [[click]](https://discord.gg/7PQUHTr)\nm'inviter: [[click]](https://discord.com/api/oauth2/authorize?client_id=712318774644310057&permissions=8&scope=bot)")
+            .addField("> :newspaper2: | 『Informations』", "```help, bot-infos, server-infos, infos, mcbe-infos```", true)
+            .addField("> :tada: | 『Fun』", "```say, img, cry, hug, kiss, muffins, quest, des, bingo```", true)
+            .addField("> :wrench: | 『Pratique』", '```rcon, color, lyrics```')
+            .addField("> :underage: | 『Nsfw』", "```anal, neko, hentai, latex, ass, hot```", true)
+            .addField("> :man_police_officer: | 『Administrative』", "```clear, ban, kick, mute, unmute```", true)
+            .addField("> :gear: | 『Paramètre』", "```SOON```")
             .setImage("https://66.media.tumblr.com/575aa752a70ffbff6267ae3d20843946/tumblr_odub4rgv4f1sg8uefo1_540.gif")
             .setTimestamp()
             .setFooter(client.config.footer);

@@ -2,17 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commands/fun/bingo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands/fun/choisis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands/pratique/lyrics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/admin/stop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/admin/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/fun/meme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/merlin_pdp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/merlin_test.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/admin/maintenance.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/maintenance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/mute.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/mute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/fun/cry.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/cry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/bot-infos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/detect-libc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/detect-libc.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/detect-libc.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/needle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/needle.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/needle.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nopt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nopt.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nopt.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rc.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rc.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf.ps1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +58,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -51,6 +72,23 @@
       <recent name="F:\Merlin\commands\infos" />
       <recent name="F:\Merlin\commands\fun" />
     </key>
+  </component>
+  <component name="RunManager" selected="Node.js.main.js">
+    <configuration default="true" type="NodeJSConfigurationType" path-to-js-file="main.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="cry.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/commands/fun/cry.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/main.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.main.js" />
+        <item itemvalue="Node.js.cry.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -90,7 +128,18 @@
       <workItem from="1590536417306" duration="3077000" />
       <workItem from="1590577501103" duration="4401000" />
       <workItem from="1590583192534" duration="8201000" />
-      <workItem from="1590592149298" duration="2892000" />
+      <workItem from="1590592149298" duration="4103000" />
+      <workItem from="1590596555418" duration="1282000" />
+      <workItem from="1590599512078" duration="2138000" />
+      <workItem from="1590601938077" duration="1597000" />
+      <workItem from="1590607107665" duration="276000" />
+      <workItem from="1590608115628" duration="3650000" />
+      <workItem from="1590615330020" duration="1678000" />
+      <workItem from="1590617281152" duration="1684000" />
+      <workItem from="1590619163104" duration="2546000" />
+      <workItem from="1590623236613" duration="1258000" />
+      <workItem from="1590626032880" duration="692000" />
+      <workItem from="1590671992334" duration="516000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -162,13 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590447111040</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update all">
+      <created>1590595146416</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1590595146416</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="changement de design sur les embeds" />
     <MESSAGE value="ajout de la commande color.js" />
     <MESSAGE value="update server-infos" />
@@ -178,25 +235,94 @@
     <MESSAGE value="modification mcbe-infos.js" />
     <MESSAGE value="update" />
     <MESSAGE value="update help, mcbe-infos et rcon" />
-    <option name="LAST_COMMIT_MESSAGE" value="update help, mcbe-infos et rcon" />
+    <MESSAGE value="update all" />
+    <option name="LAST_COMMIT_MESSAGE" value="update all" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1590447161145">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1590447161145" />
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589977479430">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590612595889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1589977479430" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1590612595889" />
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590165714174">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590165714174" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590447185330">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590595136841">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590447185330" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590595136841" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1590614250310">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590614250310" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590626373331">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590626373331" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590626373331">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590626373331" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590626373330">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590626373330" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590626373331">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590626373331" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1590607276742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590607276742" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1590607276742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1590607276742" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1590607276742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1590607276742" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1590607276742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1590607276742" />
+    <state width="1323" height="223" key="GridCell.Tab.2.bottom" timestamp="1590607276743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590607276743" />
+    <state width="1323" height="223" key="GridCell.Tab.2.center" timestamp="1590607276743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1590607276743" />
+    <state width="1323" height="223" key="GridCell.Tab.2.left" timestamp="1590607276742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1590607276742" />
+    <state width="1323" height="223" key="GridCell.Tab.2.right" timestamp="1590607276743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1590607276743" />
+    <state width="1323" height="223" key="GridCell.Tab.3.bottom" timestamp="1590607276744">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590607276744" />
+    <state width="1323" height="223" key="GridCell.Tab.3.center" timestamp="1590607276743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1590607276743" />
+    <state width="1323" height="223" key="GridCell.Tab.3.left" timestamp="1590607276743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1590607276743" />
+    <state width="1323" height="223" key="GridCell.Tab.3.right" timestamp="1590607276744">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1590607276744" />
     <state x="395" y="79" key="MultipleFileMergeDialog" timestamp="1590440442740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -205,10 +331,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="540" y="74" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590496844295" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1589990903025">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1590613010054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589990903025" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590613010054" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590533115644">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -221,10 +347,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="411" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1590440937759" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1590512902409">
+    <state x="400" y="171" key="jetbrains.nodejs.interpreters-dialog" timestamp="1590597131673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1590512902409" />
+    <state x="400" y="171" key="jetbrains.nodejs.interpreters-dialog/0.0.1366.728@0.0.1366.728" timestamp="1590597131673" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1590597198114">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1590597198114" />
     <state x="346" y="49" key="search.everywhere.popup" timestamp="1590592938033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

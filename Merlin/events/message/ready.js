@@ -14,5 +14,5 @@ module.exports = client => {
                 status: "online",
             });
         }, 10000);
-        console.log(`Je suis dans ${client.guilds.cache.size} serveur !`);
+        console.log(`Je suis dans ${client.guilds.cache.size} serveur:\n${client.guilds.cache.map(s => s.name).join(", ")}`);
 };

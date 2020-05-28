@@ -16,7 +16,7 @@ module.exports = async (client, message) => {
     if(cmd) {
         if (message.author.id !== client.config.zoumi) {
             if (client.config.maintenance === true) {
-                return message.channel.send(`<@${message.author.id}>, le bot est en mode \`maintenance\` veuillez patienter !`);
+                return message.channel.send(`<@${message.author.id}>, le bot est en mode \`maintenance\` pour la raison \`${client.config.maintenanceReason}\`, nous vous prions de patienter !`);
             }
         }
     }

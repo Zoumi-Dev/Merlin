@@ -6,6 +6,8 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
+    let reason = args.join(' ');
+
     if (!args[0]) {
         if (message.author.id === client.config.zoumi) {
             if (client.config.maintenance === false) {
@@ -29,7 +31,7 @@ module.exports.run = async (client, message, args) => {
                 fs.writeFile(`../../config.json`, config.maintenanceReason = args[0], (err) => {
                     if (err) return console.log(err);
                 });
-                return message.channel.send(`<@${message.author.id}>, le mode \`maintenance\` est désormait activer pour la raison \`${args[0]}\` !`);
+                return message.channel.send(`<@${message.author.id}>, le mode \`maintenance\` est désormait activer pour la raison \`${reason}\` !`);
             }
         }
     }
