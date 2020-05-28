@@ -6,9 +6,9 @@ module.exports.run = (client, message, args) => {
         message.mentions.users.first() || message.guild.members.cache.get(args[0])
     );
 
-    let reason = args.join(' ');
+    let reason = args.slice('').join(' ');
 
-    let pleure = message.guild.emojis.cache.find(e => e.name === 'pleure');
+    let pleure = client.emojis.cache.find(e => e.id === client.emo.pleure);
 
     if (!message.member.hasPermission('KICK_MEMBERS')){
         let noPerm = new Discord.MessageEmbed()
@@ -17,7 +17,7 @@ module.exports.run = (client, message, args) => {
             .addField("> :x: | Erreur", `\`Utilisation: ${client.config.DEFAULT_SETTINGS.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
             .setFooter(client.config.footer);
-        return message.channel.send(noPerm);
+        return message.channel.send(noPerm).then(e => e.react(pleure));
     }
 
     if (!args[0]){
@@ -27,7 +27,7 @@ module.exports.run = (client, message, args) => {
             .addField(':x: | Erreur', `\`Utilisation: ${client.config.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
             .setFooter(client.config.footer);
-        return message.channel.send(noMen);
+        return message.channel.send(noMen).then(e => e.react(pleure));
     }
 
     if (kickUser.hasPermission('KICK_MEMBERS')){
@@ -38,7 +38,7 @@ module.exports.run = (client, message, args) => {
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(havePerm).then(async m =>{
-            await m.react(pleure);
+            await m.react(pleure).then(e => e.react(pleure));
         });
     }
 
@@ -49,7 +49,7 @@ module.exports.run = (client, message, args) => {
             .addField('> :x: | Erreur', `\`Utilisation: ${client.config.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
             .setFooter(client.config.footer);
-        return message.channel.send(noMen);
+        return message.channel.send(noMen).then(e => e.react(pleure));
     }
 
     let mpEmbed = new Discord.MessageEmbed()

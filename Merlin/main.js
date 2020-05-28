@@ -4,6 +4,8 @@ const config = require('./config.json');
 
 const admin = require('./admin.json');
 
+const emo = require('./emojis.json');
+
 const Enmap = require('enmap');
 
 const fs = require("fs");
@@ -13,6 +15,8 @@ const client = new Discord.Client();
 client.config = config;
 
 client.admin = admin;
+
+client.emo = emo;
 
 client.commands = new Enmap();
 
