@@ -12,9 +12,19 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(noargs);
     }
 
+    if (isNaN(args[0])){
+        let embed = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("GREEN")
+            .addField("> :x: | Erreur", "`Utilisation: _bingo [nombre]`")
+            .setTimestamp()
+            .setFooter(client.config.footer);
+        return message.channel.send(embed);
+    }
+
     let rep = Math.floor(Math.random() * args[0]);
 
-    await message.channel.send('Le bingo commence !');
+    await message.channel.send(`A vos marques ! prêt ! partez ! Vous avez **__1 minute__** pour trouver un nombre entre **__0__** et **__${args[0]}__** ! Que le meilleur gagne.`);
 
     const filter = m => m.author.id !== client.user.id;
 
@@ -22,14 +32,14 @@ module.exports.run = async (client, message, args) => {
 
     collector.on("collect", async (collected) => {
         if (collected.content.toLowerCase() === "stop"){
-            return collector.stop(`:white_check_mark: | Le bingo à étais annuler par **__${collected.author.toString()}__** !`);
+            return collector.stop(`:white_check_mark: | Le bingo à été annulé par **__${collected.author.toString()}__** !`);
         }else{
             let reponse = await collected.content.trim();
             let response = parseInt(reponse);
             if (isNaN(response)){
                 return false;
             }else if (response === rep){
-                await collector.stop(`Waouh !\n:trophy: | ${collected.author.toString()} est le vainqueur !\nLe nombre étais ${rep}`);
+                await collector.stop(`> :tada: | Waouh !\n> :trophy: | ${collected.author.toString()} est le vainqueur !\n> :1234: | Le nombre était **__${rep}__**`);
             }
         }
     });
@@ -37,7 +47,7 @@ module.exports.run = async (client, message, args) => {
         if (reason && reason !== "time"){
             return message.channel.send(reason);
         }else{
-            return message.channel.send(`:hourglass_flowing_sand: | **__Temps écouler__** !\n:cry: | **__Aucun vainqueur__** !\nLe chiffre étais **__${rep}__**`);
+            return message.channel.send(`>:hourglass_flowing_sand: | **__Temps écoulé__** !\n> :cry: | **__Aucun vainqueur__** !\n> :1234: | Le nombre était **__${rep}__** !`);
         }
 
     });

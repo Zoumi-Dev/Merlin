@@ -11,21 +11,19 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setDescription(`> Voici l'avatar de <@${message.author.id}>`)
             .setColor("BLUE")
-            .setImage(message.author.displayAvatarURL())
+            .setImage(`https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png?size=2048`)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(avatarEmbed);
-    }else{
-        if (args[0] === usr){
-            let avatarEmbed = new Discord.MessageEmbed()
-                .setAuthor("Merlin")
-                .setDescription(`> Voici l'avatar de <@${message.author.id}>`)
-                .setColor("GREY")
-                .setImage(usr.user.displayAvatarURL())
-                .setTimestamp()
-                .setFooter(client.config.footer);
-            return message.channel.send(avatarEmbed);
-        }
+    }else {
+        let avatarEmbed = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setDescription(`> Voici l'avatar de <@${usr.user.id}>`)
+            .setColor("GREY")
+            .setImage(`https://cdn.discordapp.com/avatars/${usr.user.id}/${usr.user.avatar}.png?size=2048`)
+            .setTimestamp()
+            .setFooter(client.config.footer);
+        return message.channel.send(avatarEmbed);
     }
 };
 

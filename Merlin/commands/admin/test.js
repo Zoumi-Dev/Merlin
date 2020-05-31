@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
-const jimp = require('jimp');
+const ameClient = require('amethyste-api');
+const ameApi = new ameClient("ad4c408307abbb8ac2a682e8bc0298c2bc8fb4b09eae443ee95086c2517119b44ba1349c138ba83ea27cbf956e78b849d88e1640b4c5303370f4e67aef8d1040");
 
 module.exports.run = async (client, message, args) => {
 
@@ -13,19 +14,22 @@ module.exports.run = async (client, message, args) => {
     })
     */
 
-    let embed = new Discord.MessageEmbed()
-        .setAuthor("Merlin")
-        .setColor("BLUE")
-        .setDescription("description <= ajout des new commande etc...")
-        .addField("> :newspaper2: | 『Informations』", "```help, server-infos```", true)
-        .addField("> :newspaper2: | 『Informations』", "```help, server-infos```", true)
-        .addField("> :newspaper2: | 『Informations』", "```help, server-infos```")
-        .addField("> :newspaper2: | 『Informations』", "```help, server-infos```", true)
-        .addField("> :newspaper2: | 『Informations』", "```help, server-infos```", true)
-        .setImage("https://66.media.tumblr.com/575aa752a70ffbff6267ae3d20843946/tumblr_odub4rgv4f1sg8uefo1_540.gif")
-        .setTimestamp()
-        .setFooter(client.config.footer);
-    return message.channel.send(embed);
+    let avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png?size=2048`;
+
+    let image = ameApi.generate("wasted", {
+        "url": avatar
+    }).then(image => {
+        console.log(image);
+        message.channel.send({
+            files: [{
+                attachment: image,
+                name: "wasted.png",
+            }]
+        });
+    }).catch(err => {
+        console.log(err.message);
+    });
+
 };
 
 module.exports.help = {

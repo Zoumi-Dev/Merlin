@@ -27,14 +27,14 @@ module.exports.run = async (client, message, args) => {
     /*
     let hug = hugimg[Math.floor(Math.random() * hugimg.length)];
      */
-    var gif = await fetch("https://nekos.life/api/v2/img/hug")
+    var gif = await fetch("https://nekos.life/api/v2/img/poke")
         .then(res => res.json())
         .then(json => json.url)
 
     if (!args[0]) {
         let hugEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setDescription(`> <@${message.author.id}> a fait un câlin à <@${client.user.id}> :hugging:`)
+            .setDescription(`> <@${message.author.id}> donne un petit coup à <@${client.user.id}>`)
             .setColor("GREEN")
             .setImage(gif)
             .setTimestamp()
@@ -44,7 +44,7 @@ module.exports.run = async (client, message, args) => {
         if (usr){
             let hugEmbed = new Discord.MessageEmbed()
                 .setAuthor("Merlin")
-                .setDescription(`> <@${message.author.id}> a fait un câlin à <@${usr.user.id}> :hugging:`)
+                .setDescription(`> <@${message.author.id}> donne un petit coup à <@${usr.user.id}>`)
                 .setColor("GREEN")
                 .setImage(gif)
                 .setTimestamp()
@@ -55,5 +55,5 @@ module.exports.run = async (client, message, args) => {
 };
 
 module.exports.help = {
-    name: "hug",
+    name: "poke",
 };

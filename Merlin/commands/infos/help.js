@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
         let helpEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("BLUE")
-            .setDescription(" **__Dernière Ajout | Mise à jour__**\n✦ Ajout de la commande \`_bingo\`")
+            .setDescription(" **__Dernière Ajout | Mise à jour__**\n✦ La commande \`_lyrics\` prend désormait les chansons à plus de 2048 caractéres !")
             .addField("> :newspaper2: | 『Informations』", "```help, bot-infos, server-infos, infos, mcbe-infos, heberg-infos```", true)
             .addField("> :tada: | 『Fun』", "```say, embed, img, cry, hug, kiss, muffins, quest, des, bingo```", true)
             .addField("> :wrench: | 『Pratique』", '```rcon, color, lyrics```')

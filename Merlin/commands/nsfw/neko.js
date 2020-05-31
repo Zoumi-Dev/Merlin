@@ -1,4 +1,5 @@
 const Discrord = require('discord.js');
+const fetch = require('node-fetch');
 const neko = [
     "https://i.pinimg.com/236x/6c/ca/b8/6ccab8749673e07d515cc49012a1a8f1--anime-girls-kitty.jpg",
     "https://dzt1km7tv28ex.cloudfront.net/u/426346577527832576_35s_d.jpg",
@@ -13,14 +14,20 @@ const neko = [
 
 module.exports.run = async (client, message, args) => {
 
+    /*
     const imgneko = neko[Math.floor(Math.random() * neko.length)];
+     */
+
+    var gif = await fetch("https://nekos.life/api/v2/img/neko")
+        .then(res => res.json())
+        .then(json => json.url)
 
     if (message.channel.nsfw === true){
         let nekoEmbed = new Discrord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("RED")
             .setDescription(`> \`Neko\` demandée par \`${message.author.username}\``)
-            .setImage(imgneko)
+            .setImage(gif)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(nekoEmbed);

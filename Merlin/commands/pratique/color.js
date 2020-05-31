@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const tinycolor = require('tinycolor2');
 
 module.exports.run = async (client, message, args) => {
 
@@ -7,6 +8,7 @@ module.exports.run = async (client, message, args) => {
     if (!args[0]){
         return message.channel.send(`<@${message.author.id}>, veuillez specifier une couleur ! Exemple: ${client.config.DEFAULT_SETTINGS.prefix}color GREY.`)
     }else{
+
         let color = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setDescription(`> Voici la couleur ${args[0]}`)

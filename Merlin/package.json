@@ -1,6 +1,6 @@
 {
   "name": "merlin",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "The Official Bot Merlin, Created By Zoumi#0336",
   "main": "main.js",
   "scripts": {
@@ -20,11 +20,13 @@
     "librcon": "^1.0.3",
     "moment": "^2.25.3",
     "ms": "^2.1.2",
+    "nekos.life": "^2.0.7",
     "node-fetch": "latest",
     "random-puppy": "^1.1.0",
     "snekfetch": "^4.0.4",
     "solenolyrics": "^5.0.0",
     "superagent": "^5.2.2",
-    "ytdl-core-discord": "^1.2.0"
-  }
+    "tinycolor2": "^1.4.1"
+  },
+  "devDependencies": {}
 }

@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
     let embed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setDescription("> :white_check_mark: | Le bot est entrain de redemarré !")
+        .setDescription("> :white_check_mark: | Le bot est entrain de redemarrer !")
         .setTimestamp()
         .setFooter(client.config.footer);
     return await message.channel.send(embed) && process.exit(0);

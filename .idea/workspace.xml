@@ -2,7 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/rcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/rcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Merlin/commands/fun/poke.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Merlin/img/merlin_help.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/stop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/stop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/bingo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/bingo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/cry.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/cry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/des.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/des.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/hug.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/hug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/kiss.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/kiss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/quest.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/quest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/heberg-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/heberg-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/server-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/server-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/nsfw/anal.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/nsfw/anal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/nsfw/hentai.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/nsfw/hentai.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/nsfw/neko.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/nsfw/neko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/pratique/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/pratique/color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/pratique/lyrics.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/pratique/lyrics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/emojis.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/emojis.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/discord.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/node_modules/discord.js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/lib/html4-entities.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/lib/html4-entities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/lib/html5-entities.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/lib/html5-entities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/lib/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/lib/xml-entities.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/lib/xml-entities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/html-entities/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/dash-mpd-parser.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/dash-mpd-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/dash-mpd-parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/m3u8-parser.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/m3u8-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/m3u8-parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/parse-time.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/parse-time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/parse-time.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/parser.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/queue.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/dist/queue.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/m3u8stream/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/miniget/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/miniget/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/miniget/dist/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/miniget/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/miniget/dist/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/miniget/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core-discord/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core-discord/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core-discord/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core-discord/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core-discord/typings/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/lib/cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/lib/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/lib/info-extras.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/lib/info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/lib/sig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/node_modules/ytdl-core/typings/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +113,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/Zoumi/plugins/Faction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Merlin/main.js" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -47,6 +131,14 @@
       <recent name="F:\github\Merlin\Merlin\events\guild" />
       <recent name="F:\github\Merlin\Merlin\commands\admin" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/Merlin">
+      <method v="2" />
+    </configuration>
+    <configuration name="main.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/Merlin">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -70,6 +162,10 @@
       <workItem from="1590418193492" duration="127000" />
       <workItem from="1590418385762" duration="1645000" />
       <workItem from="1590423131297" duration="1630000" />
+      <workItem from="1590769097246" duration="842000" />
+      <workItem from="1590770741151" duration="134000" />
+      <workItem from="1590787721146" duration="8152000" />
+      <workItem from="1590879458841" duration="3817000" />
     </task>
     <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
       <created>1590346249634</created>
@@ -92,6 +188,7 @@
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande" />
     <MESSAGE value="ajout cooldown" />
     <option name="LAST_COMMIT_MESSAGE" value="ajout cooldown" />
@@ -101,30 +198,58 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="69" key="#Plugins/0.0.1600.860@0.0.1600.860" timestamp="1590418332748" />
-    <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590264342712">
+    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590788534579">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590264342712" />
+    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590788534579" />
+    <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590769655332">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590769655332" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590351200251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590351200251" />
-    <state x="504" y="187" key="FileChooserDialogImpl" timestamp="1590357457689">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590357457689" />
-    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590180821395" />
-    <state x="341" y="148" key="SettingsEditor" timestamp="1590184508513">
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1590788480491">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="341" y="148" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590184508513" />
+    <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590357457689" />
+    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590788480491" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1590796305306">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1590796305305">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1590796305305">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1590796305306">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
+    <state x="341" y="148" key="SettingsEditor" timestamp="1590770867138">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="341" y="148" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590770867138" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590346453090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590346453090" />
-    <state x="496" y="233" key="run.anything.popup" timestamp="1590271650391">
+    <state x="649" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590789965068">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="496" y="233" key="run.anything.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1590271650391" />
+    <state x="649" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1590789965068" />
+    <state x="568" y="293" key="git4idea.merge.GitPullDialog" timestamp="1590790025156">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="568" y="293" key="git4idea.merge.GitPullDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590790025156" />
+    <state x="496" y="233" key="run.anything.popup" timestamp="1590880067995">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="496" y="233" key="run.anything.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1590880067995" />
   </component>
 </project>

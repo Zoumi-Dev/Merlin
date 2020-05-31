@@ -14,8 +14,8 @@ module.exports.run = async(client, message, args) => {
 
     message.delete();
 
-    let rdmCry = cry[Math.floor(Math.random() * cry.length)];
 
+    let rdmCry = cry[Math.floor(Math.random() * cry.length)];
     /*
     const gif = await fetch(`https://api.tenor.com/v1/search?q=cry-manga&key=4XYAQG0O2S3Y&limit=1`)
         .then(res => res.json())
@@ -24,6 +24,10 @@ module.exports.run = async(client, message, args) => {
             return message.reply('Imossible de trouver le gif demandé 🙁');
         });
     */
+
+    var gif = await fetch("https://nekos.life/api/v2/img/cry")
+        .then(res => res.json())
+        .then(json => json.url)
 
     const em = new Discord.MessageEmbed()
         .setTitle("Merlin")

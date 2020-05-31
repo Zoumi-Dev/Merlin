@@ -9,8 +9,8 @@ module.exports.run = async (client, message, args) => {
     let embed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("GREEN")
-        .setDescription("> :game_die: | Lancement du dès !")
-        .addField("> Et hop !", `Le dès est tomber sur **${randomDes}**`)
+        .setDescription("> :game_die: | Lancement du dé !")
+        .addField("> Et hop !", `Le dé est tomber sur **${randomDes}**`)
         .setTimestamp()
         .setFooter(client.config.footer);
     return message.channel.send(embed);
@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
 };
 
 module.exports.help = {
-    name: "des",
+    name: "dice",
     aliases: ["dice"],
     description: "Permet de lancer un dés !",
     usage: "_des"

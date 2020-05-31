@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="Mise à jour">
-      <change afterPath="$PROJECT_DIR$/commands/fun/embed.js" afterDir="false" />
+    <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/admin/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/bingo.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/bingo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/quest.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/quest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/heberg-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/heberg-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/server-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/server-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emojis.json" beforeDir="false" afterPath="$PROJECT_DIR$/emojis.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +126,8 @@
       <workItem from="1590698000780" duration="2441000" />
       <workItem from="1590701231914" duration="1202000" />
       <workItem from="1590702818036" duration="452000" />
-      <workItem from="1590703566265" duration="1953000" />
+      <workItem from="1590703566265" duration="3865000" />
+      <workItem from="1590709856849" duration="3953000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -224,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590707180836</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Mise à jour">
+      <created>1590707938162</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590707938162</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,30 +276,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590165714174" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590707507467">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590707934710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590707507467" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590707934710" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1590614250310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590614250310" />
-    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1590707609912">
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1590713865329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590707609912" />
-    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1590707609912">
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590713865329" />
+    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1590713865329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590707609912" />
-    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1590707609912">
+    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590713865329" />
+    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1590713865329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590707609912" />
-    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1590707609912">
+    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590713865329" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1590713865329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590707609912" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590713865329" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1590675049937">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -343,10 +360,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590613010054" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590702869318">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1590707944551">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590702869318" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590707944551" />
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590447268817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

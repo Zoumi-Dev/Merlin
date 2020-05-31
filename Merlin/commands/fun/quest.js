@@ -22,7 +22,7 @@ module.exports.run = async(client, message, args) => {
     let repEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("GREEN")
-        .setDescription(`> :question: | Question posé par <@${message.author.id}>`)
+        .setDescription(`> :question: | Question posée par <@${message.author.id}>`)
         .addField("> :inbox_tray: | Question", args.join(' '))
         .addField("> :outbox_tray: | Réponse", randomReponse)
         .setTimestamp()
