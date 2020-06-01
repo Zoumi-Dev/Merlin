@@ -25,9 +25,11 @@ module.exports.run = async(client, message, args) => {
         });
     */
 
+    /*
     var gif = await fetch("https://nekos.life/api/v2/img/cry")
         .then(res => res.json())
-        .then(json => json.url)
+        .then(json => json.url);
+     */
 
     const em = new Discord.MessageEmbed()
         .setTitle("Merlin")

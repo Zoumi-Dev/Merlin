@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) => {
             "✦ les embeds rouge signifie les commandes `nsfw`, les verte signifie les commandes `funs`, les bleu signifie les commandes donnant des `informations` et les rose singifie les commandes `administratives`"
         )
         .setTimestamp()
-        .setFooter(client.config.footer);
+        .setFooter(`${client.config.footer}`);
     return message.channel.send(update).then(m => m.react(ban));
 };
 

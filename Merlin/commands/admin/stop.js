@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
         .setAuthor("Merlin")
         .setDescription("> :white_check_mark: | Le bot est entrain de redemarrer !")
         .setTimestamp()
-        .setFooter(client.config.footer);
+        .setFooter(`${client.config.footer}`);
     return await message.channel.send(embed) && process.exit(0);
 
 };

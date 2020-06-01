@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("#FF00FF")
             .addField("> :x: | Erreur", "`Utilisation: _ticket [sujet]`")
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(noargs);
     }
 
@@ -32,7 +32,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("#FF00FF")
             .addField("> :x: | Erreur", "`Cette commande est disponible uniquement dans le serveur` __**Merlin'Bot Help**__")
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(isNotInServerSupport);
     }
 
@@ -42,7 +42,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("#FF00FF")
             .addField("> :x: | Erreur", "`Vous possedez déjà un ticket !`")
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(haveTicket);
     }
 
@@ -54,7 +54,7 @@ module.exports.run = async (client, message, args) => {
         .setColor("#FF00FF")
         .setDescription(`> Votre ticket (<#${(await chh).id}>) à été créer avec succès !`)
         .setTimestamp()
-        .setFooter(client.config.footer);
+        .setFooter(`${client.config.footer}`);
     return message.channel.send(confirmEmbed);
 };
 

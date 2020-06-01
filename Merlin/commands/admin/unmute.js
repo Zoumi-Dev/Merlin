@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
             .setColor('BLUE')
             .addField('> :x: | Erreur', '`Utilisation: _unmute [utilisateur]\nPermission requise: MANAGE_MESSAGES`')
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
 
         return message.channel.send(embed);
     }
@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("#FF00FF")
             .addField(`> :x: | Erreur`, "`Utilisation: _unmute [utilisateur]\nPermission requise: MANAGE_MESSAGES`")
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
 
         return message.channel.send(nopermEmbed);
     }
@@ -38,7 +38,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("#FF00FF")
             .addField("> :x: | Erreur", "`Cet utilisateur n'est pas mute !`")
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(noMute);
     }
 
@@ -51,7 +51,7 @@ module.exports.run = async (client, message, args) => {
         .setColor("#FF00FF")
         .setDescription(`> L'utilisateur <@${muteUser.user.id}> peut désormait parler !`)
         .setTimestamp()
-        .setFooter(client.config.footer);
+        .setFooter(`${client.config.footer}`);
     return message.channel.send(succes);
 
 };

@@ -6,7 +6,7 @@ module.exports.run = (client, message, args) => {
         message.mentions.users.first() || message.guild.members.cache.get(args[0])
     );
 
-    let reason = args.slice('').join(' ');
+    let reason = args.join(' ').slice(args[2]);
 
     let pleure = client.emojis.cache.find(e => e.id === client.emo.pleure);
 
@@ -16,7 +16,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField("> :x: | Erreur", `\`Utilisation: ${client.config.DEFAULT_SETTINGS.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(noPerm).then(e => e.react(pleure));
     }
 
@@ -26,7 +26,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField(':x: | Erreur', `\`Utilisation: ${client.config.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(noMen).then(e => e.react(pleure));
     }
 
@@ -36,10 +36,9 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField("> :x: | Erreur", `\`Vous ne pouvez pas bannir une personne ayant la permission KICK_MEMBERS.\``)
             .setTimestamp()
-            .setFooter(client.config.footer);
-        return message.channel.send(havePerm).then(async m =>{
-            await m.react(pleure).then(e => e.react(pleure));
-        });
+            .setFooter(`${client.config.footer}`);
+        return message.channel.send(havePerm).then(async m => {
+            await m.react(pleure)});
     }
 
     if (!args[1]){
@@ -48,7 +47,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField('> :x: | Erreur', `\`Utilisation: ${client.config.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(noMen).then(e => e.react(pleure));
     }
 
@@ -57,14 +56,14 @@ module.exports.run = (client, message, args) => {
         .setColor("#FF00FF")
         .addField("> :exclamation: | Kick", `\`Vous avez été kick du serveur \`${message.guild.name}\` pour la raison \`${reason}\`.\``)
         .setTimestamp()
-        .setFooter(client.config.footer);
+        .setFooter(`${client.config.footer}`);
 
     let kickEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("#FF00FF")
         .addField("> :white_check_mark: | Succès", `\`Le membre \`<@${kickUser.user.id}>\` à été kick avec succès !\nRaison: \`${reason}`)
         .setTimestamp()
-        .setFooter(client.config.footer);
+        .setFooter(`${client.config.footer}`);
     return message.channel.send(kickEmbed) && kickUser.kick(reason) && kickUser.user.send(mpEmbed);
 };
 

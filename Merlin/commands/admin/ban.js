@@ -6,7 +6,7 @@ module.exports.run = (client, message, args) => {
         message.mentions.users.first() || message.guild.members.cache.get(args[0])
     );
 
-    let reason = args.join(' ');
+    let reason = args.join(' ').slice(3);
 
     let pleure = message.guild.emojis.cache.find(e => e.name === 'pleure');
 
@@ -16,7 +16,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField("> :x: | Erreur", `\`Utilisation: ${client.config.DEFAULT_SETTINGS.prefix}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(noPerm);
     }
 
@@ -26,7 +26,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField(':x: | Erreur', `\`Utilisation: ${client.config.prefix}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(noMen);
     }
 
@@ -36,7 +36,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField("> :x: | Erreur", `\`Vous ne pouvez pas bannir une personne ayant la permission BAN_MEMBERS.\``)
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(havePerm).then(async m =>{
             await m.react(pleure);
         });
@@ -48,7 +48,7 @@ module.exports.run = (client, message, args) => {
             .setColor('#FF00FF')
             .addField('> :x: | Erreur', `\`Utilisation: ${client.config.prefix}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
         return message.channel.send(noMen);
     }
 
@@ -57,14 +57,14 @@ module.exports.run = (client, message, args) => {
         .setColor("#FF00FF")
         .addField("> :exclamation: | Ban", `\`Vous avez été bannie du serveur \`${message.guild.name}\` pour la raison \`${reason}\`.\``)
         .setTimestamp()
-        .setFooter(client.config.footer);
+        .setFooter(`${client.config.footer}`);
 
     let banEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("#FF00FF")
         .addField("> :white_check_mark: | Succès", `\`Le membre \`<@${banUser.user.id}>\` à été bannie avec succès !\nRaison: \`${reason}`)
         .setTimestamp()
-        .setFooter(client.config.footer);
+        .setFooter(`${client.config.footer}`);
     return message.channel.send(banEmbed) && banUser.ban({days: 7, reason: reason}) && banUser.user.send(mpEmbed);
 };
 

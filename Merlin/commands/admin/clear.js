@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
             .setColor('#FF00FF')
             .addField('> :x: | Erreur', '`Utilisation: _clear [nombre de message]\nPermission requise: MANAGE_MESSAGES`')
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
 
         return message.channel.send(embed);
     }
@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args) => {
             .setColor('#FF00FF')
             .addField(`:wastebasket: |`, `J'ai supprimer **${args[0]}** message(s) pour vous !`)
             .setTimestamp()
-            .setFooter(client.config.footer);
+            .setFooter(`${client.config.footer}`);
 
         return message.channel.send(clearEmbed).then(message => message.delete({timeout: 5000}));
     });
