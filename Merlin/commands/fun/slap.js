@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
             .setFooter(client.config.footer);
         return message.channel.send(embed);
     }else{
-        if (args[0] === usr){
+        if (usr){
             let embed = new Discord.MessageEmbed()
                 .setAuthor("Merlin")
                 .setColor("GREEN")
@@ -36,4 +36,5 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "slap",
+    usage: "_slap ou _slap [utilisateur]"
 };
