@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if (message.author.id !== client.config.zoumi){
+    if (!client.config.ownerID.includes(message.author.id)){
         return message.reply("vous n'avez pas la permission !");
     }
 

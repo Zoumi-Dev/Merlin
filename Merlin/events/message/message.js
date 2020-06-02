@@ -14,7 +14,7 @@ module.exports = async (client, message) => {
 
     /* Si le bot est en mode maintenance */
     if(cmd) {
-        if (message.author.id !== client.config.zoumi) {
+        if (!client.config.ownerID.includes(message.author.id)) {
             if (client.config.maintenance === true) {
                 return message.channel.send(`<@${message.author.id}>, le bot est en mode \`maintenance\` pour la raison \`${client.config.maintenanceReason}\`, nous vous prions de patienter !`);
             }
@@ -42,7 +42,7 @@ module.exports = async (client, message) => {
     const timeSTamp = client.cooldowns.get(cmd.help.name);
     const cdAmount = (cmd.help.cooldown || 5) * 1000;
 
-    if (message.author.id !== client.config.zoumi) {
+    if (!client.config.ownerID.includes(message.author.id)) {
         if (timeSTamp.has(message.author.id)) {
             const cdExpTime = timeSTamp.get(message.author.id) + cdAmount;
 

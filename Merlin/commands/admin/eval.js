@@ -11,19 +11,27 @@ module.exports.run = async (client, message, args) => {
         return text;
     }
 
-    if (message.author.id !== client.config.zoumi){
+    if (!client.config.ownerID.includes(message.author.id)){
         return message.channel.send(`<@${message.author.id}>, vous n'avez pas la permission d'utiliser cette commande !`);
     }
-    try {
 
-        const code = args.join(' ');
-        const evaled = eval(code);
-        const cleanCode = await clean(evaled);
-        await message.channel.send(cleanCode, {code: "js"});
-        
-    } catch (e) {
-        return message.channel.send(`${e.message}`, {code: "js"});
-    }
+    const code = args.join(' ');
+    const result = new Promise((resolve, reject) => resolve(eval(code))).catch(e => {
+        return message.channel.send(e.message, {code: "js"});
+    });
+    return result.then(output => {
+        if (typeof output !== "string"){
+            output = require('util').inspect(output);
+            if (output.length >= 2000){
+                return;
+            }
+        }
+        if (output.includes(client.config.token)){
+            return message.channel.send("euuuuuuuhhhhhhhh NOPE", {code: "js"}).then(r => r.react(client.emojis.cache.find(e => e.id === client.emo.pleure)));
+        }
+        message.channel.send(output, {code: "js"});
+    });
+
 };
 
 module.exports.help = {

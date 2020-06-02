@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setDescription(`> Voici l'avatar de <@${message.author.id}>`)
             .setColor("BLUE")
-            .setImage(`https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png?size=2048`)
+            .setImage(`https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png?size=4096`)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(avatarEmbed);

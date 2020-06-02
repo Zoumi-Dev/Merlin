@@ -13,9 +13,13 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setDescription(`> Voici la couleur ${args[0]}`)
             .setColor(args[0])
+            .addField("> Format", `${tinycolor(args[0]).getFormat()}`)
+            .addField("> Hex", `${tinycolor(args[0]).toHexString()}`)
+            .addField("> Rgb", `${tinycolor(args[0]).toRgbString()}`)
+            .addField("> Nom", `${tinycolor(args[0]).toName()}`)
             .setTimestamp()
             .setFooter(client.config.footer);
-        return message.channel.send(color)
+        return message.channel.send(color);
     }
 
 };
