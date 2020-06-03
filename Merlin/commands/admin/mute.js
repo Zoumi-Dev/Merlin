@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
         message.mentions.users.first() || message.guild.members.cache.get([0])
     );
 
-    let raison = args.slice(args[2]).join(" ");
+    let raison = args.slice(2).join(" ");
 
     if (!muteUser){
         let embed = new Discord.MessageEmbed()
@@ -66,10 +66,16 @@ module.exports.run = async (client, message, args) => {
 
                     color: "BLACK",
 
-                    permission: [],
+                    permissions: [],
                 }
             });
-            await muteRole.setPermissions([]);
+            await message.guild.channels.cache.forEach((channel) => {
+                channel.updateOverwrite(muteRole.id, {
+                    SEND_MESSAGES: false,
+                    ADD_REACTIONS: false,
+                    CONNECT: false,
+                })
+            })
         } catch (e) {
             console.log(e.stack);
         }

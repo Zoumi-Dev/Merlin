@@ -6,7 +6,7 @@ module.exports.run = (client, message, args) => {
         message.mentions.users.first() || message.guild.members.cache.get(args[0])
     );
 
-    let reason = args.join(' ').slice(3);
+    let reason = args.slice(2).join(' ');
 
     let pleure = message.guild.emojis.cache.find(e => e.name === 'pleure');
 

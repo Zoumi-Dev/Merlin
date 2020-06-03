@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
 const fs = require('fs');
-const img = new Discord.MessageAttachment('../../img/merlin_help.gif');
-const categorieList = fs.readdirSync('././commands');
 
 module.exports.run = async (client, message, args) => {
 
@@ -16,7 +14,7 @@ module.exports.run = async (client, message, args) => {
             .addField(`> :wrench: | 『Pratique(${client.commands.filter(cat => cat.help.categories === "pratique").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "pratique").map(cmd => cmd.help.name).join(", ")}\`\`\``)
             .addField(`> :underage: | 『Nsfw(${client.commands.filter(cat => cat.help.categories === "nsfw").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "nsfw").map(cmd => cmd.help.name).join(", ")}\`\`\``, true)
             .addField(`> :man_police_officer: | 『Administrative(${client.commands.filter(cat => cat.help.categories === "admin").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "admin").map(cmd => cmd.help.name).join(", ")}\`\`\``, true)
-            .addField("> :gear: | 『Paramètre』", "```SOON```")
+            .addField(`> :gear: | 『Paramètre(${client.commands.filter(cat => cat.help.categories === "settings").map(cmd => cmd.help.name).length})』`, "```SOON```")
             .setImage("https://66.media.tumblr.com/575aa752a70ffbff6267ae3d20843946/tumblr_odub4rgv4f1sg8uefo1_540.gif")
             .setTimestamp()
             .setFooter(client.config.footer);
