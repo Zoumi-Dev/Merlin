@@ -9,6 +9,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "ping",
     cooldown: 5,
+    categories: "infos",
     description: "Permet de voir le ping du bot.",
     usage: "_ping",
 };

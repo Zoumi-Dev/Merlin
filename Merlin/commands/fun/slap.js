@@ -36,5 +36,6 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "slap",
-    usage: "_slap ou _slap [utilisateur]"
+    categories: "fun",
+    usage: "_slap ou _slap [utilisateur]",
 };

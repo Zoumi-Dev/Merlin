@@ -70,6 +70,7 @@ module.exports.run = (client, message, args) => {
 
 module.exports.help = {
     name: "ban",
+    categories: "admin",
     description: "Permet de bannir un utilisateur avec une raison.",
     usage: "_ban [utilisateur] [raison]",
 };

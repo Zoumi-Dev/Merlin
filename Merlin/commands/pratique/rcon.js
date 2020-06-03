@@ -27,6 +27,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "rcon",
     aliases: ["rc"],
+    categories: "pratique",
     description: "Permet d'effectuer ue commande depuis discord :warning: il est préférable d'effectuer cette commande dans un salon priver.",
     usage: "_rcon [mot de passe] [ip] [port] [cmd]",
 };

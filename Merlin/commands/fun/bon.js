@@ -23,5 +23,6 @@ module.exports.run = async (client, message, args) => {
 };
 
 module.exports.help = {
-    name: "bon"
+    name: "bon",
+    categories: "fun",
 };

@@ -59,6 +59,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "unmute",
     aliases: ["um"],
+    categories: "admin",
     description: "Permet de démute un utilisateur.",
     usage: "_unmute [utilisateur]",
 };

@@ -24,6 +24,7 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "meme",
+    categories: "fun",
     description: "Permet d'envoyer des mêmes :issou:.",
     usage: "_meme",
 };

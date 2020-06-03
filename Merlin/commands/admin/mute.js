@@ -101,6 +101,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "mute",
     aliases: ["m"],
+    categories: "admin",
     description: "Permet de mute un utilisateur pendant un certain temps.",
     usage: "_mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]",
 };

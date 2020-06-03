@@ -69,6 +69,7 @@ module.exports.run = (client, message, args) => {
 
 module.exports.help = {
     name: "kick",
+    categories: "admin",
     description: "Permet de kick un utilisateur avec une raison.",
     usage: "_kick [utilisateur] [raison]",
 };

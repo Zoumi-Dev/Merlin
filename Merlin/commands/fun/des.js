@@ -20,6 +20,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "dé",
     aliases: ["dice"],
+    categories: "fun",
     description: "Permet de lancer un dés !",
     usage: "_des"
 };

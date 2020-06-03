@@ -28,6 +28,7 @@ module.exports.run = (client, message, args) => {
 
 module.exports.help = {
     name: "embed",
+    categories: "fun",
     description: "Permet d'envoyer un embed.",
     usage: "_embed [message]",
 };

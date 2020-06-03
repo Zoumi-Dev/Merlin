@@ -28,6 +28,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "heberg-infos",
     aliases: ["hi"],
+    categories: "infos",
     description: "Permet de voir les informations sur l'heberger du bot.",
     usage: "_heberg-infos",
 };

@@ -24,6 +24,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "bot-infos",
     aliases: ["bi"],
+    categories: "infos",
     description: "Permet d'afficher les informations du bot.",
     usage: "_bot-infos",
 };

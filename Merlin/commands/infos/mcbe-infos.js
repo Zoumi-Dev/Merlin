@@ -34,6 +34,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "mcbe-infos",
     aliases: ["mi"],
+    categories: "infos",
     description: "Permet de voir les informations d'un serveur Minecraft Bedrock Edition",
     usage: "_mcbe-infos [ip] [port]",
     cooldown: 10,

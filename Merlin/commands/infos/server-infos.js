@@ -29,6 +29,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "server-infos",
     aliases: ["si"],
+    categories: "infos",
     description: "Permet de voir les informations du serveur.",
     usage: "_server-infos",
 };

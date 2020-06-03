@@ -46,6 +46,7 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "lyrics",
+    categories: "pratique",
     description: "Permet de voir les parôles d'une musique.",
     usage: "_lyrics [musique]"
 };

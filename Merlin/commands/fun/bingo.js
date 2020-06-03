@@ -55,6 +55,7 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "bingo",
+    categories: "fun",
     description: "Permet de lance le bingo.",
     usage: "_bingo [nombre]"
 };

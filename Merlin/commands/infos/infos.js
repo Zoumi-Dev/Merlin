@@ -48,6 +48,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "infos",
     aliases: ["i"],
+    categories: "infos",
     description: "Permet d'afficher les informations d'un utilisateur ou de vous.",
     usage: "_infos [utilisateur] ou _infos",
 };
