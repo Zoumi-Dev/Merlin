@@ -31,12 +31,12 @@ module.exports.run = async (client, message, args) => {
             const firstLyricsEmbed = new Discord.MessageEmbed()
                 .setAuthor("Merlin")
                 .setColor('GREEN')
-                .setDescription(lyrics.slice(0, 2048))
+                .setDescription(lyrics.slice(0, 2048));
             const secondLyricsEmbed = new Discord.MessageEmbed()
                 .setColor('GREEN')
                 .setDescription(lyrics.slice(2048, lyrics.length))
                 .setTimestamp()
-                .setFooter(client.config.footer)
+                .setFooter(client.config.footer);
             return await message.channel.send(firstLyricsEmbed) && message.channel.send(secondLyricsEmbed);
         }
     } catch (e) {

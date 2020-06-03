@@ -12,7 +12,7 @@ module.exports = async (client, message) => {
                 .setTimestamp()
                 .setFooter(client.config.footer);
             let embed = new Discord.MessageEmbed()
-                .setAuthor("Meliodas")
+                .setAuthor("Merlin")
                 .setColor("GREY")
                 .addField("> :cry: | Aurevoir", `<@${message.user.id}>, nous à quitter ! Nous espérons sont retour...`)
                 .setTimestamp()
