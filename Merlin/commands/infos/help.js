@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("BLUE")
             .setDescription(" **__Dernier Ajout | Mise à jour__**\n✦ La commande \`_lyrics\` prend désormait les chansons à plus de 2048 caractéres !")
             .addField("> :newspaper2: | 『Informations』", "```help, bot-infos, server-infos, infos, mcbe-infos, heberg-infos, invite```", true)
-            .addField("> :tada: | 『Fun』", "```say, embed, img, cry, hug, kiss, slap, muffins, quest, des, bingo```", true)
+            .addField("> :tada: | 『Fun』", "```say, embed, img, cry, hug, kiss, slap, muffins, quest, dé, bingo, bon```", true)
             .addField("> :wrench: | 『Pratique』", '```rcon, color, lyrics, avatar```')
             .addField("> :underage: | 『Nsfw』", "```anal, neko, hentai, latex, ass, hot```", true)
             .addField("> :man_police_officer: | 『Administrative』", "```clear, ban, kick, mute, unmute```", true)

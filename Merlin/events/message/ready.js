@@ -2,7 +2,8 @@ module.exports = client => {
 
         const activities_list = [
             `${client.guilds.cache.size} serveurs | _help`,
-            `${client.users.cache.size} utilisateurs | _help`
+            `${client.users.cache.size} utilisateurs | _help`,
+            `rejoins nous https://discord.gg/2wn6sQv !`
         ];
         setInterval(() => {
             const index = Math.floor(Math.random() * (activities_list.length));

@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
 };
 
 module.exports.help = {
-    name: "dice",
+    name: "dé",
     aliases: ["dice"],
     description: "Permet de lancer un dés !",
     usage: "_des"
