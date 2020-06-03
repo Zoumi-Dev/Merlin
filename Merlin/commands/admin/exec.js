@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
             return message.channel.send(err.message, {code: "js"});
         }
         if (stderr){
-            return message.channel.send(stderr);
+            return message.channel.send(stderr, {code: "js"});
         }
         if (exec.length < 2048){
             message.channel.send(stdout, {code: "js"});

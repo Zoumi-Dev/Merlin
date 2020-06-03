@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commands/fun/asci.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands/fun/bon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/fun/des.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/des.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/admin/exec.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/exec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/fun/asci.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/asci.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/message/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/ready.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -135,7 +133,7 @@
       <workItem from="1591135049875" duration="3120000" />
       <workItem from="1591141451448" duration="758000" />
       <workItem from="1591187364795" duration="146000" />
-      <workItem from="1591197630776" duration="6117000" />
+      <workItem from="1591197630776" duration="7969000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -270,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591122527264</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="ajout bon">
+      <created>1591203888124</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1591203888124</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +298,8 @@
     <MESSAGE value="ajout _invite" />
     <MESSAGE value="ajout _invite et _slap" />
     <MESSAGE value="mise à jour slap" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise à jour slap" />
+    <MESSAGE value="ajout bon" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout bon" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1590447161145">
@@ -308,30 +314,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1591048245141" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591134852707">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591203883559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591134852707" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591203883559" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1591187519046">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591187519046" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1591203230578">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1591205360873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591203230578" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1591203230578">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591205360873" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1591205360873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591203230578" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1591203230578">
+    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591205360873" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1591205360873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591203230578" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1591203230578">
+    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591205360873" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1591205360873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591203230578" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591205360873" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1591199037882">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -392,10 +398,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590613010054" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591187407818">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591203900736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591187407818" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591203900736" />
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590447268817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
