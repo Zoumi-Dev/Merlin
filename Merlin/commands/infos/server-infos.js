@@ -17,9 +17,9 @@ module.exports.run = async (client, message, args) => {
             .addField("> :blond_haired_man: | Humain(s)", `✦ ${message.guild.memberCount - message.guild.members.cache.filter(m => m.user.bot).size}`, true)
             .addField("> :robot: | Robot(s)", `✦ ${message.guild.members.cache.filter(m => m.user.bot).size}`, true)
             .addField("> :closed_book: | Channel(s)", `✦ ${message.guild.channels.cache.filter(ch => ch.type === "text").size}`, true)
-            .addField("> Catégorie(s)", `✦ ${message.guild.channels.cache.filter(ch => ch.type === 'category').size}`)
+            .addField("> :green_book: |Catégorie(s)", `✦ ${message.guild.channels.cache.filter(ch => ch.type === 'category').size}`)
             .addField("> :speaker: | Salon(s) Vocal/aux", `✦ ${message.guild.channels.cache.filter(m => m.type === 'voice').size}`, true)
-            .addField("> Rôle(s)", `${message.guild.roles.cache.map(r => `<@&${r.id}>`).join(" ").replace("@everyone", null)}`)
+            .addField("> :blue_book: | Rôle(s)", `✦ ${message.guild.roles.cache.map(r => r).join(" ").replace("@everyone", "").slice(0, 2048)}`)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(serverEmbed);
