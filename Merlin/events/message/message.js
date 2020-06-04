@@ -1,4 +1,5 @@
 const Enmap = require('enmap');
+const figlet = require('figlet');
 
 module.exports = async (client, message) => {
 
@@ -7,6 +8,13 @@ module.exports = async (client, message) => {
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(command));
 
     if (message.author.bot) return;
+
+    /* Si le bot est mentionner */
+    if (message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
+        if (message.author.bot) return;
+        if (message.channel.type === "dm") return;
+        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.config.DEFAULT_SETTINGS.prefix}\`. Si tu souhaites voir la liste des commandes disponibles fait \`_help\` . Si tu souhaites m'ajouter fait \`_bot-infos\` et click sur m'inviter !`);
+    }
 
     if (message.content.indexOf(client.config.prefix) !== 0) return;
 
@@ -19,13 +27,6 @@ module.exports = async (client, message) => {
                 return message.channel.send(`<@${message.author.id}>, le bot est en mode \`maintenance\` pour la raison \`${client.config.maintenanceReason}\`, nous vous prions de patienter !`);
             }
         }
-    }
-
-    /* Si le bot est mentionner */
-    if (message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
-        if (message.author.bot) return;
-        if (message.channel.type === "dm") return;
-        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.config.DEFAULT_SETTINGS.prefix}\`. Si tu souhaite voir la liste des commandes disponibles fait \`_help\` . Si tu souhaite m'ajouter fait \`_bot-infos\` et click sur m'inviter !`);
     }
 
     /* Si la commande n'existe pas */

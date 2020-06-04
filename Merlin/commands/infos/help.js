@@ -9,6 +9,7 @@ module.exports.run = async (client, message, args) => {
         let helpEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("BLUE")
+            .setDescription("**Vous avez une idée de commande ? Alors faites `_sugg` !**")
             .addField(`> :newspaper2: | 『Informations(${client.commands.filter(cat => cat.help.categories === "infos").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "infos").map(cmd => cmd.help.name).join(", ")}\`\`\``, true)
             .addField(`> :tada: | 『Fun(${client.commands.filter(cat => cat.help.categories === "fun").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "fun").map(cmd => cmd.help.name).join(", ")}\`\`\``, true)
             .addField(`> :wrench: | 『Pratique(${client.commands.filter(cat => cat.help.categories === "pratique").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "pratique").map(cmd => cmd.help.name).join(", ")}\`\`\``)

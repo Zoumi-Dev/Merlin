@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
     let reason = args.join(' ');
 
     if (!args[0]) {
-        if (!client.config.ownerID.includes(message.author.id)) {
+        if (client.config.ownerID.includes(message.author.id)) {
             if (client.config.maintenance === false) {
                 fs.writeFile(`../../config.json`, config.maintenance = true, (err) => {
                     if (err) return console.log(err);
@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
             }
         }
     }else{
-        if (!client.config.ownerID.includes(message.author.id)) {
+        if (client.config.ownerID.includes(message.author.id)) {
             if (client.config.maintenance === false) {
                 fs.writeFile(`../../config.json`, config.maintenance = true, (err) => {
                     if (err) return console.log(err);
