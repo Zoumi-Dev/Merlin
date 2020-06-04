@@ -22,9 +22,11 @@ module.exports.run = async (client, message, args) => {
             .setAuthor("Merlin")
             .setColor("BLUE")
             .addField("> :bust_in_silhouette: | Nom d'utilisateur", `✦ ${message.author.username}`, true)
+            .addField("> NickName", message.guild.member(message.author.id).nickname ? `✦ ${message.guild.member(message.author.id).nickname}` : `✦ Aucun`)
             .addField("> :id: | ID de l'utilisateur", `✦ ${message.author.id}`, true)
             .addField("> :mag: | Compte créé le", `✦ ${moment.utc(message.author.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
-            .addField("> A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
+            .addField("> :mag: | A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`)
+            .addField("> Rôle(s)", `✦ ${message.guild.member(message.author.id).roles.cache.map(r => `<@&${r.id}>`).join(" ").replace("@everyone", null)}`)
             .setThumbnail(message.author.avatarURL())
             .setTimestamp()
             .setFooter(client.config.footer);

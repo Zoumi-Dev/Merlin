@@ -4,16 +4,23 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    let ticket = client.guilds.cache.get(client.config.supportServer).channels.cache.find(ch => ch.name === `ticket-de-${message.author.username}`);
+    let ticket = client.guilds.cache.get(client.config.supportServer).channels.cache.find(ch => ch.name === `ticket-de-${message.author.username}`.toLowerCase());
 
     let sujet = args.join(" ");
 
     let chh = message.guild.channels.create(`ticket-de-${message.author.username}`, {
         type: "text",
-        permissionOverwrites: [{
-            id: message.guild.roles.cache.find(r => r.name === "villageois"),
-            deny: "VIEW_CHANNEL",
-        }]
+    });
+
+    (await chh).updateOverwrite(message.guild.roles.cache.find(r => r.name === "villageois").id, {
+        SEND_MESSAGES: false,
+        VIEW_CHANNEL: false,
+    });
+
+    (await chh).updateOverwrite(message.author.id, {
+       SEND_MESSAGES: true,
+       MENTION_EVERYONE: false,
+       VIEW_CHANNEL: true,
     });
 
     if (!sujet){
@@ -26,16 +33,6 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(noargs);
     }
 
-    if (message.guild.id !== client.config.supportServer){
-        let isNotInServerSupport = new Discord.MessageEmbed()
-            .setAuthor("Merlin")
-            .setColor("#FF00FF")
-            .addField("> :x: | Erreur", "`Cette commande est disponible uniquement dans le serveur` __**Merlin'Bot Help**__")
-            .setTimestamp()
-            .setFooter(`${client.config.footer}`);
-        return message.channel.send(isNotInServerSupport);
-    }
-
     if (ticket){
         let haveTicket = new Discord.MessageEmbed()
             .setAuthor("Merlin")
@@ -46,8 +43,27 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(haveTicket);
     }
 
-    chh;
+    if (message.guild.id !== client.config.supportServer){
+        let isNotInServerSupport = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("#FF00FF")
+            .addField("> :x: | Erreur", "`Cette commande est disponible uniquement dans le serveur` __**Merlin'Bot Help**__")
+            .setTimestamp()
+            .setFooter(`${client.config.footer}`);
+        return message.channel.send(isNotInServerSupport);
+    }
 
+    await chh.then(async c => {
+        let embed = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("#FF00FF")
+            .setDescription(`> <#${(await chh).id}>`)
+            .addField("> Owner", `<@${message.author.id}>`)
+            .addField("> Sujet", `${sujet}`)
+            .setTimestamp()
+            .setFooter(client.config.footer);
+        c.send(embed);
+    });
 
     let confirmEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
