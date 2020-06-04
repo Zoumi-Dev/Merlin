@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/commands/owner/exec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/owner/hadm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/addemoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/addemoji.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/admin/clear.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/admin/clear.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/pratique/avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/pratique/avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/owner/eval.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/eval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/owner/maintenance.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/maintenance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/owner/stop.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/stop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/owner/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/owner/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/update.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\github\Merlin\Merlin\commands\owner" />
       <recent name="F:\github\Merlin\Merlin\commands\pratique" />
       <recent name="F:\github\Merlin\Merlin\commands\fun" />
       <recent name="F:\Merlin\commands\infos" />
@@ -136,6 +141,7 @@
       <workItem from="1591273686198" duration="2558000" />
       <workItem from="1591276569026" duration="1040000" />
       <workItem from="1591278179724" duration="620000" />
+      <workItem from="1591279404691" duration="637000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -305,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591277314617</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="ajout de la catégorie owner">
+      <created>1591279583904</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1591279583904</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +346,8 @@
     <MESSAGE value="mise à jour du help, désormait autonome" />
     <MESSAGE value="fixe raison pour le mute et ban" />
     <MESSAGE value="ajout _addemoji" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout _addemoji" />
+    <MESSAGE value="ajout de la catégorie owner" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de la catégorie owner" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1590447161145">
@@ -348,30 +362,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1591048245141" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591277306261">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591279578171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591277306261" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591279578171" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1591206422699">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591206422699" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1591277587016">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1591280052390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591277587016" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1591277587016">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591280052390" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1591280052390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591277587016" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1591277587016">
+    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591280052390" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1591280052374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591277587016" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1591277587016">
+    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591280052374" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1591280052390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591277587016" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591280052390" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1591206425042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

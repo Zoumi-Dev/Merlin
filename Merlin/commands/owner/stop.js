@@ -21,4 +21,5 @@ module.exports.help = {
     name: "restart",
     description: "Permet de redemarer le bot.",
     usage: "_restart",
+    categories: "owner",
 };
