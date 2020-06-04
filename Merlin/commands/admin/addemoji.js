@@ -24,6 +24,16 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(noargs);
     }
 
+    if (message.guild.emojis.cache.find(e => e.name === args[1])){
+        let exist = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor('#FF00FF')
+            .addField("> :x: | Erreur", `L'émoji \`${args[1]}\` existe déjà !`)
+            .setTimestamp()
+            .setFooter(client.config.footer);
+        return message.channel.send(exist);
+    };
+
     await message.guild.emojis.create(args[0], args[1]);
 
     let successEmbed = new Discord.MessageEmbed()

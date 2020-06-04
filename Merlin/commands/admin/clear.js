@@ -24,7 +24,7 @@ module.exports.run = async (client, message, args) => {
 
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField(`:wastebasket: |`, `J'ai supprimer **${args[0]}** message(s) pour vous !`)
+            .addField(`:wastebasket: | Suppresion de message`, `J'ai supprimer **${args[0]}** message(s) pour vous !`)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
 
