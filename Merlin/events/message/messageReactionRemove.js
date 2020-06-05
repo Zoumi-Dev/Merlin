@@ -15,16 +15,16 @@ module.exports = async (client, messageReaction, user) => {
     if (["js", "php", "html"].includes(messageReaction.emoji.name) && message.channel.id === channel.id){
         switch (messageReaction.emoji.name) {
             case "js":
-                member.roles.add(jsRole);
-                await member.user.send(`> Le rôle \`${jsRole.name}\` vous a été attribué avec succès !`);
+                await member.roles.remove(jsRole);
+                await member.user.send(`> Le rôle \`${jsRole.name}\` vous a été retiré avec succès !`);
                 break;
             case "php":
-                member.roles.add(phpRole);
-                await member.user.send(`> Le rôle \`${phpRole.name}\` vous a été attribué avec succès !`);
+                await member.roles.remove(phpRole);
+                await member.user.send(`> Le rôle \`${phpRole.name}\` vous a été retiré avec succès !`);
                 break;
             case "html":
-                member.roles.add(htmlRole);
-                await member.user.send(`> Le rôle \`${htmlRole.name}\` vous a été attribué avec succès !`);
+                await member.roles.remove(htmlRole);
+                await member.user.send(`> Le rôle \`${htmlRole.name}\` vous a été retiré avec succès !`);
         }
     }
 

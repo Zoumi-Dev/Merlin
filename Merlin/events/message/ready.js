@@ -1,3 +1,5 @@
+const Discord = require('discord.js');
+
 module.exports = client => {
 
         const activities_list = [
@@ -16,4 +18,26 @@ module.exports = client => {
             });
         }, 10000);
         console.log(`Je suis dans ${client.guilds.cache.size} serveur:\n${client.guilds.cache.map(s => s.name).join(", ")}`);
+        if (client.guilds.cache.get(client.config.supportServer)){
+
+            client.guilds.cache.get(client.config.supportServer).channels.cache.get("718420987078639647").bulkDelete(20);
+
+            let html = client.emojis.cache.find(e => e.name === "html");
+
+            let js = client.emojis.cache.find(e => e.name === "js");
+
+            let php = client.emojis.cache.find(e => e.name === "php");
+
+
+            let embed = new Discord.MessageEmbed()
+                .setAuthor("Merlin")
+                .setDescription(`> Reaction rôle !\n\n${html} \`HTML/CSS\`\n${js} \`JavaScript\`\n${php} \`Hypertext Preprocessor\`\n\n__**Cliquez sur une des réactions ci-dessous pour obtenir le rôle correspondant !**__`)
+                .setTimestamp()
+                .setFooter(client.config.footer);
+            return client.guilds.cache.get(client.config.supportServer).channels.cache.get("718420987078639647").send(embed).then(async e => {
+                await e.react(html);
+                await e.react(js);
+                await e.react(php);
+            });
+        }
 };

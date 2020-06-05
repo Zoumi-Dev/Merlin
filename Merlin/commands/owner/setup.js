@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) => {
 
     let embed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
-        .setDescription(`> Reaction rôle !\n\n${html} \`HTML/CSS\`\n${js} \`JavaScript\`\n${php} \`Hypertext Preprocessor\`\n\n__**Clique sur une des réactions ci-dessous pour obtenir ce rôle !**__`)
+        .setDescription(`> Reaction rôle !\n\n${html} \`HTML/CSS\`\n${js} \`JavaScript\`\n${php} \`Hypertext Preprocessor\`\n\n__**Cliquez sur une des réactions ci-dessous pour obtenir le rôle correspondant !**__`)
         .setTimestamp()
         .setFooter(client.config.footer);
     return message.channel.send(embed).then(async e => {
