@@ -37,5 +37,5 @@ module.exports.help = {
     categories: "infos",
     description: "Permet de voir les informations d'un serveur Minecraft Bedrock Edition",
     usage: "_mcbe-infos [ip] [port]",
-    cooldown: 10,
+    cooldown: 30,
 };
