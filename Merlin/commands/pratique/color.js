@@ -14,9 +14,9 @@ module.exports.run = async (client, message, args) => {
             .setDescription(`> Voici la couleur ${args[0]}`)
             .setColor(args[0])
             .addField("> Format", `${tinycolor(args[0]).getFormat()}`)
-            .addField("> Hex", `${tinycolor(args[0]).toHexString()}`)
-            .addField("> Rgb", `${tinycolor(args[0]).toRgbString()}`)
-            .addField("> Nom", `${tinycolor(args[0]).toName()}`)
+            .addField("> Hex", `${tinycolor(args[0].toLowerCase()).toHexString()}`)
+            .addField("> Rgb", `${tinycolor(args[0].toLowerCase()).toRgbString()}`)
+            .addField("> Nom", `${tinycolor(args[0].toLowerCase()).toName()}`)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(color);

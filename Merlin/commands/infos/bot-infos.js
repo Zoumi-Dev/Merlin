@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
         .setColor("BLUE")
         .setThumbnail(client.user.avatarURL())
         .addField("> :man_technologist: | Développeur", "✦ Zoumi#0336\n✦ JOrDan#5128", true)
-        .addField("> Site Web", "https://merlin.zoumi.wtf/")
+        .addField("> :globe_with_meridians: | Site Web", "https://merlin.zoumi.wtf/")
         .addField(">  :book: | Librairie", "✦ NodeJs\n✦ DiscordJs", true)
         .addField("> :wrench: | Version", "✦ 1.2.1")
         .addField(`> ${client.emojis.cache.find(e => e.id === client.emo.inovaPerf)} | Hébergeur`, "✦ InovaPerf", true)

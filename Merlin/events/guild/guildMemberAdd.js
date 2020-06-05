@@ -18,7 +18,7 @@ module.exports = async (client, message, member) => {
                 .addField("> :wave: | Bienvenu(e)", `<@${message.user.id}>, nous à rejoint ! Nous t'invitons à aller lire le <#712413922790998076> et si tu souhaites ou si ce n'est pas déjà fait, ajoute le bot sur ton serveur discord !`)
                 .setTimestamp()
                 .setFooter(client.config.footer);
-            return message.guild.channels.cache.find(ch => ch.name === "logs-merlin").send(logs) && channel.send(embed) && message.guild.member(message.user.id).roles.add("712445027258990602");
+            return message.guild.channels.cache.find(ch => ch.name === "logs-merlin").send(logs) && channel.send(embed) && message.guild.member(message.user.id).roles.add(message.guild.roles.cache.find(r => r.name === "non-verifier").id);
         }
     }
 };

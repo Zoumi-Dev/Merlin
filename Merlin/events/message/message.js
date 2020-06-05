@@ -9,6 +9,12 @@ module.exports = async (client, message) => {
 
     if (message.author.bot) return;
 
+    if (client.guilds.cache.get(client.config.supportServer)){
+        if (message.content.includes("https") || message.content.includes("http") || message.content.includes("HTTPS") || message.content.includes("HTTP")){
+            message.delete();
+        }
+    }
+
     /* Si le bot est mentionner */
     if (message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
         if (message.author.bot) return;

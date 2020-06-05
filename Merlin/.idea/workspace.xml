@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/commands/owner/anti-raid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/infos/invite.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/invite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/pratique/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/pratique/color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/guild/guildMemberAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/guild/guildMemberAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/messageReactionAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/messageReactionAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/message/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +149,11 @@
       <workItem from="1591312656010" duration="3232000" />
       <workItem from="1591316373452" duration="4950000" />
       <workItem from="1591357833883" duration="11776000" />
-      <workItem from="1591370381970" duration="719000" />
+      <workItem from="1591370381970" duration="1109000" />
+      <workItem from="1591374540612" duration="1178000" />
+      <workItem from="1591376555545" duration="1406000" />
+      <workItem from="1591383033655" duration="880000" />
+      <workItem from="1591390759875" duration="1342000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -389,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591370615750</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="fix cmd _invite">
+      <created>1591371151430</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1591371151430</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +415,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="modification mcbe-infos.js" />
     <MESSAGE value="update" />
     <MESSAGE value="update help, mcbe-infos et rcon" />
     <MESSAGE value="update all" />
@@ -422,7 +439,8 @@
     <MESSAGE value="fixe reactionAdd et reactionRemove" />
     <MESSAGE value="fixe" />
     <MESSAGE value="ajout d'un cooldown de 30 seconde sur la cmd mcbe-infos" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout d'un cooldown de 30 seconde sur la cmd mcbe-infos" />
+    <MESSAGE value="fix cmd _invite" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix cmd _invite" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1590447161145">
@@ -437,30 +455,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1591048245141" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591370600895">
+    <state x="402" y="38" key="#main.js" timestamp="1591390872682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591370600895" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1591206422699">
+    <state x="402" y="38" key="#main.js/0.0.1366.728@0.0.1366.728" timestamp="1591390872682" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591371146713">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591206422699" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1591370688993">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591371146713" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1591390872199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591370688993" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1591370688993">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591390872199" />
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1591392313429">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591370688993" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1591370688993">
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591392313429" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1591392313413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591370688993" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1591370688993">
+    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591392313413" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1591392313413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591370688993" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591392313413" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1591392313429">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591392313429" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1591206425042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -521,10 +543,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590613010054" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591370647834">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591371157959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591370647834" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591371157959" />
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590447268817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
