@@ -5,13 +5,21 @@ const ameApi = new ameClient("ad4c408307abbb8ac2a682e8bc0298c2bc8fb4b09eae443ee9
 
 module.exports.run = async (client, message, args) => {
 
+    /*
     await jimp.read('././img/merlin_pdp.jpg', (err, merlin) => {
         if (err) throw err;
         merlin
             .loadFont(jimp.FONT_SANS_8_WHITE).then(font => {merlin.print(font, 8, 8, "test")})
             .write('././img/merlin_test.jpg');
     })
+     */
 
+    let embed = new Discord.MessageEmbed()
+        .setAuthor("Merlin")
+        .setDescription(message.author.presence.status === "online" || message.author.presence.status === "idle" ? `:green_circle:` : `:red_circle:`)
+        .setTimestamp()
+        .setFooter(client.config.footer);
+    return message.channel.send(embed);
 
     /*
     let avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png?size=2048`;
