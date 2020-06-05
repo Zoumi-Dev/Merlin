@@ -8,20 +8,25 @@ module.exports.run = async (client, message, args) => {
 
     let sujet = args.join(" ");
 
-    let chh = message.guild.channels.create(`ticket-de-${message.author.username}`, {
-        type: "text",
-    });
+    if (message.guild.id !== client.config.supportServer){
+        let isNotInServerSupport = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("#FF00FF")
+            .addField("> :x: | Erreur", "Cette commande est disponible uniquement dans le serveur __**[Merlin'Bot Help](https://discord.gg/2wn6sQv)**__")
+            .setTimestamp()
+            .setFooter(`${client.config.footer}`);
+        return message.channel.send(isNotInServerSupport);
+    }
 
-    (await chh).updateOverwrite(message.guild.roles.cache.find(r => r.name === "villageois").id, {
-        SEND_MESSAGES: false,
-        VIEW_CHANNEL: false,
-    });
-
-    (await chh).updateOverwrite(message.author.id, {
-       SEND_MESSAGES: true,
-       MENTION_EVERYONE: false,
-       VIEW_CHANNEL: true,
-    });
+    if (ticket){
+        let haveTicket = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("#FF00FF")
+            .addField("> :x: | Erreur", "Vous possedez déjà un ticket !")
+            .setTimestamp()
+            .setFooter(`${client.config.footer}`);
+        return message.channel.send(haveTicket);
+    }
 
     if (!sujet){
         let noargs = new Discord.MessageEmbed()
@@ -33,42 +38,42 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(noargs);
     }
 
-    if (ticket){
-        let haveTicket = new Discord.MessageEmbed()
-            .setAuthor("Merlin")
-            .setColor("#FF00FF")
-            .addField("> :x: | Erreur", "`Vous possedez déjà un ticket !`")
-            .setTimestamp()
-            .setFooter(`${client.config.footer}`);
-        return message.channel.send(haveTicket);
-    }
-
-    if (message.guild.id !== client.config.supportServer){
-        let isNotInServerSupport = new Discord.MessageEmbed()
-            .setAuthor("Merlin")
-            .setColor("#FF00FF")
-            .addField("> :x: | Erreur", "`Cette commande est disponible uniquement dans le serveur` __**Merlin'Bot Help**__")
-            .setTimestamp()
-            .setFooter(`${client.config.footer}`);
-        return message.channel.send(isNotInServerSupport);
-    }
+    let chh = message.guild.channels.create(`ticket-de-${message.author.username}`, {
+        type: "text",
+    });
 
     await chh.then(async c => {
         let embed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("#FF00FF")
             .setDescription(`> <#${(await chh).id}>`)
-            .addField("> Owner", `<@${message.author.id}>`)
+            .addField("> Propriétaire du ticket", `<@${message.author.id}>`)
             .addField("> Sujet", `${sujet}`)
             .setTimestamp()
             .setFooter(client.config.footer);
         c.send(embed);
     });
 
+    (await chh).updateOverwrite(message.guild.roles.cache.find(r => r.id === "712445027258990602"), {
+        SEND_MESSAGES: false,
+        VIEW_CHANNEL: false,
+    });
+
+    (await chh).updateOverwrite(message.guild.roles.cache.find(r => r.id === "718257168939483226").id, {
+        SEND_MESSAGES: true,
+        VIEW_CHANNEL: true,
+    });
+
+    (await chh).updateOverwrite(message.author.id, {
+        SEND_MESSAGES: true,
+        MENTION_EVERYONE: false,
+        VIEW_CHANNEL: true,
+    });
+
     let confirmEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("#FF00FF")
-        .setDescription(`> Votre ticket (<#${(await chh).id}>) à été créer avec succès !`)
+        .setDescription(`> Votre ticket (<#${(await chh).id}>) à été créé avec succès !`)
         .setTimestamp()
         .setFooter(`${client.config.footer}`);
     return message.channel.send(confirmEmbed);

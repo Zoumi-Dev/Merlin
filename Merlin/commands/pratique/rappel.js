@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
     let rappelEmbed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("GREY")
-        .setDescription(`> <@${message.author.id}>, je vous rappellerez dans \`${args[0]}\` pour la raison \`${rappel}\``)
+        .setDescription(`> <@${message.author.id}>, je vous rappellerai dans \`${args[0]}\` pour la raison \`${rappel}\``)
         .setTimestamp()
         .setFooter(client.config.footer);
     return message.channel.send(rappelEmbed);

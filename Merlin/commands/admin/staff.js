@@ -12,7 +12,8 @@ module.exports.run = async (client, message, args) => {
             `:crown: | __**Owner**__\n\n` +
             `✦ ${client.guilds.cache.get(client.config.supportServer).member("371340889722847234").presence.status === "online" || client.guilds.cache.get(client.config.supportServer).member("371340889722847234").presence.status === "idle" ? `:green_circle: ${client.guilds.cache.get(client.config.supportServer).member("371340889722847234").user.tag}` : `:red_circle: ${client.guilds.cache.get(client.config.supportServer).member("371340889722847234").user.tag}`}\n` +
             `✦ ${client.guilds.cache.get(client.config.supportServer).member("660921972271611924").presence.status === "online" || client.guilds.cache.get(client.config.supportServer).member("660921972271611924").presence.status === "idle" ? `:green_circle: ${client.guilds.cache.get(client.config.supportServer).member("660921972271611924").user.tag}` : `:red_circle: ${client.guilds.cache.get(client.config.supportServer).member("660921972271611924").user.tag}`}\n\n` +
-            `:gem: | __**Support**__`
+            `:gem: | __**Support**__\n\n` +
+            `✦ ${client.guilds.cache.get(client.config.supportServer).member("658016476548300810").presence.status === "online" || client.guilds.cache.get(client.config.supportServer).member("658016476548300810").presence.status === "idle" ? `:green_circle: ${client.guilds.cache.get(client.config.supportServer).member("658016476548300810").user.tag}` : `:red_circle: ${client.guilds.cache.get(client.config.supportServer).member("658016476548300810").user.tag}`}`
         )
         .setTimestamp()
         .setFooter(client.config.footer);
