@@ -32,7 +32,7 @@ module.exports.run = async (client, message, args) => {
                 `🔧 | Pratique\n\n` +
                 `🔞 | Nsfw\n\n` +
                 `👮 | Administrative\n\n` +
-                `⚙ | Paramètre\n\n`
+                `⚙ | Paramètre\n\n` +
                 `**💡 | Vous avez une idée de commande ? Alors faites \`_sugg\` !**`
             )
             .setImage("https://66.media.tumblr.com/575aa752a70ffbff6267ae3d20843946/tumblr_odub4rgv4f1sg8uefo1_540.gif")

@@ -4,6 +4,8 @@ const fs = require('fs');
 
 module.exports = async (client, message) => {
 
+    if (message.author.bot) return;
+
     if (!fs.existsSync(`././serveurs/${message.guild.name}.json`)){
         fs.writeFileSync(`././serveurs/${message.guild.name}.json`, `{\n"${message.guild.name}": "${message.guild.id}",\n"prefix": "=",\n"guildMemberAdd": false,\n"guildMemberRemove": false,\n"logs-channel": false\n}`, 'utf-8'), (err) => {
             if (err) return console.log(err.message);
@@ -17,8 +19,6 @@ module.exports = async (client, message) => {
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(command));
 
-    if (message.author.bot) return;
-
     if (message.guild.id === client.config.supportServer){
         if (message.content.includes("https") || message.content.includes("http") || message.content.includes("HTTPS") || message.content.includes("HTTP")){
             message.delete();
@@ -26,13 +26,13 @@ module.exports = async (client, message) => {
     }
 
     /* Si le bot est mentionner */
-    if (message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
+    if (message.content === message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
         if (message.author.bot) return;
         if (message.channel.type === "dm") return;
-        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.serv["prefix"]}\`. Si tu souhaites voir la liste des commandes disponibles fait \`_help\` . Si tu souhaites m'ajouter fait \`_bot-infos\` et click sur m'inviter !`);
+        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.serv["prefix"]}\`. Si tu souhaites voir la liste des commandes disponibles fait \`${client.serv["prefix"]}help\` . Si tu souhaites m'ajouter fait \`${client.serv["prefix"]}bot-infos\` et click sur m'inviter !`);
     }
 
-    if (message.content.indexOf(client.config.prefix) !== 0) return;
+    if (message.content.indexOf(client.serv["prefix"]) !== 0) return;
 
     if (message.channel.type === "dm") return client.emit("messagePriver", message);
 
@@ -47,7 +47,7 @@ module.exports = async (client, message) => {
 
     /* Si la commande n'existe pas */
     if (!cmd){
-        return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`_help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faite \`_bot-infos\` et clicker sur m'inviter !`);
+        return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`${client.serv["prefix"]}help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faite \`${client.serv["prefix"]}bot-infos\` et clicker sur m'inviter !`);
     }
 
     /* Cooldown */
