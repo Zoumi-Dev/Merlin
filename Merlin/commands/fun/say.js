@@ -6,11 +6,11 @@ module.exports.run = async (client, message, args) => {
 
     let say = args.join(" ");
 
-    if (!args[0]){
+    if (!args[0]) {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREEN")
-            .addField("> :x: | Erreur", "`Utilisation: _say [message]`")
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}say [message]\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);

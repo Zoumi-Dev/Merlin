@@ -8,11 +8,11 @@ module.exports.run = async(client, message, args) => {
 
     let randomReponse = reponse[Math.floor(Math.random() * reponse.length)];
 
-    if (!args[0]){
+    if (!args[0]) {
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('GREEN')
-            .addField('> :x: | Erreur', '`Utilisation: _quest [question]`')
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}quest [question]\``)
             .setTimestamp()
             .setFooter(client.config.footer);
 

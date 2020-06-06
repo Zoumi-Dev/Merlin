@@ -1,15 +1,25 @@
 const Enmap = require('enmap');
 const figlet = require('figlet');
+const fs = require('fs');
 
 module.exports = async (client, message) => {
 
-    const args = message.content.slice(client.config.prefix.length).split(/ +/);
+    if (!fs.existsSync(`././serveurs/${message.guild.name}.json`)){
+        fs.writeFileSync(`././serveurs/${message.guild.name}.json`, `{\n"${message.guild.name}": "${message.guild.id}",\n"prefix": "=",\n"guildMemberAdd": false,\n"guildMemberRemove": false,\n"logs-channel": false\n}`, 'utf-8'), (err) => {
+            if (err) return console.log(err.message);
+        };
+        return message.channel.send(`${client.emojis.cache.find(e => e.id === client.emo.kawai)} Aucune config trouvée, création de la config en cours...`);
+
+    }else {
+        client.serv = JSON.parse(fs.readFileSync(`././serveurs/${message.guild.name}.json`, 'utf8'));
+    }
+    const args = message.content.slice(client.serv["prefix"].length).split(/ +/);
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(command));
 
     if (message.author.bot) return;
 
-    if (client.guilds.cache.get(client.config.supportServer)){
+    if (message.guild.id === client.config.supportServer){
         if (message.content.includes("https") || message.content.includes("http") || message.content.includes("HTTPS") || message.content.includes("HTTP")){
             message.delete();
         }
@@ -19,7 +29,7 @@ module.exports = async (client, message) => {
     if (message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
         if (message.author.bot) return;
         if (message.channel.type === "dm") return;
-        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.config.DEFAULT_SETTINGS.prefix}\`. Si tu souhaites voir la liste des commandes disponibles fait \`_help\` . Si tu souhaites m'ajouter fait \`_bot-infos\` et click sur m'inviter !`);
+        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.serv["prefix"]}\`. Si tu souhaites voir la liste des commandes disponibles fait \`_help\` . Si tu souhaites m'ajouter fait \`_bot-infos\` et click sur m'inviter !`);
     }
 
     if (message.content.indexOf(client.config.prefix) !== 0) return;

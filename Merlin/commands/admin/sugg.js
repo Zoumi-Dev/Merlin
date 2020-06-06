@@ -8,11 +8,11 @@ module.exports.run = async (client, message, args) => {
 
     let sugge = args.join(" ");
 
-    if (!args[0]){
+    if (!args[0]) {
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField('> :x: | Erreur', '`Utilisation: _sugg [votre suggestion]`')
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}sugg [votre suggestion]\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(embed);
@@ -44,5 +44,5 @@ module.exports.run = async (client, message, args) => {
 module.exports.help = {
     name: "sugg",
     description: "Permet d'envoyer une suggestion dans le serveur help de Merlin.",
-    usage: "_sugg [votre suggestion]",
+    usage: "=sugg [votre suggestion]",
 };

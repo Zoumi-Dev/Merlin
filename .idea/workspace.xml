@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
+    <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="ajout paramètre">
+      <change afterPath="$PROJECT_DIR$/Merlin/commands/parametre/checkconfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/addemoji.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/addemoji.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/ban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/clear.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/clear.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/kick.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/kick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/mute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/mute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/sugg.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/sugg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/ticket.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/ticket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/unban.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/unban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/admin/unmute.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/admin/unmute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/asci.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/asci.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/bingo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/bingo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/embed.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/embed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/kiss.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/kiss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/meme.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/meme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/quest.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/quest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/say.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/say.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/mcbe-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/mcbe-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/owner/hadm.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/owner/hadm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/guild/guildCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/guild/guildDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message/messageReactionAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/messageReactionAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +37,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Merlin/main.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -87,6 +114,7 @@
       <workItem from="1590787721146" duration="8152000" />
       <workItem from="1590879458841" duration="4025000" />
       <workItem from="1590959434343" duration="2235000" />
+      <workItem from="1591471545625" duration="1481000" />
     </task>
     <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
       <created>1590346249634</created>
@@ -113,7 +141,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -135,31 +163,35 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590769655332" />
-    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1590884016208">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591473003630">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590351200251" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591473003630" />
     <state x="379" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1590884016208" />
     <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1590788480491">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590357457689" />
     <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590788480491" />
-    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1590796305306">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591471778595">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591471778595" />
     <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
-    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1590796305305">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591471778594">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591471778594" />
     <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
-    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1590796305305">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591471778594">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591471778594" />
     <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
-    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1590796305306">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591471778595">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591471778595" />
     <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
     <state x="341" y="148" key="SettingsEditor" timestamp="1590770867138">
       <screen x="0" y="0" width="1680" height="1010" />

@@ -10,6 +10,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("BLACK")
             .setDescription(`> Woaa trop fort <@${message.author.id}>, tu es owner :drooling_face:`)
             .addField(`> :crown: | 『Owner(${client.commands.filter(cat => cat.help.categories === "owner").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "owner").map(cmd => cmd.help.name).join(", ")}\`\`\``, true)
+            .addField("> Voici la liste des serveurs ou je me trouve", `**${client.guilds.cache.map(s => s.name).join("**, **")}`)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(hadm);

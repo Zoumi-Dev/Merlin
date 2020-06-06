@@ -1,14 +1,15 @@
 const Discord = require('discord.js');
+const fs = require('fs');
 
 module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if (!message.member.hasPermission("MANAGE_EMOJIS")){
+    if (!message.member.hasPermission("MANAGE_EMOJIS")) {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("#FF00FF")
-            .addField("> :x: | Erreur", "`Utilisation: _addemoji [lien] [nom]\nPermission requis: MANAGE_EMOJIS`")
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}addemoji [lien] [nom]\nPermission requis: MANAGE_EMOJIS\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);
@@ -18,7 +19,7 @@ module.exports.run = async (client, message, args) => {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("#FF00FF")
-            .addField("> :x: | Erreur", "`Utilisation: _addemoji [lien] [nom]\nPermission requise: MANAGE_EMOJIS`")
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}addemoji [lien] [nom]\nPermission requis: MANAGE_EMOJIS\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);
@@ -50,5 +51,5 @@ module.exports.help = {
     name: "addemoji",
     categories: "admin",
     description: "Permet d'ajouter un emoji.",
-    usage: "_addemoji [lien] [nom]",
+    usage: `=addemoji [lien] [nom]`,
 };

@@ -14,7 +14,7 @@ module.exports.run = (client, message, args) => {
         let noPerm = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField("> :x: | Erreur", `\`Utilisation: ${client.config.DEFAULT_SETTINGS.prefix}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(noPerm);
@@ -24,7 +24,7 @@ module.exports.run = (client, message, args) => {
         let noMen = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField(':x: | Erreur', `\`Utilisation: ${client.config.prefix}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
+            .addField(':x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(noMen);
@@ -46,7 +46,7 @@ module.exports.run = (client, message, args) => {
         let noMen = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField('> :x: | Erreur', `\`Utilisation: ${client.config.prefix}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}ban [utilisateur] [raison]\nPermission requise: BAN_MEMBERS\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(noMen);
@@ -72,5 +72,5 @@ module.exports.help = {
     name: "ban",
     categories: "admin",
     description: "Permet de bannir un utilisateur avec une raison.",
-    usage: "_ban [utilisateur] [raison]",
+    usage: "=ban [utilisateur] [raison]",
 };

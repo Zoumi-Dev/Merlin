@@ -2,13 +2,25 @@ const Discord = require("discord.js");
 
 const config = require('./config.json');
 
+const emo = require('./emojis.json');
+
+const admin = require('./admin.json');
+
 const Enmap = require('enmap');
 
 const fs = require("fs");
 
+const serv = fs.readFileSync(`././serveurs/${client.guild.name}.json`);
+
 const client = new Discord.Client();
 
 client.config = config;
+
+client.serv = serv;
+
+client.emo = emo;
+
+client.admin = admin;
 
 client.commands = new Enmap();
 

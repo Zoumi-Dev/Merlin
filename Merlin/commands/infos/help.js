@@ -6,6 +6,7 @@ module.exports.run = async (client, message, args) => {
     message.delete();
 
     if (!args[0]) {
+        /*
         let helpEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("BLUE")
@@ -20,6 +21,32 @@ module.exports.run = async (client, message, args) => {
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(helpEmbed);
+         */
+        let helpEmbed = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("BLUE")
+            .setDescription(
+                `__**Bienvenu(e) sur le panel d'aide ! Clique sur une des réactions pour plus de détail.**__\n\n` +
+                `🗞 | Informations\n\n` +
+                `🎉 | Fun\n\n` +
+                `🔧 | Pratique\n\n` +
+                `🔞 | Nsfw\n\n` +
+                `👮 | Administrative\n\n` +
+                `⚙ | Paramètre\n\n`
+                `**💡 | Vous avez une idée de commande ? Alors faites \`_sugg\` !**`
+            )
+            .setImage("https://66.media.tumblr.com/575aa752a70ffbff6267ae3d20843946/tumblr_odub4rgv4f1sg8uefo1_540.gif")
+            .setTimestamp()
+            .setFooter(client.config.footer);
+        return message.channel.send(helpEmbed).then(e => {
+            e.react("🗞");
+            e.react("🎉");
+            e.react("🔧");
+            e.react("🔞");
+            e.react("👮");
+            e.react("⚙");
+            e.delete({timeout: 20000});
+        });
     }else{
         const command = client.commands.get(args[0]) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(args[0]));
 

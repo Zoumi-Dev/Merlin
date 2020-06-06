@@ -32,7 +32,7 @@ module.exports.run = async (client, message, args) => {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("#FF00FF")
-            .addField("> :x: | Erreur", "`Utilisation: _ticket [sujet]`")
+            .addField("> :x: | Erreur", `\`Utilisation: _ticket [sujet]\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(noargs);
@@ -83,5 +83,5 @@ module.exports.help = {
     name: "ticket",
     aliases: ["tck"],
     description: "Permet de créer un ticket.",
-    usage: "_ticket",
+    usage: "=ticket",
 };

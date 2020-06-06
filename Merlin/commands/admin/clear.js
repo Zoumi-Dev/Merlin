@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField('> :x: | Erreur', '`Utilisation: _clear [nombre de message]\nPermission requise: MANAGE_MESSAGES`')
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}clear [nombre de message]\nPermission requise: MANAGE_MESSAGES\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
 
@@ -36,5 +36,5 @@ module.exports.help = {
     name: "clear",
     categories: "admin",
     description: "Permet de supprimer plusieur message.",
-    usage: "_clear [nombre de message] ATTENTION une limite de 100 messages par utilisation.",
+    usage: "=clear [nombre de message] ATTENTION une limite de 100 messages par utilisation.",
 };

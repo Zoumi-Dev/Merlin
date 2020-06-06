@@ -11,11 +11,11 @@ module.exports.run = async (client, message, args) => {
 
     let raison = args.slice(2).join(" ");
 
-    if (!muteUser){
+    if (!muteUser) {
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('BLUE')
-            .addField('> :x: | Erreur', '`Utilisation: _mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]\nPermission requise: MANAGE_MESSAGES`')
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]\nPermission requise: MANAGE_MESSAGES\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
 
@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args) => {
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('BLUE')
-            .addField('> :x: | Erreur', '`Utilisation: _mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]\nPermission requise: MANAGE_MESSAGES`')
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]\nPermission requise: MANAGE_MESSAGES\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
 
@@ -37,7 +37,7 @@ module.exports.run = async (client, message, args) => {
         let havePerm = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor("#FF00FF")
-            .addField('> :x: | Erreur', '`Utilisation: _mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]\nPermission requise: MANAGE_MESSAGES`')
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]\nPermission requise: MANAGE_MESSAGES\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(havePerm);
@@ -49,7 +49,7 @@ module.exports.run = async (client, message, args) => {
 
             .setAuthor('Merlin')
             .setColor("#FF00FF")
-            .addField(`> :x: | Erreur`, "`Utilisation: _mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]\nPermission requise: MANAGE_MESSAGES`")
+            .addField(`> :x: | Erreur`, `\`Utilisation: ${client.serv["prefix"]}mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]\nPermission requise: MANAGE_MESSAGES\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
 
@@ -109,5 +109,5 @@ module.exports.help = {
     aliases: ["m"],
     categories: "admin",
     description: "Permet de mute un utilisateur pendant un certain temps.",
-    usage: "_mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]",
+    usage: "=mute [utilisateur] [temps (d => jour, h => heure, m => minute)] [reason]",
 };

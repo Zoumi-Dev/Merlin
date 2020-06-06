@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('BLUE')
-            .addField('> :x: | Erreur', '`Utilisation: _unmute [utilisateur]\nPermission requise: MANAGE_MESSAGES`')
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}unmute [utilisateur]\nPermission requise: MANAGE_MESSAGES\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
 
@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) => {
 
             .setAuthor('Merlin')
             .setColor("#FF00FF")
-            .addField(`> :x: | Erreur`, "`Utilisation: _unmute [utilisateur]\nPermission requise: MANAGE_MESSAGES`")
+            .addField(`> :x: | Erreur`, `\`Utilisation: ${client.serv["prefix"]}unmute [utilisateur]\nPermission requise: MANAGE_MESSAGES\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
 
@@ -61,5 +61,5 @@ module.exports.help = {
     aliases: ["um"],
     categories: "admin",
     description: "Permet de démute un utilisateur.",
-    usage: "_unmute [utilisateur]",
+    usage: "=unmute [utilisateur]",
 };

@@ -3,17 +3,9 @@ const fs = require('fs');
 
 module.exports = async (client, guild) => {
 
-    /*
-    if (fs.exists(`../../${client.guilds.cache.get(guild.id).name}.json`, (exists => {
-        exists.valueOf();
-    }))){
-        return console.log(`Le dossier ${guild.name}.json existe déjà !`);
-    }else{
-        fs.mkdir(`../../${guild.name}.json`, {recursive: true}, (err => {
-            if (err) return console.log(err.message);
-        }));
-    }
-    */
+    fs.writeFileSync(`././serveurs/${guild.name}.json`, `{\n"${guild.name}": "${guild.id}",\n"prefix": "=",\n"guildMemberAdd": false,\n"guildMemberRemove": false,\n"logs-channel": false\n}`, 'utf-8'), (err) => {
+        if (err) return console.log(err.message);
+    };
 
     if (client.guilds.cache.get('712358618993000499').channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel)) {
         let joinEmbed = new Discord.MessageEmbed()

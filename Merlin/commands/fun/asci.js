@@ -7,11 +7,11 @@ module.exports.run = async (client, message, args) => {
 
     var maxLenght = 100;
 
-    if (!args.join(" ")){
+    if (!args.join(" ")) {
         let embed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREEN")
-            .addField("> :x: | Erreur", "`Utilisation _asci [text]`")
+            .addField("> :x: | Erreur", `\`Utilisation ${client.serv["prefix"]}asci [text]\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(embed);

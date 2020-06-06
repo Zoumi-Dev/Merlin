@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args) => {
 
     var gif = await fetch("https://nekos.life/api/v2/img/kiss")
         .then(res => res.json())
-        .then(json => json.url)
+        .then(json => json.url);
 
     if (!args[0]) {
         let kissEmbed = new Discord.MessageEmbed()

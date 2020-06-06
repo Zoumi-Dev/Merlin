@@ -14,7 +14,7 @@ module.exports.run = (client, message, args) => {
         let noPerm = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField("> :x: | Erreur", `\`Utilisation: ${client.config.DEFAULT_SETTINGS.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(noPerm).then(e => e.react(pleure));
@@ -24,7 +24,7 @@ module.exports.run = (client, message, args) => {
         let noMen = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField(':x: | Erreur', `\`Utilisation: ${client.config.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
+            .addField(':x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(noMen).then(e => e.react(pleure));
@@ -34,7 +34,7 @@ module.exports.run = (client, message, args) => {
         let havePerm = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField("> :x: | Erreur", `\`Vous ne pouvez pas bannir une personne ayant la permission KICK_MEMBERS.\``)
+            .addField("> :x: | Erreur", `\`Vous ne pouvez pas kick une personne ayant la permission KICK_MEMBERS.\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(havePerm).then(async m => {
@@ -45,7 +45,7 @@ module.exports.run = (client, message, args) => {
         let noMen = new Discord.MessageEmbed()
             .setAuthor('Merlin')
             .setColor('#FF00FF')
-            .addField('> :x: | Erreur', `\`Utilisation: ${client.config.prefix}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
+            .addField('> :x: | Erreur', `\`Utilisation: ${client.serv["prefix"]}kick [utilisateur] [raison]\nPermission requise: KICK_MEMBERS\``)
             .setTimestamp()
             .setFooter(`${client.config.footer}`);
         return message.channel.send(noMen).then(e => e.react(pleure));
@@ -71,5 +71,5 @@ module.exports.help = {
     name: "kick",
     categories: "admin",
     description: "Permet de kick un utilisateur avec une raison.",
-    usage: "_kick [utilisateur] [raison]",
+    usage: "=kick [utilisateur] [raison]",
 };

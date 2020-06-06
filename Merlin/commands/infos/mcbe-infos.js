@@ -5,11 +5,11 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if (args < 1){
+    if (args < 1) {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("BLUE")
-            .addField("> :x: | Erreur", "`Utilisation: _mcbe-infos [ip] [port]`")
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}mcbe-infos [ip] [port]\``)
             .setTimestamp()
             .setFooter("Merlin | Powered by Zoumi#0336");
         return message.channel.send(noargs);

@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
 
-    if (!args[0]){
+    if (!args[0]) {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREEN")
-            .addField("> :x: | Erreur", "`Utilisation: _bingo [nombre]`")
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}bingo [nombre]\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);
@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) => {
         let embed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREEN")
-            .addField("> :x: | Erreur", "`Utilisation: _bingo [nombre]`")
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}bingo [nombre]\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(embed);
@@ -47,7 +47,7 @@ module.exports.run = async (client, message, args) => {
         if (reason && reason !== "time"){
             return message.channel.send(reason);
         }else{
-            return message.channel.send(`>:hourglass_flowing_sand: | **__Temps écoulé__** !\n> :cry: | **__Aucun vainqueur__** !\n> :1234: | Le nombre était **__${rep}__** !`);
+            return message.channel.send(`> :hourglass_flowing_sand: | **__Temps écoulé__** !\n> :cry: | **__Aucun vainqueur__** !\n> :1234: | Le nombre était **__${rep}__** !`);
         }
 
     });
@@ -57,5 +57,5 @@ module.exports.help = {
     name: "bingo",
     categories: "fun",
     description: "Permet de lance le bingo.",
-    usage: "_bingo [nombre]"
+    usage: "=bingo [nombre]"
 };
