@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "amethyste-api": "^1.1.4",
+    "canvas": "^2.6.1",
     "discord.js": "^12.2.0",
     "enmap": "^5.2.4",
     "figlet": "^1.4.0",

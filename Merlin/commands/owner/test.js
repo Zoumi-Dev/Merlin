@@ -1,47 +1,30 @@
 const Discord = require('discord.js');
-const ameClient = require('amethyste-api');
-const jimp = require('jimp');
-const ameApi = new ameClient("ad4c408307abbb8ac2a682e8bc0298c2bc8fb4b09eae443ee95086c2517119b44ba1349c138ba83ea27cbf956e78b849d88e1640b4c5303370f4e67aef8d1040");
+const Canvas = require('canvas');
+const snekfetch = require('snekfetch');
 
 module.exports.run = async (client, message, args) => {
 
-    /*
-    await jimp.read('././img/merlin_pdp.jpg', (err, merlin) => {
-        if (err) throw err;
-        merlin
-            .loadFont(jimp.FONT_SANS_8_WHITE).then(font => {merlin.print(font, 8, 8, "test")})
-            .write('././img/merlin_test.jpg');
-    })
-     */
-
-    let embed = new Discord.MessageEmbed()
-        .setAuthor("Merlin")
-        .setDescription(message.author.presence.status === "online" || message.author.presence.status === "idle" ? `:green_circle:` : `:red_circle:`)
-        .setTimestamp()
-        .setFooter(client.config.footer);
-    return message.channel.send(embed);
-
-    /*
-    let avatar = `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png?size=2048`;
-
-    let image = await ameApi.generate("wasted", {
-        "url": avatar
-    }).then(image => {
-        console.log(image);
-        message.channel.send({
-            files: [{
-                attachment: image,
-                name: "wasted.png",
-            }]
-        });
-    }).catch(err => {
-        console.log(err.message);
+    Canvas.registerFont('././txt/Anton-Regular.ttf', {
+        family: "nike",
     });
-     */
+    const canvas = Canvas.createCanvas(540, 260);
+    const ctx = canvas.getContext("2d");
+
+    const background = await Canvas.loadImage("././img/logo_nike.png");
+    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+
+    ctx.font = '100px "nike"';
+    ctx.fillStyle = "#000";
+    ctx.fillText(`${args.join(" ")}`, 230, 160);
+    ctx.quality = "best";
+
+
+    const attachement = new Discord.MessageAttachment(canvas.toBuffer(), `nike-${args.join("-")}.png`);
+
+    await message.channel.send(attachement);
 
 };
 
 module.exports.help = {
-    name: "test",
-    categories: "owner",
+    name: "test"
 };
