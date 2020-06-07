@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
         let embed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREEN")
-            .setDescription(`> <@${message.author.id}> a foutue une tarte à <@${client.user.id}>`)
+            .setDescription(`> <@${message.author.id}> a foutu une tarte à <@${client.user.id}>`)
             .setImage(gif)
             .setTimestamp()
             .setFooter(client.config.footer);

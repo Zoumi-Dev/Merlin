@@ -26,7 +26,7 @@ module.exports = async (client, message) => {
     }
 
     /* Si le bot est mentionner */
-    if (message.content === message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
+    if (message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
         if (message.author.bot) return;
         if (message.channel.type === "dm") return;
         return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.serv["prefix"]}\`. Si tu souhaites voir la liste des commandes disponibles fait \`${client.serv["prefix"]}help\` . Si tu souhaites m'ajouter fait \`${client.serv["prefix"]}bot-infos\` et click sur m'inviter !`);

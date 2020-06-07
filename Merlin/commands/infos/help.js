@@ -27,6 +27,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("BLUE")
             .setDescription(
                 `__**Bienvenu(e) sur le panel d'aide ! Clique sur une des réactions pour plus de détail.**__\n\n` +
+                `Nombre de commande aux total **${client.commands.size}**\n\n` +
                 `🗞 | Informations\n\n` +
                 `🎉 | Fun\n\n` +
                 `🔧 | Pratique\n\n` +

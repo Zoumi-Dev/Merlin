@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/Dev Community Server - Help.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/Dev2You - Aide.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/LaFutaCraft v3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/Merlin'Bot • Help.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/Ørinium FACTION.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Merlin/commands/parametre/setlogs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/Kirua Bot - Support.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/slap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/slap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/server-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/server-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/owner/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/owner/update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/parametre/checkconfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/parametre/checkconfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/parametre/setprefix.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/parametre/setprefix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/serveurs/Dev2You - Aide.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/serveurs/Dev2You - Aide.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1cHKGI24CO4h4mSxicaNqy6Kman" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -96,7 +99,8 @@
       <workItem from="1590787721146" duration="8152000" />
       <workItem from="1590879458841" duration="4025000" />
       <workItem from="1590959434343" duration="2235000" />
-      <workItem from="1591471545625" duration="2331000" />
+      <workItem from="1591471545625" duration="5096000" />
+      <workItem from="1591540277246" duration="1102000" />
     </task>
     <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
       <created>1590346249634</created>
@@ -126,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591473116900</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update prefix">
+      <created>1591474032812</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591474032812</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +149,8 @@
     <MESSAGE value="ajout cooldown" />
     <MESSAGE value="update lyrics" />
     <MESSAGE value="ajout paramètre" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout paramètre" />
+    <MESSAGE value="update prefix" />
+    <option name="LAST_COMMIT_MESSAGE" value="update prefix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="69" key="#Plugins" timestamp="1590418332748">
@@ -153,44 +165,44 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590769655332" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591473110744">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591474029860">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591473110744" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591474029860" />
     <state x="379" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1590884016208" />
-    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1590788480491">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="504" y="187" key="FileChooserDialogImpl" timestamp="1591476706509">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590357457689" />
+    <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591476706509" />
     <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590788480491" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591474012256">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591540957147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591474012256" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591540957147" />
     <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591474012255">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591540957147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591474012255" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591540957147" />
     <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591474012255">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591540957147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591474012255" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591540957147" />
     <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591474012255">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591540957147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591474012255" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591540957147" />
     <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
     <state x="341" y="148" key="SettingsEditor" timestamp="1590770867138">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="341" y="148" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590770867138" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591473177706">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591474041975">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591473177706" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591474041975" />
     <state x="338" y="133" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1590884067097" />
     <state x="649" y="418" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590789965068">
       <screen x="0" y="0" width="1680" height="1010" />

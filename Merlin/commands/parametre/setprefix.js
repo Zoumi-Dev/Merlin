@@ -5,11 +5,11 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if (!message.member.hasPermission("MANAGE_MESSAGES")) {
+    if (!message.member.hasPermission("ADMINISTRATOR")) {
         let noperm = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("PURPLE")
-            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv.prefix}setprefix [nouveau prefix]\``)
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv.prefix}setprefix [nouveau prefix]\nPermission requise: ADMINISTRATOR\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noperm);
@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("PURPLE")
-            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv.prefix}setprefix [nouveau prefix]\``)
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv.prefix}setprefix [nouveau prefix]\nPermission requise: ADMINISTRATOR\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);
