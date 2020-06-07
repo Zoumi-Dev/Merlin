@@ -34,88 +34,11 @@ module.exports = async (client, messageReaction, user) => {
     }
 
     /* Verification rôle */
-    if (["✅"].includes(messageReaction.emoji.name) && message.channel.id === channelVerif.id){
+    if (["✅"].includes(messageReaction.emoji.name) && message.channel.id === channelVerif.id && message.guild.cache.get(client.config.supportServer)){
         switch (messageReaction.emoji.name) {
             case "✅":
                 await member.roles.remove(nonVerifier);
                 member.roles.add(membre);
-                break;
-        }
-    }
-
-    /* Help */
-    if (["🗞", "🎉", "🔧", "🔞", "👮", "⚙"].includes(messageReaction.emoji.name)){
-        switch (messageReaction.emoji.name) {
-            /* Informations */
-            case "🗞":
-                let infos = new Discord.MessageEmbed()
-                    .setAuthor("Merlin")
-                    .setColor("BLUE")
-                    .setDescription(`**__Voici les commandes disponibles pour la catégorie \`Informations\`__**\n\n\`\`\`${client.commands.filter(cat => cat.help.categories === "infos").map(cm => cm.help.name).join(", ")}\`\`\``)
-                    .setTimestamp()
-                    .setFooter(client.config.footer);
-                await message.channel.send(infos).then(e => {
-                    e.delete({timeout: 20000})
-                });
-                break;
-            /* Fun */
-            case "🎉":
-                let fun = new Discord.MessageEmbed()
-                    .setAuthor("Merlin")
-                    .setColor("BLUE")
-                    .setDescription(`**__Voici les commandes disponibles pour la catégorie \`Fun\`__**\n\n\`\`\`${client.commands.filter(cat => cat.help.categories === "fun").map(cm => cm.help.name).join(", ")}\`\`\``)
-                    .setTimestamp()
-                    .setFooter(client.config.footer);
-                await message.channel.send(fun).then(e => {
-                    e.delete({timeout: 20000})
-                });
-                break;
-            /* Pratique */
-            case "🔧":
-                let pratique = new Discord.MessageEmbed()
-                    .setAuthor("Merlin")
-                    .setColor("BLUE")
-                    .setDescription(`**__Voici les commandes disponibles pour la catégorie \`Pratique\`__**\n\n\`\`\`${client.commands.filter(cat => cat.help.categories === "pratique").map(cm => cm.help.name).join(", ")}\`\`\``)
-                    .setTimestamp()
-                    .setFooter(client.config.footer);
-                await message.channel.send(pratique).then(e => {
-                    e.delete({timeout: 20000})
-                });
-                break;
-            /* Nsfw */
-            case "🔞":
-                let nsfw = new Discord.MessageEmbed()
-                    .setAuthor("Merlin")
-                    .setColor("BLUE")
-                    .setDescription(`**__Voici les commandes disponibles pour la catégorie \`Nsfw\`__**\n\n\`\`\`${client.commands.filter(cat => cat.help.categories === "nsfw").map(cm => cm.help.name).join(", ")}\`\`\``)
-                    .setTimestamp()
-                    .setFooter(client.config.footer);
-                await message.channel.send(nsfw).then(e => {
-                    e.delete({timeout: 20000})
-                });
-                break;
-            /* Admin */
-            case "👮":
-                let admin = new Discord.MessageEmbed()
-                    .setAuthor("Merlin")
-                    .setColor("BLUE")
-                    .setDescription(`**__Voici les commandes disponibles pour la catégorie \`Administrative\`__**\n\n\`\`\`${client.commands.filter(cat => cat.help.categories === "admin").map(cm => cm.help.name).join(", ")}\`\`\``)
-                    .setTimestamp()
-                    .setFooter(client.config.footer);
-                await message.channel.send(admin).then(e => {
-                    e.delete({timeout: 20000})
-                });
-                break;
-            case "⚙":
-                let param = new Discord.MessageEmbed()
-                    .setAuthor("Merlin")
-                    .setColor("BLUE")
-                    .setDescription(`**__Voici les commandes disponibles pour la catégorie \`Paramètre\`__**\n\n\`\`\`${client.commands.filter(cat => cat.help.categories === "parametre").map(cm => cm.help.name).join(", ")}\`\`\``)
-                    .setTimestamp()
-                    .setFooter(client.config.footer);
-                await message.channel.send(param).then(e => {
-                    e.delete({timeout: 20000})
-                });
                 break;
         }
     }

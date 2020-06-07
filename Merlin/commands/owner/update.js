@@ -16,16 +16,15 @@ module.exports.run = async (client, message, args) => {
         .setThumbnail(client.user.avatarURL())
         .addField("> Update #3",
             "__**Mise à jour**__\n" +
-            "✦ `ban` la raison est désormait fixe.\n" +
-            "✦ `kick` la raison est désormait fixe.\n" +
-            "✦ `avatar` Plus besoin de mentionner ! Taper juste sont pseudo.\n" +
+            "✦ `ban, kick` les raisons sont désormait fixe.\n" +
+            "✦ `avatar` Plus besoin de mentionner ! Taper juste son pseudo.\n" +
             "__**Ajout**__\n" +
             "✦ `asci` Permet d'afficher un text sous format caractère.\n" +
-            "✦ `bon` Permet d'envoyer un mème bon toutou.\n" +
+            "✦ `bon` Permet d'envoyer un meme \"bon toutou\".\n" +
             "✦ `setprefix` Permet de définir le prefix de merlin.\n" +
             "✦ `checkconfig` Permet de voir la config du serveur.\n" +
             "__**Informations**__\n" +
-            "✦ Les commandes `Paramètre` arriverons très prochainement."
+            "✦ Les commandes `Paramètre` arriveront très prochainement."
         )
         .setTimestamp()
         .setFooter(`${client.config.footer}`);

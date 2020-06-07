@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    let usr = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
+    let usr = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(u => u.user.username === args[0]));
 
     var gif = await fetch("https://nekos.life/api/v2/img/slap")
         .then(res => res.json())

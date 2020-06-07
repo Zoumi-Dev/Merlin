@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    let usr = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
+    let usr = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(u => u.user.username === args[0]));
 
     /*
     let kiss = kissimg[Math.floor(Math.random() * kissimg.length)];
