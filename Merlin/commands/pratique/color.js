@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
         let color = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setDescription(`> Voici la couleur ${args[0]}`)
-            .setColor(args[0])
+            .setColor(`${tinycolor(args[0]).toHexString()}`)
             .addField("> Format", `${tinycolor(args[0]).getFormat()}`)
             .addField("> Hex", `${tinycolor(args[0].toLowerCase()).toHexString()}`)
             .addField("> Rgb", `${tinycolor(args[0].toLowerCase()).toRgbString()}`)

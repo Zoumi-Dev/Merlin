@@ -7,11 +7,11 @@ module.exports.run = async (client, message, args) => {
 
     let rappel = args.slice(1).join(" ");
 
-    if (args < 1){
+    if (args < 1) {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREY")
-            .addField("> :x: | Erreur", "`Utilisation: _rappel [temps] [message]`")
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}rappel [temps] [message\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);

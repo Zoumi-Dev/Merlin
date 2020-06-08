@@ -5,11 +5,11 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
-    if (!args[0]){
+    if (!args[0]) {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREY")
-            .addField("> :x: | Erreur", "`Utilisation: _lyrics [musique]`")
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv["prefix"]}lyrics [musique]\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);

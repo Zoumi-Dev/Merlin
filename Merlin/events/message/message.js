@@ -21,6 +21,10 @@ module.exports = async (client, message) => {
 
     if (message.content.indexOf(client.serv["prefix"]) !== 0) return;
 
+    if (!client.config.ownerID.includes(message.author.id)){
+        return message.reply("je suis actuellement en maintenance, nous vous prions de patienter.");
+    }
+
     if (message.guild.id === client.config.supportServer){
         if (message.content.includes("https") || message.content.includes("http") || message.content.includes("HTTPS") || message.content.includes("HTTP")){
             message.delete();
