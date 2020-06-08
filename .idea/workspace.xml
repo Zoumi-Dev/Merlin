@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Merlin/commands/parametre/setjoin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/Destiné.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/Dev2You - Aide.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Merlin/serveurs/Futonium.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/pratique/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/pratique/color.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/pratique/lyrics.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/pratique/lyrics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/pratique/rappel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/pratique/rappel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/pratique/rcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/pratique/rcon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/parametre/setjoin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/parametre/setjoin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/guild/guildMemberAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildMemberAdd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +96,7 @@
       <workItem from="1591559853585" duration="6482000" />
       <workItem from="1591569619110" duration="4894000" />
       <workItem from="1591621996796" duration="1180000" />
-      <workItem from="1591630234139" duration="1486000" />
+      <workItem from="1591630234139" duration="1652000" />
     </task>
     <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
       <created>1590346249634</created>
@@ -163,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591622484805</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ajout setjoin.js SOON setquit">
+      <created>1591631846989</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591631847005</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +178,8 @@
     <MESSAGE value="modif #deception road to new help nega" />
     <MESSAGE value="update logs-channel" />
     <MESSAGE value="mise à jour des logs fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise à jour des logs fixes" />
+    <MESSAGE value="ajout setjoin.js SOON setquit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout setjoin.js SOON setquit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="69" key="#Plugins" timestamp="1590418332748">
@@ -195,35 +194,35 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590769655332" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591622469044">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591631840274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591622469044" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591631840274" />
     <state x="379" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1590884016208" />
     <state x="504" y="187" key="FileChooserDialogImpl" timestamp="1591624309016">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591624309016" />
     <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590788480491" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591631810464">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591631956992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591631810464" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591631956992" />
     <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591631810463">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591631956992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591631810463" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591631956992" />
     <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591631810462">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591631956991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591631810462" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591631956991" />
     <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591631810463">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591631956992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591631810463" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591631956992" />
     <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
     <state x="341" y="148" key="SettingsEditor" timestamp="1590770867138">
       <screen x="0" y="0" width="1680" height="1010" />

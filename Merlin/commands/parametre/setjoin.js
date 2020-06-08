@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("PURPLE")
-            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv.prefix}setjoin [channel id ou nom] [message]\nPermission requise: ADMINISTRATOR\``)
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv.prefix}setjoin [channel id ou nom] [message]\nInformations: Le mots username remplace le nom de l'utilisateur.\nPermission requise: ADMINISTRATOR\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);
@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
         let noargs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("PURPLE")
-            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv.prefix}setjoin [channel id ou nom] [message]\nPermission requise: ADMINISTRATOR\``)
+            .addField("> :x: | Erreur", `\`Utilisation: ${client.serv.prefix}setjoin [channel id ou nom] [message]\nInformations: Le mots username remplace le nom de l'utilisateur.\nPermission requise: ADMINISTRATOR\``)
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noargs);

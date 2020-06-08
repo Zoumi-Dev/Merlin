@@ -11,7 +11,7 @@ module.exports = async (client, message, member) => {
         let join = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("#82E5CC")
-            .setDescription(`${client.serv["guildMemberAddMessage"]}`)
+            .setDescription(`${client.serv["guildMemberAddMessage"].replace("username", `${message.user.username}`)}`)
             .setTimestamp()
             .setFooter(client.config.footer);
         logsChannel.send(join);
