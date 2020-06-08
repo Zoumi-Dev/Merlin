@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const fs = require('fs');
 
 module.exports = async (client, guild) => {
 
@@ -11,15 +12,19 @@ module.exports = async (client, guild) => {
 
     const {executor} = latestBanAdd;
 
-    if (guild.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel)) {
+    client.serv = JSON.parse(fs.readFileSync(`././serveurs/${guild.guild.name}.json`, 'utf8'));
+
+    let logsChannel = message.guild.channels.cache.find(ch => ch.name === client.serv["logs-channel"]) || message.guild.channels.cache.find(ch => ch.id === client.serv["logs-channel"]);
+
+    if (logsChannel) {
         let logs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("#82E5CC")
             .setDescription("> :unlock: | Utilisateur bannie")
             .addField("> Utilisateur", `\`${executor.username}\``)
             .addField("> Reason", `\`\``)
             .setTimestamp()
             .setFooter(client.config.footer);
-        return guild.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(logs);
+        return logsChannel.send(logs);
     }
 };

@@ -4,27 +4,28 @@ module.exports = async (client, channel) => {
 
     if (channel.type === "dm"){
         return false;
-    }else {
+    }
 
-        let fetchChannelCreate = await channel.guild.fetchAuditLogs({
-            limit: 1,
-            type: 'CHANNEL_CREATE'
-        });
+    let fetchChannelCreate = await channel.guild.fetchAuditLogs({
+        limit: 1,
+        type: 'CHANNEL_CREATE'
+    });
 
-        const latestChannelCreate = fetchChannelCreate.entries.first();
+    const latestChannelCreate = fetchChannelCreate.entries.first();
 
-        const {executor} = latestChannelCreate;
+    const {executor} = latestChannelCreate;
+
+    let logsChannel = channel.guild.channels.cache.find(ch => ch.name === client.serv["logs-channel"]) || channel.guild.channels.cache.find(ch => ch.id === client.serv["logs-channel"]);
         
-        if (channel.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel)) {
-            let logs = new Discord.MessageEmbed()
-                .setAuthor("Merlin")
-                .setColor("GREY")
-                .setDescription("> :unlock: | Création de salon")
-                .addField("> Utilisateur", `\`${executor.username}\``)
-                .addField("> Nom du salon créer", `\`${channel.name}\``)
-                .setTimestamp()
-                .setFooter(client.config.footer);
-            return channel.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(logs);
-        }
+    if (logsChannel) {
+        let logs = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("#82E5CC")
+            .setDescription("> :unlock: | Création de salon")
+            .addField("> Utilisateur", `\`${executor.username}\``)
+            .addField("> Nom du salon créer", `\`${channel.name}\``)
+            .setTimestamp()
+            .setFooter(client.config.footer);
+        return logsChannel.send(logs);
     }
 };

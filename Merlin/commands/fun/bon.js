@@ -5,11 +5,11 @@ module.exports.run = async (client, message, args) => {
     message.delete();
 
     if (!args[0]){
-        return message.reply("veuillez faire _bon [message] [couleur]");
+        return message.reply(`veuillez faire ${client.serv["prefix"]}bon [message] [couleur]`);
     }
 
     if (!args[1]){
-        return message.reply("veuillez faire _bon [message] [couleur]");
+        return message.reply(`veuillez faire ${client.serv["prefix"]}bon [message] [couleur]`);
     }
 
     let bonEmbed = new Discord.MessageEmbed()

@@ -11,7 +11,9 @@ module.exports = async (client, channel) => {
 
     const {executor} = latestChannelDelete;
 
-    if (channel.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel)) {
+    let logsChannel = channel.guild.channels.cache.find(ch => ch.name === client.serv["logs-channel"]) || channel.guild.channels.cache.find(ch => ch.id === client.serv["logs-channel"]);
+
+    if (logsChannel) {
         let logs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("GREY")
@@ -20,6 +22,6 @@ module.exports = async (client, channel) => {
             .addField("> Nom du salon supprimer", `\`${channel.name}\``)
             .setTimestamp()
             .setFooter(client.config.footer);
-        return channel.guild.channels.cache.find(ch => ch.name === client.config.DEFAULT_SETTINGS.logsChannel).send(logs);
+        return logsChannel.send(logs);
     }
 };

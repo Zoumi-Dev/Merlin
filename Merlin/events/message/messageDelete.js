@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const fs = require('fs');
 
 module.exports = async (client, message) => {
 
@@ -16,7 +17,7 @@ module.exports = async (client, message) => {
     if (logsChannel) {
         let logs = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setColor("GREY")
+            .setColor("#82E5CC")
             .setDescription("> :wastebasket: | Suppression de message")
             .addField("> Utilisateur", `\`${executor.username}\``)
             .addField("> Message supprimé", `\`${message.content}\``)

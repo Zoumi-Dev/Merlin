@@ -19,6 +19,8 @@ module.exports = async (client, message) => {
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(command));
 
+    if (message.content.indexOf(client.serv["prefix"]) !== 0) return;
+
     if (message.guild.id === client.config.supportServer){
         if (message.content.includes("https") || message.content.includes("http") || message.content.includes("HTTPS") || message.content.includes("HTTP")){
             message.delete();
@@ -47,7 +49,7 @@ module.exports = async (client, message) => {
 
     /* Si la commande n'existe pas */
     if (!cmd){
-        return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`${client.serv["prefix"]}help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faite \`${client.serv["prefix"]}bot-infos\` et clicker sur m'inviter !`);
+        return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`${client.serv["prefix"]}help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faites \`${client.serv["prefix"]}bot-infos\` et cliquez sur m'inviter !`);
     }
 
     /* Cooldown */
