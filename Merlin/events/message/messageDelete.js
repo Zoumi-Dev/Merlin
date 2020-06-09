@@ -12,6 +12,8 @@ module.exports = async (client, message) => {
 
     const {executor} = latestMessageDeleted;
 
+    client.serv = JSON.parse(fs.readFileSync(`././serveurs/${message.guild.name}.json`, 'utf8'));
+
     let logsChannel = message.guild.channels.cache.find(ch => ch.name === client.serv["logs-channel"]) || message.guild.channels.cache.find(ch => ch.id === client.serv["logs-channel"]);
 
     if (logsChannel) {
