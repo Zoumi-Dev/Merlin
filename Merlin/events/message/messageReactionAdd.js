@@ -34,7 +34,7 @@ module.exports = async (client, messageReaction, user) => {
     }
 
     /* Verification rôle */
-    if (["✅"].includes(messageReaction.emoji.name) && message.channel.id === channelVerif.id && message.guild.cache.get(client.config.supportServer)){
+    if (["✅"].includes(messageReaction.emoji.name) && message.channel.id === channelVerif.id && message.guild.id === message.guild.cache.get(client.config.supportServer)){
         switch (messageReaction.emoji.name) {
             case "✅":
                 await member.roles.remove(nonVerifier);

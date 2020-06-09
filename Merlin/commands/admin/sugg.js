@@ -8,6 +8,16 @@ module.exports.run = async (client, message, args) => {
 
     let sugge = args.join(" ");
 
+    if (client.config.blacklist.includes(message.author.id)){
+        let blacklisted = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("BLACK")
+            .setDescription("Ohoh... Vous faites partie de la liste `blacklisted`, vous n'avez donc plus accès à cette commande. :cry:")
+            .setTimestamp()
+            .setFooter(client.config.footer);
+        return message.channel.send(blacklisted);
+    }
+
     if (!args[0]) {
         let embed = new Discord.MessageEmbed()
             .setAuthor('Merlin')
