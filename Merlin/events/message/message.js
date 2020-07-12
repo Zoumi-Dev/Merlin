@@ -4,7 +4,14 @@ const fs = require('fs');
 
 module.exports = async (client, message) => {
 
+    if (message.guild.id === client.config.supportServer){
+        if (message.content.toLowerCase() === "https" || message.content.toLowerCase() === "http"){
+            message.delete();
+        }
+    }
+
     if (message.author.bot) return;
+
 
     if (message.channel.type === "dm") return client.emit("messagePriver", message);
 
@@ -17,6 +24,7 @@ module.exports = async (client, message) => {
     }else {
         client.serv = JSON.parse(fs.readFileSync(`././serveurs/${message.guild.name}.json`, 'utf8'));
     }
+
     const args = message.content.slice(client.serv["prefix"].length).split(/ +/);
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(command));
@@ -35,12 +43,6 @@ module.exports = async (client, message) => {
         return message.reply("je suis actuellement en maintenance, nous vous prions de patienter.");
     }
      */
-
-    if (message.guild.id === client.config.supportServer){
-        if (message.content.includes("https") || message.content.includes("http") || message.content.includes("HTTPS") || message.content.includes("HTTP")){
-            message.delete();
-        }
-    }
 
     /* Si le bot est en mode maintenance */
     if(cmd) {

@@ -3,10 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/embed.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/embed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/say.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/say.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/guild/guildDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildDelete.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/serveurs/Destiné.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/serveurs/Dev2You - Aide.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/serveurs/Futonium.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message/messageDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/messageDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/events/message/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +25,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BotTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Telechargement/ChangeProtectArmor" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -99,6 +108,8 @@
       <workItem from="1591569619110" duration="4894000" />
       <workItem from="1591621996796" duration="1180000" />
       <workItem from="1591630234139" duration="4019000" />
+      <workItem from="1594388987811" duration="120000" />
+      <workItem from="1594390020658" duration="242000" />
     </task>
     <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
       <created>1590346249634</created>
@@ -174,7 +185,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -208,11 +219,11 @@
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591632029688" />
     <state x="379" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1590884016208" />
-    <state x="504" y="187" key="FileChooserDialogImpl" timestamp="1591644936975">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1594390286064">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591644936975" />
-    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590788480491" />
+    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1594390286064" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591644938253">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

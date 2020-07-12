@@ -16,7 +16,13 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(noargs);
     }
 
-    return message.channel.send(say);
+    return message.channel.send(say, {
+        disableMentions: "everyone",
+        allowedMentions: {
+            roles: false,
+            users: false,
+        }
+    });
 };
 
 module.exports.help = {

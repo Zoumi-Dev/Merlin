@@ -22,7 +22,13 @@ module.exports.run = (client, message, args) => {
         .setColor("GREEN")
         .setTimestamp()
         .setFooter(client.config.footer);
-    return message.channel.send(embed);
+    return message.channel.send(embed, {
+        disableMentions: "everyone",
+        allowedMentions: {
+            roles: false,
+            users: false,
+        }
+    });
 
 };
 

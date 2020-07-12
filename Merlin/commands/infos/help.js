@@ -16,6 +16,7 @@ module.exports.run = async (client, message, args) => {
             .addField(`> :underage: | 『Nsfw(${client.commands.filter(cat => cat.help.categories === "nsfw").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "nsfw").map(cmd => cmd.help.name).join(", ")}\`\`\``, true)
             .addField(`> :man_police_officer: | 『Administrative(${client.commands.filter(cat => cat.help.categories === "admin").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "admin").map(cmd => cmd.help.name).join(", ")}\`\`\``, true)
             .addField(`> :gear: | 『Paramètre(${client.commands.filter(cat => cat.help.categories === "parametre").map(cmd => cmd.help.name).length})』`, `\`\`\`${client.commands.filter(cat => cat.help.categories === "parametre").map(cmd => cmd.help.name).join(", ")}\`\`\``)
+            .addField(`> 🎶 | 『Musique(${client.commands.filter(cat => cat.help.categories === "musique").map(cmd => cmd.help.name).length})』`,  `\`\`\`${client.commands.filter(cat => cat.help.categories === "musique").map(cmd => cmd.help.name).join(", ")}\`\`\``)
             .setImage("https://66.media.tumblr.com/575aa752a70ffbff6267ae3d20843946/tumblr_odub4rgv4f1sg8uefo1_540.gif")
             .setTimestamp()
             .setFooter(client.config.footer);

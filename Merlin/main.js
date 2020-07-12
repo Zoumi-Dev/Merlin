@@ -22,6 +22,8 @@ client.commands = new Enmap();
 
 client.cooldowns = new Discord.Collection();
 
+client.queue = new Map();
+
 const loadCommands = (dir = "./commands/") => {
   fs.readdirSync(dir).forEach(dirs => {
       const commands = fs.readdirSync(`${dir}/${dirs}/`).filter(files => files.endsWith('.js'));

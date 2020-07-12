@@ -3,8 +3,8 @@ const Discord = require('discord.js');
 module.exports = client => {
 
         const activities_list = [
-            `${client.guilds.cache.size} serveurs | _help`,
-            `${client.users.cache.size} utilisateurs | _help`,
+            `${client.guilds.cache.size} serveurs | =help`,
+            `${client.users.cache.size} utilisateurs | =help`,
             `rejoins nous 2wn6sQv !`
         ];
         setInterval(() => {
