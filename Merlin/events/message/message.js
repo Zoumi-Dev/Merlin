@@ -15,6 +15,7 @@ module.exports = async (client, message) => {
 
     if (message.channel.type === "dm") return client.emit("messagePriver", message);
 
+    /*
     if (!fs.existsSync(`././serveurs/${message.guild.name}.json`)){
         fs.writeFileSync(`././serveurs/${message.guild.name}.json`, `{\n"${message.guild.name}": "${message.guild.id}",\n"prefix": "=",\n"guildMemberAdd": false,\n"guildMemberRemove": false,\n"logs-channel": false\n}`, 'utf-8'), (err) => {
             if (err) return console.log(err.message);
@@ -24,8 +25,9 @@ module.exports = async (client, message) => {
     }else {
         client.serv = JSON.parse(fs.readFileSync(`././serveurs/${message.guild.name}.json`, 'utf8'));
     }
+     */
 
-    const args = message.content.slice(client.serv["prefix"].length).split(/ +/);
+    const args = message.content.slice(client.config.prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(command));
 
@@ -36,13 +38,12 @@ module.exports = async (client, message) => {
         return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.serv["prefix"]}\`. Si tu souhaites voir la liste des commandes disponibles fait \`${client.serv["prefix"]}help\` . Si tu souhaites m'ajouter fait \`${client.serv["prefix"]}invite\` !`);
     }
 
-    if (message.content.indexOf(client.serv["prefix"]) !== 0) return;
+    if (message.content.indexOf(client.config.prefix) !== 0) return;
 
-    /*
+
     if (!client.config.ownerID.includes(message.author.id)){
         return message.reply("je suis actuellement en maintenance, nous vous prions de patienter.");
     }
-     */
 
     /* Si le bot est en mode maintenance */
     if(cmd) {

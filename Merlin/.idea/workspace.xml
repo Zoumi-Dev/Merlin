@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/fun/embed.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/embed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/fun/say.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fun/say.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/bot-infos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/guild/guildDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/guild/guildDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/owner/hadm.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/hadm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/owner/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/message/messageDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/messageDelete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events/message/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/ready.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/discord.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/discord.js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/receiver.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/receiver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/sender.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/sender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/websocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/websocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ws/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -50,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Merlin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -167,7 +160,8 @@
       <workItem from="1592569013539" duration="296000" />
       <workItem from="1594472290362" duration="772000" />
       <workItem from="1594473601863" duration="595000" />
-      <workItem from="1594567855521" duration="705000" />
+      <workItem from="1594567855521" duration="2671000" />
+      <workItem from="1594767818378" duration="357000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -428,15 +422,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591392354873</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="update">
+      <created>1594568911524</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1594568911524</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update help, mcbe-infos et rcon" />
     <MESSAGE value="update all" />
     <MESSAGE value="ajout d'emojis" />
     <MESSAGE value="Mise à jour" />
@@ -461,7 +461,8 @@
     <MESSAGE value="ajout d'un cooldown de 30 seconde sur la cmd mcbe-infos" />
     <MESSAGE value="fix cmd _invite" />
     <MESSAGE value="ajout de la commande anti-raid.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la commande anti-raid.js" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1590447161145">
@@ -480,31 +481,36 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="402" y="38" key="#main.js/0.0.1366.728@0.0.1366.728" timestamp="1591390872682" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591392349172">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1594568860630">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591392349172" />
-    <state x="938" y="213" key="FileChooserDialogImpl" timestamp="1594568639894">
+    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1594568860630" />
+    <state x="938" y="213" key="FileChooserDialogImpl" timestamp="1594768215145">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592569341125" />
-    <state x="938" y="213" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1594568639894" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1591972737907">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="938" y="213" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1594768215145" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1594768220863">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591972737907" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1591972737907">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1594768220863" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1594768220863">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591972737907" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1591972737907">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1594768220863" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1594768220863">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591972737907" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1591972737907">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1594768220863" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1594768220863">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591972737907" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1594768220863" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1591206425042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -566,19 +572,21 @@
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590613010054" />
     <state x="252" y="126" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1594568701014" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591392387707">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="338" y="133" key="Vcs.Push.Dialog.v2" timestamp="1594568937991">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591392387707" />
+    <state x="338" y="133" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1594568937991" />
     <state x="605" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594472316957">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1590447268817" />
     <state x="605" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1594472316957" />
-    <state x="411" y="155" key="git4idea.merge.GitPullDialog" timestamp="1591122535954">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="505" y="215" key="git4idea.merge.GitPullDialog" timestamp="1594767849331">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="411" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1591122535954" />
+    <state x="505" y="215" key="git4idea.merge.GitPullDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1594767849331" />
     <state x="400" y="171" key="jetbrains.nodejs.interpreters-dialog" timestamp="1590597131673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
