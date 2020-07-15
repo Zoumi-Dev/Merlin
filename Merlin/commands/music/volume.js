@@ -2,11 +2,22 @@ const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
 
-    const queue = message.client.queue.get(message.guild.id);
+    /*const queue = message.client.queue.get(message.guild.id);
 
     let nextVolume = args[0];
 
+    const channelId = message.guild.member(message.user.id).voice;
+
     if (queue){
+        if (!channelId.channelID === client.queue.get("voiceChannel")){
+            let notinChannel = new Discord.MessageEmbed()
+                .setAuthor("Merlin")
+                .setColor("RED")
+                .addField(`${client.emojis.cache.find(e => e.id === client.emo.kawai)} | Error`, "Vous devez être dans le même salon vocal du bot pour modifier le volume !")
+                .setTimestamp()
+                .setFooter(client.config.footer);
+            return message.channel.send(notinChannel);
+        }
         if (isNaN(nextVolume)){
             let notNumber = new Discord.MessageEmbed()
                 .setAuthor("Merlin")
@@ -42,7 +53,9 @@ module.exports.run = async (client, message, args) => {
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(noMusique);
-    }
+    }*/
+
+    return message.channel.send("cette commande est en maintenance.");
 
 };
 

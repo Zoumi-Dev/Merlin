@@ -17,18 +17,13 @@ module.exports.run = (client, message, args) => {
     }
 
     let embed = new Discord.MessageEmbed()
-        .setAuthor("Merlin")
+        .setAuthor(`${message.author.username}`)
         .setDescription(`${sayEmbed}`)
         .setColor("GREEN")
+        .setThumbnail(message.author.avatarURL({dynamic: true}))
         .setTimestamp()
         .setFooter(client.config.footer);
-    return message.channel.send(embed, {
-        disableMentions: "everyone",
-        allowedMentions: {
-            roles: false,
-            users: false,
-        }
-    });
+    return message.channel.send(embed);
 
 };
 

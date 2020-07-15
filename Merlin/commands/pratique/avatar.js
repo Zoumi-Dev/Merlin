@@ -1,4 +1,10 @@
 const Discord = require('discord.js');
+const msg = [
+    "Hmmmm, pas ouf",
+    "Peut mieux faire",
+    "Digne d'un titan",
+    "Photo de profil de qualité :issou:",
+];
 
 module.exports.run = async (client, message, args) => {
 
@@ -6,21 +12,28 @@ module.exports.run = async (client, message, args) => {
 
     let usr = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(u => u.user.username === args[0]));
 
+    let radomMsg = msg[Math.floor(Math.random() * msg.length)];
+
     if (!args[0]) {
-        let avatarEmbed = new Discord.MessageEmbed()
-            .setAuthor("Merlin")
-            .setDescription(`> Voici l'avatar de <@${message.author.id}>`)
-            .setColor("BLUE")
-            .setImage(`https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png?size=4096`)
-            .setTimestamp()
-            .setFooter(client.config.footer);
-        return message.channel.send(avatarEmbed);
+        if (message) {
+            let avatarEmbed = new Discord.MessageEmbed()
+                .setAuthor("Merlin")
+                .setDescription(`> ${radomMsg}`)
+                .setColor("BLUE")
+                .setImage(message.author.avatarURL({dynamic: true, size: 4096}))
+                .setTimestamp()
+                .setFooter(client.config.footer);
+            return message.channel.send(avatarEmbed);
+        }
     }else {
+        if (!usr){
+            return message.reply("cette utilisateur n'existe pas.");
+        }
         let avatarEmbed = new Discord.MessageEmbed()
             .setAuthor("Merlin")
-            .setDescription(`> Voici l'avatar de <@${usr.user.id}>`)
+            .setDescription(`> Waouh qu'elle belle photo de profil **${usr.user.username}**`)
             .setColor("BLUE")
-            .setImage(`https://cdn.discordapp.com/avatars/${usr.user.id}/${usr.user.avatar}.png?size=4096`)
+            .setImage(usr.user.avatarURL({dynamic: true, size: 4096}))
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(avatarEmbed);

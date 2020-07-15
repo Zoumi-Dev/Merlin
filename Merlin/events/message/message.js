@@ -15,7 +15,6 @@ module.exports = async (client, message) => {
 
     if (message.channel.type === "dm") return client.emit("messagePriver", message);
 
-    /*
     if (!fs.existsSync(`././serveurs/${message.guild.name}.json`)){
         fs.writeFileSync(`././serveurs/${message.guild.name}.json`, `{\n"${message.guild.name}": "${message.guild.id}",\n"prefix": "=",\n"guildMemberAdd": false,\n"guildMemberRemove": false,\n"logs-channel": false\n}`, 'utf-8'), (err) => {
             if (err) return console.log(err.message);
@@ -25,9 +24,8 @@ module.exports = async (client, message) => {
     }else {
         client.serv = JSON.parse(fs.readFileSync(`././serveurs/${message.guild.name}.json`, 'utf8'));
     }
-     */
 
-    const args = message.content.slice(client.config.prefix.length).split(/ +/);
+    const args = message.content.slice(client.serv["prefix"].length).split(/ +/);
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.help.aliases && cmd.help.aliases.includes(command));
 
@@ -38,7 +36,7 @@ module.exports = async (client, message) => {
         return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.serv["prefix"]}\`. Si tu souhaites voir la liste des commandes disponibles fait \`${client.serv["prefix"]}help\` . Si tu souhaites m'ajouter fait \`${client.serv["prefix"]}invite\` !`);
     }
 
-    if (message.content.indexOf(client.config.prefix) !== 0) return;
+    if (message.content.indexOf(client.serv["prefix"]) !== 0) return;
 
 
     if (!client.config.ownerID.includes(message.author.id)){
@@ -56,7 +54,7 @@ module.exports = async (client, message) => {
 
     /* Si la commande n'existe pas */
     if (!cmd){
-        return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`${client.serv["prefix"]}help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faites \`${client.serv["prefix"]}invite\` !`);
+        return message.channel.send(`<@${message.author.id}>, cette commande n'existe pas ! Veuillez faire \`${client.serv["prefix"]}help\` pour voir la liste des commandes disponibles et si vous souhaitez ajouter notre bot faites \`${client.serv["prefix"]}invite\` !`).then(message => message.delete({timeout: 5000}));
     }
 
     /* Cooldown */
@@ -74,7 +72,7 @@ module.exports = async (client, message) => {
 
             if (timeNow < cdExpTime) {
                 timeLeft = (cdExpTime - timeNow) / 1000;
-                return message.channel.send(`<@${message.author.id}>, veuiller patienter \`${timeLeft.toFixed(0)}\` seconde(s) avant de ré-utiliser cette commande.`);
+                return message.channel.send(`<@${message.author.id}>, veuiller patienter \`${timeLeft.toFixed(0)}\` seconde(s) avant de ré-utiliser cette commande.`).then(message => message.delete({timeout: 5000}));
             }
         }
     }

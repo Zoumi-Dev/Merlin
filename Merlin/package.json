@@ -21,6 +21,7 @@
     "libquery": "^1.0.2",
     "librcon": "^1.0.3",
     "moment": "^2.25.3",
+    "moment-timezone": "^0.5.31",
     "ms": "^2.1.2",
     "nekos.life": "^2.0.7",
     "node-fetch": "latest",

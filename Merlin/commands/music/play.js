@@ -49,13 +49,14 @@ module.exports.run = async (client, message, args) => {
     const queueConstruct = {
         textChannel: message.channel,
         channel,
+        voiceChannel: channel.id,
         connection: null,
         songs: [],
         loops: false,
         volume: 50,
         playing: true,
     };
-
+    console.log(queueConstruct);
     if (serveurQueue){
         serveurQueue.songs.push(song);
         let queued = new Discord.MessageEmbed()
@@ -110,7 +111,7 @@ module.exports.run = async (client, message, args) => {
             let songRuning = new Discord.MessageEmbed()
                 .setAuthor("Merlin")
                 .setColor("RED")
-                .addField(`${client.emojis.cache.find(e => e.id === client.emo.dab)} | En train de jouer...`, `🎶 | **Musique**\n${song.title}\n⏳ | **Temps restants**\n${new Date(song.duration * 1000).toISOString().substr(11, 8)}\n**Volume**\n**50%**`)
+                .addField(`> ${client.emojis.cache.find(e => e.id === client.emo.dab)} | En train de jouer...`, `🎶 | **Musique**\n${song.title}\n⏳ | **Temps restants**\n${new Date(song.duration * 1000).toISOString().substr(11, 8)}\n**Volume**\n**50%**`)
                 .setTimestamp()
                 .setFooter(client.config.footer);
             await queue.textChannel.send(songRuning);

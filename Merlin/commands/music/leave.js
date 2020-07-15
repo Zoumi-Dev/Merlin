@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
         let notinChannel = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("RED")
-            .addField(`${client.emojis.cache.find(e => e.id === client.emo.dab)} | Succès`, "Vous devez être dans le même salon vocal du bot pour le déconnecter !")
+            .addField(`${client.emojis.cache.find(e => e.id === client.emo.kawai)} | Error`, "Vous devez être dans le même salon vocal du bot pour le déconnecter !")
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(notinChannel);
@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(succes);
     }
 
-    if (!message.member.roles.cache.find(r => r.name === "dj")){
+    if (!message.member.roles.cache.find(r => r.name.toLowerCase() === "dj")){
         let notDj = new Discord.MessageEmbed()
             .setAuthor("Merlin")
             .setColor("RED")
