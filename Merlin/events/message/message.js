@@ -15,6 +15,7 @@ module.exports = async (client, message) => {
 
     if (message.channel.type === "dm") return client.emit("messagePriver", message);
 
+
     if (!fs.existsSync(`././serveurs/${message.guild.name}.json`)){
         fs.writeFileSync(`././serveurs/${message.guild.name}.json`, `{\n"${message.guild.name}": "${message.guild.id}",\n"prefix": "=",\n"guildMemberAdd": false,\n"guildMemberRemove": false,\n"logs-channel": false\n}`, 'utf-8'), (err) => {
             if (err) return console.log(err.message);
@@ -33,15 +34,20 @@ module.exports = async (client, message) => {
     if (message.mentions.has(`${client.user.id}`, {ignoreEveryone: true})) {
         if (message.author.bot) return;
         if (message.channel.type === "dm") return;
-        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.serv["prefix"]}\`. Si tu souhaites voir la liste des commandes disponibles fait \`${client.serv["prefix"]}help\` . Si tu souhaites m'ajouter fait \`${client.serv["prefix"]}invite\` !`);
+        return message.channel.send(`<@${message.author.id}>, mon prefix est \`${client.serv["prefix"]}\`. Si tu souhaites voir la liste des commandes disponibles fait \`${client.serv["prefix"]}help\` . Si tu souhaites m'ajouter fait \`${client.serv["prefix"]}invite\` !`).then(message => message.delete({timeout: 5000}));
     }
 
     if (message.content.indexOf(client.serv["prefix"]) !== 0) return;
 
 
+
+    /*
     if (!client.config.ownerID.includes(message.author.id)){
         return message.reply("je suis actuellement en maintenance, nous vous prions de patienter.");
     }
+     */
+
+
 
     /* Si le bot est en mode maintenance */
     if(cmd) {

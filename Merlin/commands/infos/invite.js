@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
     let embed = new Discord.MessageEmbed()
         .setAuthor("Merlin")
         .setColor("BLUE")
-        .setDescription(`> Hey <@${message.author.id}>, click [[ici]](https://discord.com/api/oauth2/authorize?client_id=712318774644310057&permissions=8&scope=bot) si tu souhaites inviter le bot sur ton serveur discord ou click [[ici]](https://discord.gg/7PQUHTr) si tu souhaites rejoindre le serveur help de __**Merlin**__.`)
+        .setDescription(`> Hey <@${message.author.id}>, clique [[ici]](https://discord.com/api/oauth2/authorize?client_id=712318774644310057&permissions=8&scope=bot) si tu souhaites inviter le bot sur ton serveur discord ou clique [[ici]](https://discord.gg/7PQUHTr) si tu souhaites rejoindre le serveur help de __**Merlin**__.`)
         .setTimestamp()
         .setFooter(client.config.footer);
     return message.channel.send(embed);

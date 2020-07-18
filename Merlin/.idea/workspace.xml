@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="13ade82c-46d4-4391-8f6b-c785e6dbb2a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/owner/hadm.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/hadm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/owner/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/owner/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/infos/mcbe-infos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/events/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/discord.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/discord.js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ws/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/receiver.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/receiver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/sender.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/sender.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/stream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ws/lib/websocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/lib/websocket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ws/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ws/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Merlin" />
+    <property name="last_opened_file_path" value="F:/github/BlackSky" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -162,6 +154,7 @@
       <workItem from="1594473601863" duration="595000" />
       <workItem from="1594567855521" duration="2671000" />
       <workItem from="1594767818378" duration="357000" />
+      <workItem from="1594908445241" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="changement de design sur les embeds">
       <created>1590363177221</created>
@@ -486,11 +479,11 @@
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591392349172" />
     <state x="379" y="0" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1594568860630" />
-    <state x="938" y="213" key="FileChooserDialogImpl" timestamp="1594768215145">
+    <state x="938" y="213" key="FileChooserDialogImpl" timestamp="1594909156442">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592569341125" />
-    <state x="938" y="213" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1594768215145" />
+    <state x="938" y="213" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1594909156442" />
     <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1594768220863">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

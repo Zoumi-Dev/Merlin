@@ -25,9 +25,9 @@ module.exports.run = async (client, message, args) => {
             .addField("> :detective: | NickName", message.guild.member(message.author.id).nickname ? `✦ ${message.guild.member(message.author.id).nickname}` : `✦ Aucun`, true)
             .addField("> :id: | ID de l'utilisateur", `✦ ${message.author.id}`, true)
             .addField("> :mag: | Compte créé le", `✦ ${moment.utc(message.author.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
-            .addField("> :mag: | A rejoint le", `✦ ${moment.utc(message.guild.member.joinedAt).format("DD/MM/YYYY à hh:mm A")}`, true)
-            .addField("> :blue_book: | Rôle(s)", `✦ ${message.guild.member(message.author.id).roles.cache.map(r => r).join(" ").replace("@everyone", "")}`, true)
-            .setThumbnail(message.author.avatarURL())
+            .addField("> :mag: | A rejoint le", `✦ ${moment.utc(message.guild.member(message.author.id).joinedAt).format("DD/MM/YYYY à hh:mm A")}`, true)
+            .addField("> :blue_book: | Rôle(s)", `✦ ${message.guild.member(message.author.id).roles.cache.map(r => r).join(" ").replace("@everyone", "")}`)
+            .setThumbnail(message.author.avatarURL({dynamic: true}))
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(infos);
@@ -40,8 +40,8 @@ module.exports.run = async (client, message, args) => {
             .addField("> :id: | ID de l'utilisateur", `✦ ${usr.user.id}`, true)
             .addField("> :mag: | Compte créé le", `✦ ${moment.utc(usr.user.createdAt).format("DD/MM/YYYY à hh:mm A")}`, true)
             .addField("> :mag: | A rejoint le", `✦ ${moment.utc(message.guild.member(usr.user.id).joinedAt).format("DD/MM/YYYY à hh:mm A")}`, true)
-            .addField("> :blue_book: | Rôle(s)", `✦ ${message.guild.member(usr.user.id).roles.cache.map(r => r).join(" ").replace("@everyone", "")}`, true)
-            .setThumbnail(usr.user.avatarURL())
+            .addField("> :blue_book: | Rôle(s)", `✦ ${message.guild.member(usr.user.id).roles.cache.map(r => r).join(" ").replace("@everyone", "")}`)
+            .setThumbnail(usr.user.avatarURL({dynamic: true}))
             .setTimestamp()
             .setFooter(client.config.footer);
         return message.channel.send(infos);

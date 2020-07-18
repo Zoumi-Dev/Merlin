@@ -5,6 +5,24 @@ module.exports.run = async (client, message, args) => {
 
     message.delete();
 
+    if (client.config.ownerID.includes(message.author.id)){
+        let prefixes = JSON.parse(fs.readFileSync(`././serveurs/${message.guild.name}.json`, 'utf8'));
+
+        prefixes["prefix"] = args[0];
+
+        fs.writeFileSync(`././serveurs/${message.guild.name}.json`, JSON.stringify(prefixes), (err) => {
+            if (err) return message.channel.send(err.message);
+        })
+
+        let pref = new Discord.MessageEmbed()
+            .setAuthor("Merlin")
+            .setColor("PURPLE")
+            .addField("> :white_check_mark: | Succès", `> Le prefix est désormait \`${args[0]}\``)
+            .setTimestamp()
+            .setFooter(client.config.footer);
+        return message.channel.send(pref);
+    }
+
     if (!message.member.hasPermission("ADMINISTRATOR")) {
         let noperm = new Discord.MessageEmbed()
             .setAuthor("Merlin")

@@ -26,14 +26,14 @@ module.exports.run = async (client, message, args) => {
             .addField("> :busts_in_silhouette: | Joueur(s) en ligne", `✦ ${data.online}/${data.max}`)
             .setTimestamp()
             .setFooter(client.config.footer);
-        return message.channel.send(embed).catch(e => { return message.channel.send(e.message, {code: "php"}) }) && message.channel.send((`> :map: | Map(s)\n\`\`\`${data.map}\`\`\``)) && message.channel.send((`> :file_folder: | Plugin(s)\n\`\`\`${data.plugins}\`\`\``));
+        return message.channel.send(embed).catch(e => { return message.channel.send(e.message, {code: "php"}) }) && message.channel.send((`> :map: | Map par défaut\n\`\`\`${data.map}\`\`\``)) && message.channel.send((`> :file_folder: | Plugin(s)\n\`\`\`${data.plugins}\`\`\``));
     }).catch(e => { return message.channel.send(e.message)});
 
 };
 
 module.exports.help = {
     name: "mcbe-infos",
-    aliases: ["mi"],
+    aliases: ["mi", "mcpe"],
     categories: "infos",
     description: "Permet de voir les informations d'un serveur Minecraft Bedrock Edition",
     usage: "_mcbe-infos [ip] [port]",

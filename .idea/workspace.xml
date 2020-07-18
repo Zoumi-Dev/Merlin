@@ -3,21 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e2203032-cb0d-41ab-88c8-345e476f1591" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/embed.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/embed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/commands/fun/say.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/fun/say.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/bot-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/heberg-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/heberg-infos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/guild/guildDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/guild/guildDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/invite.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/invite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/infos/mcbe-infos.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/infos/mcbe-infos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/owner/hadm.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/owner/hadm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/commands/parametre/setprefix.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/commands/parametre/setprefix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merlin/emojis.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/emojis.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Merlin/events/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/message/messageDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/messageDelete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/events/message/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/events/message/ready.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merlin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Merlin/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Telechargement/ChangeProtectArmor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -110,6 +106,7 @@
       <workItem from="1591630234139" duration="4019000" />
       <workItem from="1594388987811" duration="120000" />
       <workItem from="1594390020658" duration="242000" />
+      <workItem from="1595080251185" duration="5648000" />
     </task>
     <task id="LOCAL-00001" summary="ajout des aliases pour certaine commande ainsi que fix les dates sur certaine commande">
       <created>1590346249634</created>
@@ -224,26 +221,26 @@
     </state>
     <state x="504" y="187" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591644936975" />
     <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1594390286064" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1591644938253">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1595084996587">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591644938253" />
-    <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1591644938252">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1595084996587" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1595084996587">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591644938252" />
-    <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1591644938252">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1595084996587" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1595084996587">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591644938252" />
-    <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305305" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1591644938252">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1595084996587" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1595084996587">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591644938252" />
-    <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590796305306" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1595084996587" />
     <state x="341" y="148" key="SettingsEditor" timestamp="1590770867138">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
